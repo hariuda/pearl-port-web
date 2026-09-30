@@ -8,6 +8,7 @@ import { GradientOutlinedCard } from '../components/GradientOutlinedCard';
 import { getPalette, getSectorPalette } from '../theme/colors';
 import { getFdCurrentValue } from '../types';
 import { formatCurrency } from '../utils/formatters';
+import { isGoldAsset } from '../services/goldService';
 
 interface AllocationScreenProps {
   onNavigateBack: () => void;
@@ -68,7 +69,8 @@ export const AllocationScreen: React.FC<AllocationScreenProps> = ({ onNavigateBa
     unitTrusts.forEach((ut) => {
       const v = (ut.currentNav > 0 ? ut.currentNav : ut.averageNav) * ut.units;
       utVal += v;
-      uMap[ut.fundName] = (uMap[ut.fundName] || 0) + v;
+      const fName = ut.fundName?.trim() || 'Unspecified';
+      uMap[fName] = (uMap[fName] || 0) + v;
     });
 
     let cVal = 0;
@@ -79,19 +81,25 @@ export const AllocationScreen: React.FC<AllocationScreenProps> = ({ onNavigateBa
       cMap[c.symbol] = (cMap[c.symbol] || 0) + v;
     });
 
-    let oVal = 0;
+    let goldVal = 0;
+    let otherVal = 0;
     otherInvestments.forEach((o) => {
       const v = o.quantity > 0 ? o.quantity * o.currentPrice : o.value;
-      oVal += v;
+      if (isGoldAsset(o.type, o.name, o.symbol)) {
+        goldVal += v;
+      } else {
+        otherVal += v;
+      }
     });
 
-    const tot = sVal + fdVal + utVal + cVal + oVal;
+    const tot = sVal + fdVal + utVal + cVal + goldVal + otherVal;
     const acMap: Record<string, number> = {};
     if (sVal > 0) acMap['Equities'] = sVal;
     if (fdVal > 0) acMap['Fixed Deposits'] = fdVal;
     if (utVal > 0) acMap['Unit Trusts'] = utVal;
     if (cVal > 0) acMap['Crypto Currency'] = cVal;
-    if (oVal > 0) acMap['Gold & Other'] = oVal;
+    if (goldVal > 0) acMap['Gold'] = goldVal;
+    if (otherVal > 0) acMap['Other'] = otherVal;
 
     return {
       totalAssets: tot,

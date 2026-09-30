@@ -13,9 +13,10 @@ import {
   getFdCurrentValue
 } from '../types';
 import { StorageService } from '../services/storageService';
-import { fetchAspiData, fetchTradeSummary } from '../services/cseService';
-import { fallbackUtaslFunds, findBestUtaslMatch } from '../services/utaslData';
-import { getFallbackP2pRates, findP2pPriceForAsset } from '../services/p2pArmyData';
+import { fetchAspiData, fetchTradeSummary, isCseMarketOpen } from '../services/cseService';
+import { fetchUtaslFundPrices, findBestUtaslMatch } from '../services/utaslData';
+import { fetchLiveP2pRates, findP2pPriceForAsset } from '../services/p2pArmyData';
+import { fetchRanLankaGoldRates, getGoldPriceForAsset, isGoldAsset } from '../services/goldService';
 import { generatePortfolioInsights as callGemini } from '../services/geminiService';
 
 interface PortfolioContextType {
@@ -36,6 +37,11 @@ interface PortfolioContextType {
 
   aiInsights: string | null;
   isFetchingInsights: boolean;
+
+  isRefreshingPrices: boolean;
+  priceRefreshError: string | null;
+  lastPricesUpdated: Date | null;
+  isMarketOpen: boolean;
 
   // Actions
   setUserName: (name: string) => void;
@@ -89,6 +95,14 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const [aiInsights, setAiInsights] = useState<string | null>(null);
   const [isFetchingInsights, setIsFetchingInsights] = useState(false);
 
+  const [isRefreshingPrices, setIsRefreshingPrices] = useState(false);
+  const [priceRefreshError, setPriceRefreshError] = useState<string | null>(null);
+  const [lastPricesUpdated, setLastPricesUpdated] = useState<Date | null>(() => {
+    const ts = StorageService.getLastPricesUpdated();
+    return ts ? new Date(ts) : null;
+  });
+  const [isMarketOpen, setIsMarketOpen] = useState<boolean>(() => isCseMarketOpen());
+
   // Sync state to storage
   useEffect(() => { StorageService.savePositions(positions); }, [positions]);
   useEffect(() => { StorageService.saveFixedDeposits(fixedDeposits); }, [fixedDeposits]);
@@ -140,36 +154,102 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   }, []);
 
   const refreshPrices = useCallback(async () => {
+    setIsRefreshingPrices(true);
+    setPriceRefreshError(null);
+    setIsMarketOpen(isCseMarketOpen());
+
     try {
-      const cseMap = await fetchTradeSummary();
-      setPositions(prev => prev.map(p => {
-        const newPrice = cseMap[p.symbol];
-        if (newPrice && newPrice !== p.currentPrice) {
-          return { ...p, currentPrice: newPrice };
-        }
-        return p;
-      }));
+      const result = await fetchTradeSummary();
+      if (result.prices && Object.keys(result.prices).length > 0) {
+        setPositions(prev => prev.map(p => {
+          const sym = p.symbol.trim().toUpperCase();
+          const mappedSym = (sym === 'HEMA.N0000' || sym === 'HEMA') ? 'HHL.N0000' : sym;
+          const newPrice = result.prices[mappedSym] 
+            || result.prices[mappedSym + '.N0000']
+            || result.prices[mappedSym.replace(/\.N\d{4}$/, '')]
+            || result.prices[sym];
 
-      // Update crypto from P2P Army
-      const rates = getFallbackP2pRates();
-      setCrypto(prev => prev.map(c => {
-        const matched = findP2pPriceForAsset(c.symbol, c.exchangeName, c.isPrivateWallet, rates);
-        if (matched && matched.effectivePrice > 0) {
-          return { ...c, currentPrice: matched.effectivePrice };
-        }
-        return c;
-      }));
+          if (typeof newPrice === 'number' && newPrice > 0 && newPrice !== p.currentPrice) {
+            return { ...p, currentPrice: newPrice };
+          }
+          return p;
+        }));
+      }
 
-      // Update unit trusts from UTASL
-      setUnitTrusts(prev => prev.map(ut => {
-        const matched = findBestUtaslMatch(ut.fundName, fallbackUtaslFunds);
-        if (matched && matched.effectiveNav > 0) {
-          return { ...ut, currentNav: matched.effectiveNav };
-        }
-        return ut;
-      }));
+      if (result.success) {
+        const now = Date.now();
+        setLastPricesUpdated(new Date(now));
+        StorageService.saveLastPricesUpdated(now);
+        setPriceRefreshError(null);
+      } else {
+        setPriceRefreshError(result.error || "Could not reach CSE live prices. Showing latest closing prices.");
+      }
+
+      // Also refresh ASPI
+      const aspi = await fetchAspiData();
+      if (aspi) {
+        setAspiData(aspi);
+      }
+
+      // Update crypto from P2P Army live
+      try {
+        let cryptoSymbols: string[] = [];
+        setCrypto(current => {
+          cryptoSymbols = current.map(c => c.symbol);
+          return current;
+        });
+        const rates = await fetchLiveP2pRates(cryptoSymbols);
+        setCrypto(prev => prev.map(c => {
+          const matched = findP2pPriceForAsset(c.symbol, c.exchangeName, c.isPrivateWallet, rates);
+          if (matched && matched.effectivePrice > 0 && Math.abs(matched.effectivePrice - c.currentPrice) > 0.0001) {
+            return { ...c, currentPrice: matched.effectivePrice };
+          }
+          return c;
+        }));
+      } catch (err) {
+        console.error("Error refreshing crypto prices:", err);
+      }
+
+      // Update unit trusts from UTASL live
+      try {
+        const liveFunds = await fetchUtaslFundPrices();
+        setUnitTrusts(prev => prev.map(ut => {
+          const matched = findBestUtaslMatch(ut.fundName || '', liveFunds);
+          if (matched && matched.effectiveNav > 0 && Math.abs(matched.effectiveNav - ut.currentNav) > 0.00001) {
+            return { ...ut, currentNav: matched.effectiveNav };
+          }
+          return ut;
+        }));
+      } catch (err) {
+        console.error("Error refreshing UTASL fund prices:", err);
+      }
+
+      // Update gold investments from Ran Lanka live rates
+      try {
+        const liveGold = await fetchRanLankaGoldRates();
+        setOtherInvestments(prev => prev.map(o => {
+          if (isGoldAsset(o.type, o.name, o.symbol)) {
+            const purity = o.purity || '22KT';
+            const unit = o.unit || 'PAWN';
+            const livePrice = getGoldPriceForAsset(purity, unit, liveGold, 'bid');
+            if (livePrice > 0 && Math.abs(livePrice - o.currentPrice) > 0.1) {
+              return {
+                ...o,
+                currentPrice: livePrice,
+                value: o.quantity > 0 ? o.quantity * livePrice : livePrice,
+              };
+            }
+          }
+          return o;
+        }));
+      } catch (err) {
+        console.error("Error refreshing Ran Lanka gold rates:", err);
+      }
     } catch (e) {
       console.error("Error refreshing prices", e);
+      setPriceRefreshError("Failed to update prices from CSE. Showing last known prices.");
+    } finally {
+      setIsRefreshingPrices(false);
     }
   }, []);
 
@@ -374,7 +454,7 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
       const gain = val - cost;
       totalUtCost += cost;
       totalUtVal += val;
-      sb += `"${ut.fundName}",${ut.units},${ut.averageNav.toFixed(2)},${curNav.toFixed(2)},${cost.toFixed(2)},${val.toFixed(2)},${gain.toFixed(2)}\n`;
+      sb += `"${ut.fundName || 'Unspecified'}",${ut.units},${ut.averageNav.toFixed(2)},${curNav.toFixed(2)},${cost.toFixed(2)},${val.toFixed(2)},${gain.toFixed(2)}\n`;
     });
     sb += `Subtotal Unit Trusts Cost: LKR ${totalUtCost.toFixed(2)}, Subtotal Unit Trusts Value: LKR ${totalUtVal.toFixed(2)}, Total Unrealized Gain: LKR ${(totalUtVal - totalUtCost).toFixed(2)}\n\n`;
 
@@ -481,6 +561,10 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
     addOtherInvestment,
     removeOtherInvestment,
     refreshPrices,
+    isRefreshingPrices,
+    priceRefreshError,
+    lastPricesUpdated,
+    isMarketOpen,
     generateAIInsights,
     exportTaxReport,
     exportDetailedTaxReport,

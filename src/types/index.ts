@@ -58,7 +58,7 @@ export function getFdCurrentValue(fd: FixedDeposit): number {
 
 export interface UnitTrust {
   id: number;
-  fundName: string;
+  fundName?: string;
   units: number;
   averageNav: number;
   currentNav: number;
@@ -89,6 +89,8 @@ export interface OtherInvestment {
   quantity: number;
   averagePrice: number;
   currentPrice: number;
+  purity?: string; // e.g. "24KT", "22KT", "21KT", "20KT", "18KT", "14KT", "9KT"
+  unit?: 'PAWN' | 'GRAM'; // 'PAWN' = 1 Sovereign (8g), 'GRAM' = 1 Gram
 }
 
 export interface DividendRecord {

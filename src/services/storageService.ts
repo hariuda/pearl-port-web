@@ -47,7 +47,7 @@ export const initialSamplePositions: StockPosition[] = [
     companyName: "Commercial Bank of Ceylon PLC",
     quantity: 1200,
     averagePrice: 104.50,
-    currentPrice: 118.50,
+    currentPrice: 203.25,
     sector: "Banks",
     totalDividends: 9600.0,
     purchaseDate: Date.now() - 120 * 86400000
@@ -58,7 +58,7 @@ export const initialSamplePositions: StockPosition[] = [
     companyName: "Sampath Bank PLC",
     quantity: 1500,
     averagePrice: 84.00,
-    currentPrice: 92.50,
+    currentPrice: 139.75,
     sector: "Banks",
     totalDividends: 6750.0,
     purchaseDate: Date.now() - 90 * 86400000
@@ -69,7 +69,7 @@ export const initialSamplePositions: StockPosition[] = [
     companyName: "John Keells Holdings PLC",
     quantity: 3500,
     averagePrice: 19.80,
-    currentPrice: 21.80,
+    currentPrice: 18.90,
     sector: "Capital Goods",
     totalDividends: 4200.0,
     purchaseDate: Date.now() - 60 * 86400000
@@ -80,7 +80,7 @@ export const initialSamplePositions: StockPosition[] = [
     companyName: "Capital Alliance Limited",
     quantity: 2000,
     averagePrice: 58.00,
-    currentPrice: 66.50,
+    currentPrice: 43.00,
     sector: "Diversified Financials",
     totalDividends: 10000.0,
     purchaseDate: Date.now() - 45 * 86400000
@@ -122,7 +122,7 @@ export const initialSampleUnitTrusts: UnitTrust[] = [
     fundName: "CAL Balanced Fund",
     units: 12500,
     averageNav: 24.50,
-    currentNav: 27.5625,
+    currentNav: 34.45,
     purchaseDate: Date.now() - 150 * 86400000,
     sector: "CAL Asset Management Ltd"
   },
@@ -131,7 +131,7 @@ export const initialSampleUnitTrusts: UnitTrust[] = [
     fundName: "NDB Wealth Growth Fund",
     units: 8000,
     averageNav: 20.80,
-    currentNav: 22.90,
+    currentNav: 22.49,
     purchaseDate: Date.now() - 80 * 86400000,
     sector: "NDB Wealth Management Ltd"
   }
@@ -143,7 +143,7 @@ export const initialSampleCrypto: Crypto[] = [
     symbol: "USDT",
     quantity: 1500,
     averagePrice: 312.00,
-    currentPrice: 322.65,
+    currentPrice: 338.90,
     purchaseDate: Date.now() - 70 * 86400000,
     isPrivateWallet: false,
     exchangeName: "Binance",
@@ -154,7 +154,7 @@ export const initialSampleCrypto: Crypto[] = [
     symbol: "BTC",
     quantity: 0.025,
     averagePrice: 18500000.0,
-    currentPrice: 20676000.0,
+    currentPrice: 28416765.0,
     purchaseDate: Date.now() - 110 * 86400000,
     isPrivateWallet: true,
     exchangeName: "",
@@ -167,13 +167,15 @@ export const initialSampleOther: OtherInvestment[] = [
     id: 1,
     name: "Sovereign Gold Coins",
     type: "Gold",
-    value: 650000.0,
+    value: 652192.0,
     purchaseDate: Date.now() - 200 * 86400000,
     sector: "Gold & Other",
     symbol: "GOLD",
-    quantity: 24.0,
-    averagePrice: 24500.0,
-    currentPrice: 27083.33
+    quantity: 2.0,
+    averagePrice: 285000.0,
+    currentPrice: 326096.0,
+    purity: "22KT",
+    unit: "PAWN"
   }
 ];
 
@@ -328,6 +330,15 @@ export class StorageService {
 
   static saveChartColorPalette(palette: string): void {
     localStorage.setItem(STORAGE_KEYS.CHART_PALETTE, palette);
+  }
+
+  static getLastPricesUpdated(): number | null {
+    const val = localStorage.getItem('pearlport_last_prices_updated');
+    return val ? parseInt(val, 10) : null;
+  }
+
+  static saveLastPricesUpdated(timestamp: number): void {
+    localStorage.setItem('pearlport_last_prices_updated', timestamp.toString());
   }
 
   static exportBackup(): string {

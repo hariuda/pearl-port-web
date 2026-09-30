@@ -4,42 +4,54 @@ export const ChartPalettes = {
     'Fixed Deposits': '#10B981',
     'Unit Trusts': '#3B82F6',
     'Crypto Currency': '#8B5CF6',
-    'Gold & Other': '#D4AF37'
+    'Gold & Other': '#D4AF37',
+    'Gold': '#D4AF37',
+    'Other': '#64748B'
   },
   DefaultDark: {
     'Equities': '#A78BFA',
     'Fixed Deposits': '#10B981',
     'Unit Trusts': '#60A5FA',
     'Crypto Currency': '#FB923C',
-    'Gold & Other': '#FBBF24'
+    'Gold & Other': '#FBBF24',
+    'Gold': '#FBBF24',
+    'Other': '#94A3B8'
   },
   Vibrant: {
     'Equities': '#FF5722',
     'Fixed Deposits': '#9C27B0',
     'Unit Trusts': '#2196F3',
     'Crypto Currency': '#4CAF50',
-    'Gold & Other': '#FFC107'
+    'Gold & Other': '#FFC107',
+    'Gold': '#FFC107',
+    'Other': '#78716C'
   },
   VibrantDark: {
     'Equities': '#FF7043',
     'Fixed Deposits': '#BA68C8',
     'Unit Trusts': '#42A5F5',
     'Crypto Currency': '#66BB6A',
-    'Gold & Other': '#FFD54F'
+    'Gold & Other': '#FFD54F',
+    'Gold': '#FFD54F',
+    'Other': '#A8A29E'
   },
   Ocean: {
     'Equities': '#0077B6',
     'Fixed Deposits': '#00B4D8',
     'Unit Trusts': '#90E0EF',
     'Crypto Currency': '#03045E',
-    'Gold & Other': '#CAF0F8'
+    'Gold & Other': '#CAF0F8',
+    'Gold': '#E0A96D',
+    'Other': '#48CAE4'
   },
   OceanDark: {
     'Equities': '#38BDF8',
     'Fixed Deposits': '#22D3EE',
     'Unit Trusts': '#7DD3FC',
     'Crypto Currency': '#FB923C',
-    'Gold & Other': '#BAE6FD'
+    'Gold & Other': '#BAE6FD',
+    'Gold': '#FBBF24',
+    'Other': '#38BDF8'
   }
 };
 

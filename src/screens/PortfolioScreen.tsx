@@ -17,8 +17,12 @@ import {
   ChevronUp,
   Wallet,
   CheckCircle2,
+  RefreshCw,
+  AlertCircle,
+  Clock,
 } from 'lucide-react';
 import { usePortfolio } from '../context/PortfolioContext';
+import { formatMarketTime } from '../services/cseService';
 import { EmptyPortfolioState } from '../components/EmptyPortfolioState';
 import { GradientOutlinedCard } from '../components/GradientOutlinedCard';
 import { AddInvestmentDialog } from '../components/AddInvestmentDialog';
@@ -28,6 +32,7 @@ import { AIInsightsDialog } from '../components/AIInsightsDialog';
 import { getPalette } from '../theme/colors';
 import { formatCurrency } from '../utils/formatters';
 import { StockPosition, getFdCurrentValue, PortfolioSortOrder } from '../types';
+import { isGoldAsset, formatGoldWeight } from '../services/goldService';
 
 type SortOrder = PortfolioSortOrder;
 
@@ -47,6 +52,11 @@ export const PortfolioScreen: React.FC = () => {
     logDividendRecord,
     chartPaletteName,
     isDarkMode,
+    refreshPrices,
+    isRefreshingPrices,
+    priceRefreshError,
+    lastPricesUpdated,
+    isMarketOpen,
   } = usePortfolio();
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(0);
@@ -54,6 +64,7 @@ export const PortfolioScreen: React.FC = () => {
   const [itemToEdit, setItemToEdit] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchActive, setIsSearchActive] = useState(false);
+  const [selectedFundFilter, setSelectedFundFilter] = useState<string>('ALL');
   const [sortOrder, setSortOrder] = useState<SortOrder>('VALUE_DESC');
   const [showSortMenu, setShowSortMenu] = useState(false);
   const [showAiDialog, setShowAiDialog] = useState(false);
@@ -74,13 +85,23 @@ export const PortfolioScreen: React.FC = () => {
     { name: 'Fixed Deposits', icon: Landmark },
     { name: 'Unit Trusts', icon: PieIcon },
     { name: 'Crypto Currency', icon: Bitcoin },
-    { name: 'Gold & Other', icon: Coins },
+    { name: 'Gold', icon: Coins },
+    { name: 'Other', icon: Wallet },
   ];
 
   // Palette
   const palette = useMemo(() => {
     return getPalette(chartPaletteName, isDarkMode);
   }, [chartPaletteName, isDarkMode]);
+
+  // Split otherInvestments into Gold and Other
+  const goldInvestments = useMemo(() => {
+    return otherInvestments.filter((o) => isGoldAsset(o.type, o.name, o.symbol));
+  }, [otherInvestments]);
+
+  const nonGoldInvestments = useMemo(() => {
+    return otherInvestments.filter((o) => !isGoldAsset(o.type, o.name, o.symbol));
+  }, [otherInvestments]);
 
   // Tab counts
   const tabCounts = [
@@ -93,7 +114,8 @@ export const PortfolioScreen: React.FC = () => {
     fixedDeposits.length,
     unitTrusts.length,
     crypto.length,
-    otherInvestments.length,
+    goldInvestments.length,
+    nonGoldInvestments.length,
   ];
 
   // Current category Invested & Current Value
@@ -117,8 +139,11 @@ export const PortfolioScreen: React.FC = () => {
       }
 
       case 2: {
-        const inv = unitTrusts.reduce((acc, u) => acc + u.averageNav * u.units, 0);
-        const cur = unitTrusts.reduce(
+        const targetList = selectedFundFilter === 'ALL'
+          ? unitTrusts
+          : unitTrusts.filter((u) => (u.fundName?.trim() || 'Unspecified') === selectedFundFilter);
+        const inv = targetList.reduce((acc, u) => acc + u.averageNav * u.units, 0);
+        const cur = targetList.reduce(
           (acc, u) => acc + (u.currentNav > 0 ? u.currentNav : u.averageNav) * u.units,
           0
         );
@@ -133,11 +158,24 @@ export const PortfolioScreen: React.FC = () => {
         return { currentInvested: inv, currentValue: cur };
       }
       case 4: {
-        const inv = otherInvestments.reduce(
+        // Gold
+        const inv = goldInvestments.reduce(
           (acc, o) => acc + (o.quantity > 0 ? o.quantity * o.averagePrice : o.value),
           0
         );
-        const cur = otherInvestments.reduce(
+        const cur = goldInvestments.reduce(
+          (acc, o) => acc + (o.quantity > 0 ? o.quantity * o.currentPrice : o.value),
+          0
+        );
+        return { currentInvested: inv, currentValue: cur };
+      }
+      case 5: {
+        // Other
+        const inv = nonGoldInvestments.reduce(
+          (acc, o) => acc + (o.quantity > 0 ? o.quantity * o.averagePrice : o.value),
+          0
+        );
+        const cur = nonGoldInvestments.reduce(
           (acc, o) => acc + (o.quantity > 0 ? o.quantity * o.currentPrice : o.value),
           0
         );
@@ -146,7 +184,7 @@ export const PortfolioScreen: React.FC = () => {
       default:
         return { currentInvested: 0, currentValue: 0 };
     }
-  }, [selectedTabIndex, positions, fixedDeposits, unitTrusts, crypto, otherInvestments]);
+  }, [selectedTabIndex, selectedFundFilter, positions, fixedDeposits, unitTrusts, crypto, goldInvestments, nonGoldInvestments]);
 
   const currentTitle = tabs[selectedTabIndex].name;
   const currentTabColor = palette[currentTitle] || '#818CF8';
@@ -223,6 +261,61 @@ export const PortfolioScreen: React.FC = () => {
         return entries;
     }
   }, [positions, searchQuery, sortOrder]);
+
+  // Unique Held Funds for Unit Trusts Filter
+  const uniqueHeldFunds = useMemo(() => {
+    const set = new Set<string>();
+    unitTrusts.forEach((ut) => {
+      set.add(ut.fundName?.trim() || 'Unspecified');
+    });
+    return Array.from(set).sort((a, b) => a.localeCompare(b));
+  }, [unitTrusts]);
+
+  // Filtered & Sorted Unit Trusts
+  const filteredUnitTrusts = useMemo(() => {
+    let list = unitTrusts;
+    if (selectedFundFilter !== 'ALL') {
+      list = list.filter((ut) => (ut.fundName?.trim() || 'Unspecified') === selectedFundFilter);
+    }
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      list = list.filter((ut) => {
+        const fName = (ut.fundName || 'Unspecified').toLowerCase();
+        const sec = (ut.sector || '').toLowerCase();
+        return fName.includes(q) || sec.includes(q);
+      });
+    }
+    switch (sortOrder) {
+      case 'VALUE_DESC':
+        return [...list].sort((a, b) => {
+          const valA = (a.currentNav > 0 ? a.currentNav : a.averageNav) * a.units;
+          const valB = (b.currentNav > 0 ? b.currentNav : b.averageNav) * b.units;
+          return valB - valA;
+        });
+      case 'VALUE_ASC':
+        return [...list].sort((a, b) => {
+          const valA = (a.currentNav > 0 ? a.currentNav : a.averageNav) * a.units;
+          const valB = (b.currentNav > 0 ? b.currentNav : b.averageNav) * b.units;
+          return valA - valB;
+        });
+      case 'NAME_ASC':
+        return [...list].sort((a, b) =>
+          (a.fundName || 'Unspecified').localeCompare(b.fundName || 'Unspecified')
+        );
+      case 'GAIN_DESC':
+        return [...list].sort((a, b) => {
+          const costA = a.averageNav * a.units;
+          const valA = (a.currentNav > 0 ? a.currentNav : a.averageNav) * a.units;
+          const gainA = costA > 0 ? (valA - costA) / costA : 0;
+          const costB = b.averageNav * b.units;
+          const valB = (b.currentNav > 0 ? b.currentNav : b.averageNav) * b.units;
+          const gainB = costB > 0 ? (valB - costB) / costB : 0;
+          return gainB - gainA;
+        });
+      default:
+        return list;
+    }
+  }, [unitTrusts, selectedFundFilter, searchQuery, sortOrder]);
 
   return (
     <div className="w-full min-h-screen pb-28 select-none">
@@ -430,6 +523,56 @@ export const PortfolioScreen: React.FC = () => {
         {/* TAB 0: EQUITIES */}
         {selectedTabIndex === 0 && (
           <>
+            {/* Live CSE Status Bar & Refresh Controls */}
+            <div className="flex flex-wrap items-center justify-between gap-2 px-1 py-1">
+              <div className="flex items-center gap-2">
+                {isMarketOpen ? (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    CSE Market Live
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-500/10 text-slate-600 dark:text-slate-400 border border-slate-500/20">
+                    <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
+                    Market Closed (Last Close)
+                  </span>
+                )}
+
+                {lastPricesUpdated && (
+                  <span className="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                    <Clock size={12} />
+                    <span>Updated {formatMarketTime(lastPricesUpdated)}</span>
+                  </span>
+                )}
+              </div>
+
+              <button
+                onClick={() => refreshPrices()}
+                disabled={isRefreshingPrices}
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-indigo-600 dark:text-indigo-400 text-xs font-semibold transition-all disabled:opacity-50"
+                title="Fetch latest stock prices from Colombo Stock Exchange"
+              >
+                <RefreshCw size={13} className={isRefreshingPrices ? 'animate-spin' : ''} />
+                <span>{isRefreshingPrices ? 'Updating...' : 'Refresh prices'}</span>
+              </button>
+            </div>
+
+            {/* Error Banner if price sync failed */}
+            {priceRefreshError && (
+              <div className="flex items-center justify-between gap-2 p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs">
+                <div className="flex items-center gap-2">
+                  <AlertCircle size={15} className="flex-shrink-0" />
+                  <span>{priceRefreshError}</span>
+                </div>
+                <button
+                  onClick={() => refreshPrices()}
+                  className="font-bold underline hover:no-underline flex-shrink-0"
+                >
+                  Retry
+                </button>
+              </div>
+            )}
+
             {positions.length === 0 ? (
               <EmptyPortfolioState
                 title="No Equities Yet"
@@ -500,9 +643,14 @@ export const PortfolioScreen: React.FC = () => {
                       onClick={() => toggleExpand(sym)}
                       className="cursor-pointer flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100 dark:border-slate-800 mt-3"
                     >
-                      <span>
-                        {totalQty} Shares @ Avg {formatCurrency(avgBuyPrice)}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span>
+                          {totalQty} Shares @ Avg {formatCurrency(avgBuyPrice)}
+                        </span>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 font-semibold text-slate-700 dark:text-slate-300">
+                          {isMarketOpen ? 'Live' : 'Close'}: {formatCurrency(curPrice)}
+                        </span>
+                      </div>
                       <div className="flex items-center gap-1 text-[11px] font-medium text-indigo-500">
                         <span>{lots.length} Lot(s)</span>
                         {isExp ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -665,74 +813,135 @@ export const PortfolioScreen: React.FC = () => {
                 icon={PieIcon}
               />
             ) : (
-              unitTrusts.map((ut) => {
-                const curNav = ut.currentNav > 0 ? ut.currentNav : ut.averageNav;
-                const totalCost = ut.averageNav * ut.units;
-                const totalVal = curNav * ut.units;
-                const diff = totalVal - totalCost;
-                const diffPct = totalCost > 0 ? (diff / totalCost) * 100 : 0;
-                const isProf = diff >= 0;
+              <>
+                {/* Live UTASL Status Bar & Refresh Controls */}
+                <div className="flex flex-wrap items-center justify-between gap-2 px-1 py-1 mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                      UTASL Official Prices
+                    </span>
 
-                return (
-                  <GradientOutlinedCard key={ut.id} className="p-4 rounded-[16px]">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-2.5">
-                        <div className="w-9 h-9 rounded-xl bg-purple-500/15 text-purple-500 flex items-center justify-center font-bold">
-                          <PieIcon size={18} />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-sm">{ut.fundName}</h4>
-                          <span className="text-[11px] text-slate-500">{ut.sector}</span>
-                        </div>
-                      </div>
-
-                      <div className="flex items-center gap-1.5">
-                        <button
-                          onClick={() => setItemToEdit(ut)}
-                          className="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
-                        >
-                          <Edit2 size={15} />
-                        </button>
-                        <button
-                          onClick={() => removeUnitTrust(ut.id)}
-                          className="p-1.5 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30"
-                        >
-                          <Trash2 size={15} />
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2 text-xs py-2 border-y border-slate-100 dark:border-slate-800 my-2">
-                      <div>
-                        <span className="text-slate-500 block text-[11px]">
-                          {ut.units.toFixed(2)} Units @ LKR {ut.averageNav.toFixed(4)}
-                        </span>
-                        <span className="font-bold">{formatCurrency(totalVal)}</span>
-                      </div>
-                      <div className="text-right">
-                        <span className="text-slate-500 block text-[11px]">
-                          Current NAV: LKR {curNav.toFixed(4)}
-                        </span>
-                        <span
-                          className="font-bold"
-                          style={{ color: isProf ? '#10B981' : '#EF4444' }}
-                        >
-                          {isProf ? '+' : ''}
-                          {formatCurrency(diff)} ({isProf ? '+' : ''}
-                          {diffPct.toFixed(2)}%)
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-between text-[11px] text-slate-500">
-                      <span className="flex items-center gap-1 text-emerald-500 font-semibold">
-                        <CheckCircle2 size={14} /> UTASL Live
+                    {lastPricesUpdated && (
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                        <Clock size={12} />
+                        <span>Updated {formatMarketTime(lastPricesUpdated)}</span>
                       </span>
-                      <span>Invested: {new Date(ut.purchaseDate).toLocaleDateString()}</span>
-                    </div>
-                  </GradientOutlinedCard>
-                );
-              })
+                    )}
+                  </div>
+
+                  <button
+                    onClick={() => refreshPrices()}
+                    disabled={isRefreshingPrices}
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-indigo-600 dark:text-indigo-400 text-xs font-semibold transition-all disabled:opacity-50"
+                    title="Fetch latest unit trust prices from UTASL"
+                  >
+                    <RefreshCw size={13} className={isRefreshingPrices ? 'animate-spin' : ''} />
+                    <span>{isRefreshingPrices ? 'Updating...' : 'Refresh UTASL'}</span>
+                  </button>
+                </div>
+
+                {/* Fund Filter Selector */}
+                <div className="flex items-center justify-between gap-2 px-1 mb-2">
+                  <span className="text-xs font-semibold text-slate-500">Filter by Fund:</span>
+                  <select
+                    value={selectedFundFilter}
+                    onChange={(e) => setSelectedFundFilter(e.target.value)}
+                    className="px-3 py-1.5 rounded-xl border text-xs font-medium focus:ring-2 focus:ring-indigo-500 outline-none max-w-[220px] truncate"
+                    style={{
+                      backgroundColor: isDarkMode ? '#1E293B' : '#FFFFFF',
+                      borderColor: isDarkMode ? '#334155' : '#E2E8F0',
+                      color: isDarkMode ? '#F8FAFC' : '#0F172A',
+                    }}
+                  >
+                    <option value="ALL">All Funds ({unitTrusts.length})</option>
+                    {uniqueHeldFunds.map((f) => {
+                      const count = unitTrusts.filter((u) => (u.fundName?.trim() || 'Unspecified') === f).length;
+                      return (
+                        <option key={f} value={f}>
+                          {f} ({count})
+                        </option>
+                      );
+                    })}
+                  </select>
+                </div>
+
+                {filteredUnitTrusts.length === 0 ? (
+                  <div className="py-8 text-center text-xs text-slate-500">
+                    No unit trusts match the selected filter.
+                  </div>
+                ) : (
+                  filteredUnitTrusts.map((ut) => {
+                    const curNav = ut.currentNav > 0 ? ut.currentNav : ut.averageNav;
+                    const totalCost = ut.averageNav * ut.units;
+                    const totalVal = curNav * ut.units;
+                    const diff = totalVal - totalCost;
+                    const diffPct = totalCost > 0 ? (diff / totalCost) * 100 : 0;
+                    const isProf = diff >= 0;
+                    const fundDisplayName = ut.fundName?.trim() || 'Unspecified';
+
+                    return (
+                      <GradientOutlinedCard key={ut.id} className="p-4 rounded-[16px]">
+                        <div className="flex items-center justify-between mb-2">
+                          <div className="flex items-center gap-2.5">
+                            <div className="w-9 h-9 rounded-xl bg-purple-500/15 text-purple-500 flex items-center justify-center font-bold">
+                              <PieIcon size={18} />
+                            </div>
+                            <div>
+                              <h4 className="font-bold text-sm">{fundDisplayName}</h4>
+                              <span className="text-[11px] text-slate-500">{ut.sector}</span>
+                            </div>
+                          </div>
+
+                          <div className="flex items-center gap-1.5">
+                            <button
+                              onClick={() => setItemToEdit(ut)}
+                              className="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+                            >
+                              <Edit2 size={15} />
+                            </button>
+                            <button
+                              onClick={() => removeUnitTrust(ut.id)}
+                              className="p-1.5 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30"
+                            >
+                              <Trash2 size={15} />
+                            </button>
+                          </div>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-2 text-xs py-2 border-y border-slate-100 dark:border-slate-800 my-2">
+                          <div>
+                            <span className="text-slate-500 block text-[11px]">
+                              {ut.units.toFixed(2)} Units @ LKR {ut.averageNav.toFixed(4)}
+                            </span>
+                            <span className="font-bold">{formatCurrency(totalVal)}</span>
+                          </div>
+                          <div className="text-right">
+                            <span className="text-slate-500 block text-[11px]">
+                              Current NAV: LKR {curNav.toFixed(4)}
+                            </span>
+                            <span
+                              className="font-bold"
+                              style={{ color: isProf ? '#10B981' : '#EF4444' }}
+                            >
+                              {isProf ? '+' : ''}
+                              {formatCurrency(diff)} ({isProf ? '+' : ''}
+                              {diffPct.toFixed(2)}%)
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center justify-between text-[11px] text-slate-500">
+                          <span className="flex items-center gap-1 text-emerald-500 font-semibold">
+                            <CheckCircle2 size={14} /> UTASL Live
+                          </span>
+                          <span>Invested: {new Date(ut.purchaseDate).toLocaleDateString()}</span>
+                        </div>
+                      </GradientOutlinedCard>
+                    );
+                  })
+                )}
+              </>
             )}
           </>
         )}
@@ -747,7 +956,35 @@ export const PortfolioScreen: React.FC = () => {
                 icon={Bitcoin}
               />
             ) : (
-              crypto.map((c) => {
+              <>
+                {/* Live P2P Army Status Bar & Refresh Controls */}
+                <div className="flex flex-wrap items-center justify-between gap-2 px-1 py-1 mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-orange-500/10 text-orange-600 dark:text-orange-400 border border-orange-500/20">
+                      <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+                      P2P Army Live Rates
+                    </span>
+
+                    {lastPricesUpdated && (
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                        <Clock size={12} />
+                        <span>Updated {formatMarketTime(lastPricesUpdated)}</span>
+                      </span>
+                    )}
+                  </div>
+
+                  <button
+                    onClick={() => refreshPrices()}
+                    disabled={isRefreshingPrices}
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-indigo-600 dark:text-indigo-400 text-xs font-semibold transition-all disabled:opacity-50"
+                    title="Fetch latest crypto prices from P2P Army"
+                  >
+                    <RefreshCw size={13} className={isRefreshingPrices ? 'animate-spin' : ''} />
+                    <span>{isRefreshingPrices ? 'Updating...' : 'Refresh P2P Rates'}</span>
+                  </button>
+                </div>
+
+                {crypto.map((c) => {
                 const curPrice = c.currentPrice > 0 ? c.currentPrice : c.averagePrice;
                 const totalCost = c.averagePrice * c.quantity;
                 const totalVal = curPrice * c.quantity;
@@ -814,72 +1051,235 @@ export const PortfolioScreen: React.FC = () => {
                     </div>
                   </GradientOutlinedCard>
                 );
-              })
+              })}
+            </>
+          )}
+          </>
+        )}
+
+        {/* TAB 4: GOLD */}
+        {selectedTabIndex === 4 && (
+          <>
+            {goldInvestments.length === 0 ? (
+              <EmptyPortfolioState
+                title="No Gold Assets Yet"
+                message="Tap 'Add Asset' to track gold coins, bars, and sovereigns with live Ran Lanka rates."
+                icon={Coins}
+              />
+            ) : (
+              <>
+                {/* Live Ran Lanka Gold Status Bar & Refresh Controls */}
+                <div className="flex flex-wrap items-center justify-between gap-2 px-1 py-1 mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                      <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                      Ran Lanka Gold Rates (1 Pawn = 8g)
+                    </span>
+
+                    {lastPricesUpdated && (
+                      <span className="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
+                        <Clock size={12} />
+                        <span>Updated {formatMarketTime(lastPricesUpdated)}</span>
+                      </span>
+                    )}
+                  </div>
+
+                  <button
+                    onClick={() => refreshPrices()}
+                    disabled={isRefreshingPrices}
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-amber-50 dark:bg-amber-950/50 hover:bg-amber-100 dark:hover:bg-amber-900/60 text-amber-700 dark:text-amber-400 text-xs font-semibold transition-all disabled:opacity-50"
+                    title="Fetch latest gold rates from ranlankagoldbuyer.com"
+                  >
+                    <RefreshCw size={13} className={isRefreshingPrices ? 'animate-spin' : ''} />
+                    <span>{isRefreshingPrices ? 'Updating...' : 'Refresh Gold'}</span>
+                  </button>
+                </div>
+
+                {goldInvestments.map((o) => {
+                  const purity = o.purity || '22KT';
+                  const unit = o.unit || 'PAWN';
+
+                  const totalVal = o.quantity > 0 ? o.quantity * o.currentPrice : o.value;
+                  const totalCost = o.quantity > 0 ? o.quantity * o.averagePrice : o.value;
+                  const diff = totalVal - totalCost;
+                  const diffPct = totalCost > 0 ? (diff / totalCost) * 100 : 0;
+                  const isProf = diff >= 0;
+
+                  return (
+                    <GradientOutlinedCard key={o.id} className="p-4 rounded-[16px]">
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="flex items-center gap-2.5">
+                          <div className="w-9 h-9 rounded-xl bg-amber-500/15 text-amber-500 flex items-center justify-center font-bold">
+                            <Coins size={18} />
+                          </div>
+                          <div>
+                            <div className="flex items-center gap-1.5">
+                              <h4 className="font-bold text-sm">{o.name}</h4>
+                              <span className="px-1.5 py-0.5 rounded text-[10px] font-extrabold bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                                {purity}
+                              </span>
+                            </div>
+                            <span className="text-[11px] text-slate-500">
+                              {formatGoldWeight(o.quantity, unit)}
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-1.5">
+                          <button
+                            onClick={() => setItemToEdit(o)}
+                            className="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+                          >
+                            <Edit2 size={15} />
+                          </button>
+                          <button
+                            onClick={() => removeOtherInvestment(o.id)}
+                            className="p-1.5 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30"
+                          >
+                            <Trash2 size={15} />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-2 text-xs py-2 border-y border-slate-100 dark:border-slate-800 my-2">
+                        <div>
+                          <span className="text-slate-500 block text-[11px]">
+                            {o.quantity > 0
+                              ? unit === 'PAWN'
+                                ? `${o.quantity} ${o.quantity === 1 ? 'Pawn' : 'Pawns'}`
+                                : `${o.quantity} Grams`
+                              : 'Total Holding'}
+                          </span>
+                          <span className="font-bold text-sm">
+                            {formatCurrency(totalVal)}
+                          </span>
+                          {totalCost > 0 && o.currentPrice > 0 && (
+                            <span
+                              className="block text-[11px] font-bold mt-0.5"
+                              style={{ color: isProf ? '#10B981' : '#EF4444' }}
+                            >
+                              {isProf ? '+' : ''}
+                              {formatCurrency(diff)} ({isProf ? '+' : ''}
+                              {diffPct.toFixed(2)}%)
+                            </span>
+                          )}
+                        </div>
+
+                        <div className="text-right">
+                          <span className="text-slate-500 block text-[11px]">
+                            Current Rate ({unit === 'PAWN' ? 'pawn' : 'g'})
+                          </span>
+                          <span className="font-bold">
+                            {formatCurrency(o.currentPrice > 0 ? o.currentPrice : o.averagePrice)}
+                          </span>
+                          {o.averagePrice > 0 && (
+                            <span className="block text-[10px] text-slate-400 mt-0.5">
+                              Cost: {formatCurrency(o.averagePrice)}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-between text-[11px] text-slate-500">
+                        <span className="flex items-center gap-1 text-amber-500 font-semibold">
+                          <CheckCircle2 size={14} /> Ran Lanka Live ({purity})
+                        </span>
+                        <span>Acquired: {new Date(o.purchaseDate).toLocaleDateString()}</span>
+                      </div>
+                    </GradientOutlinedCard>
+                  );
+                })}
+              </>
             )}
           </>
         )}
 
-        {/* TAB 4: GOLD & OTHER */}
-        {selectedTabIndex === 4 && (
+        {/* TAB 5: OTHER */}
+        {selectedTabIndex === 5 && (
           <>
-            {otherInvestments.length === 0 ? (
+            {nonGoldInvestments.length === 0 ? (
               <EmptyPortfolioState
                 title="No Other Assets Yet"
-                message="Tap 'Add Asset' to track gold, commodities, and real estate."
-                icon={Coins}
+                message="Tap 'Add Asset' to track real estate, land, commodities, and alternative investments."
+                icon={Wallet}
               />
             ) : (
-              otherInvestments.map((o) => (
-                <GradientOutlinedCard key={o.id} className="p-4 rounded-[16px]">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-9 h-9 rounded-xl bg-amber-500/15 text-amber-500 flex items-center justify-center font-bold">
-                        <Coins size={18} />
+              nonGoldInvestments.map((o) => {
+                const totalVal = o.quantity > 0 ? o.quantity * o.currentPrice : o.value;
+                const totalCost = o.quantity > 0 ? o.quantity * o.averagePrice : o.value;
+                const diff = totalVal - totalCost;
+                const diffPct = totalCost > 0 ? (diff / totalCost) * 100 : 0;
+                const isProf = diff >= 0;
+
+                return (
+                  <GradientOutlinedCard key={o.id} className="p-4 rounded-[16px]">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center gap-2.5">
+                        <div className="w-9 h-9 rounded-xl bg-slate-500/15 text-slate-500 dark:text-slate-300 flex items-center justify-center font-bold">
+                          <Wallet size={18} />
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-sm">{o.name}</h4>
+                          <span className="text-[11px] text-slate-500">
+                            {o.type} {o.symbol && `• ${o.symbol}`}
+                          </span>
+                        </div>
                       </div>
+
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={() => setItemToEdit(o)}
+                          className="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+                        >
+                          <Edit2 size={15} />
+                        </button>
+                        <button
+                          onClick={() => removeOtherInvestment(o.id)}
+                          className="p-1.5 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30"
+                        >
+                          <Trash2 size={15} />
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2 text-xs py-2 border-y border-slate-100 dark:border-slate-800 my-2">
                       <div>
-                        <h4 className="font-bold text-sm">{o.name}</h4>
-                        <span className="text-[11px] text-slate-500">
-                          {o.type} {o.symbol && `• ${o.symbol}`}
+                        <span className="text-slate-500 block text-[11px]">
+                          {o.quantity > 0 ? `${o.quantity} Units` : 'Valuation'}
+                        </span>
+                        <span className="font-bold text-sm">
+                          {formatCurrency(totalVal)}
+                        </span>
+                        {totalCost > 0 && o.currentPrice > 0 && (
+                          <span
+                            className="block text-[11px] font-bold mt-0.5"
+                            style={{ color: isProf ? '#10B981' : '#EF4444' }}
+                          >
+                            {isProf ? '+' : ''}
+                            {formatCurrency(diff)} ({isProf ? '+' : ''}
+                            {diffPct.toFixed(2)}%)
+                          </span>
+                        )}
+                      </div>
+                      <div className="text-right">
+                        <span className="text-slate-500 block text-[11px]">
+                          {o.quantity > 0 ? 'Unit Rate' : 'Cost Value'}
+                        </span>
+                        <span className="font-bold">
+                          {formatCurrency(o.averagePrice > 0 ? o.averagePrice : o.value)}
                         </span>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-1.5">
-                      <button
-                        onClick={() => setItemToEdit(o)}
-                        className="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
-                      >
-                        <Edit2 size={15} />
-                      </button>
-                      <button
-                        onClick={() => removeOtherInvestment(o.id)}
-                        className="p-1.5 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30"
-                      >
-                        <Trash2 size={15} />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-2 text-xs py-2 border-y border-slate-100 dark:border-slate-800 my-2">
-                    <div>
-                      <span className="text-slate-500 block text-[11px]">
-                        {o.quantity > 0 ? `${o.quantity} Units` : 'Valuation'}
+                    <div className="flex items-center justify-between text-[11px] text-slate-500">
+                      <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 font-medium">
+                        {o.sector || o.type || 'Asset'}
                       </span>
-                      <span className="font-bold">
-                        {formatCurrency(o.quantity > 0 ? o.quantity * o.currentPrice : o.value)}
-                      </span>
+                      <span>Acquired: {new Date(o.purchaseDate).toLocaleDateString()}</span>
                     </div>
-                    <div className="text-right">
-                      <span className="text-slate-500 block text-[11px]">Unit Rate</span>
-                      <span className="font-bold">{formatCurrency(o.averagePrice)}</span>
-                    </div>
-                  </div>
-
-                  <div className="text-right text-[11px] text-slate-500">
-                    Acquired: {new Date(o.purchaseDate).toLocaleDateString()}
-                  </div>
-                </GradientOutlinedCard>
-              ))
+                  </GradientOutlinedCard>
+                );
+              })
             )}
           </>
         )}

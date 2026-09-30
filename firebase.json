@@ -1,4 +1,7 @@
 {
+  "functions": {
+    "source": "functions"
+  },
   "hosting": {
     "public": "dist",
     "ignore": [
@@ -7,6 +10,18 @@
       "**/node_modules/**"
     ],
     "rewrites": [
+      {
+        "source": "/api/cse/**",
+        "function": "cseProxy"
+      },
+      {
+        "source": "/api/utasl/**",
+        "function": "utaslProxy"
+      },
+      {
+        "source": "/api/p2p/**",
+        "function": "p2pProxy"
+      },
       {
         "source": "**",
         "destination": "/index.html"

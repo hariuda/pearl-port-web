@@ -10,6 +10,7 @@ import { SectorPieChart } from '../components/SectorPieChart';
 import { AllocationSection } from '../components/AllocationSection';
 import { getPalette, getSectorPalette } from '../theme/colors';
 import { getFdCurrentValue } from '../types';
+import { isGoldAsset } from '../services/goldService';
 
 interface DashboardScreenProps {
   onNavigateToAllocation: () => void;
@@ -79,14 +80,23 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({ onNavigateToAl
     });
     if (cVal > 0) sMap['Crypto Currency'] = cVal;
 
-    // Other
+    // Gold & Other
     let oVal = 0;
+    let goldVal = 0;
+    let otherVal = 0;
     otherInvestments.forEach((o) => {
       const cur = o.quantity > 0 ? o.quantity * o.currentPrice : o.value;
+      const cost = o.quantity > 0 ? o.quantity * o.averagePrice : o.value;
       oVal += cur;
-      inv += cur;
+      inv += cost;
+      if (isGoldAsset(o.type, o.name, o.symbol)) {
+        goldVal += cur;
+      } else {
+        otherVal += cur;
+      }
     });
-    if (oVal > 0) sMap['Gold & Other'] = oVal;
+    if (goldVal > 0) sMap['Gold'] = goldVal;
+    if (otherVal > 0) sMap['Other'] = otherVal;
 
     return {
       totalStocksValue: sVal,
@@ -256,7 +266,8 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({ onNavigateToAl
     const map: Record<string, number> = {};
     unitTrusts.forEach((ut) => {
       const v = (ut.currentNav > 0 ? ut.currentNav : ut.averageNav) * ut.units;
-      map[ut.fundName] = (map[ut.fundName] || 0) + v;
+      const fName = ut.fundName?.trim() || 'Unspecified';
+      map[fName] = (map[fName] || 0) + v;
     });
     return map;
   }, [unitTrusts]);

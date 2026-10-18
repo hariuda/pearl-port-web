@@ -1,7 +1,7 @@
 import { P2pArmyPrice } from '../types';
 
 // Baseline USDT/LKR P2P reference rates across major P2P exchanges (Sri Lanka)
-const DEFAULT_USDT_BASE = 338.90;
+const DEFAULT_USDT_BASE = 336.99;
 
 const exchangeSpreads: [string, number, number][] = [
   ["Binance", 1.002, 0.998],
@@ -17,26 +17,26 @@ const exchangeSpreads: [string, number, number][] = [
 
 // Fallback spot multipliers in USDT (regularly refreshed live via Binance & CoinGecko)
 const fallbackSpotUsdt: Record<string, number> = {
-  USDT: 1.0,
-  USDC: 1.0,
-  BTC: 83850.0,
-  ETH: 2695.0,
-  BNB: 768.0,
-  SOL: 119.5,
-  XRP: 1.51,
-  DOGE: 0.0958,
-  ADA: 0.248,
-  AVAX: 23.4,
-  LINK: 13.8,
-  DOT: 4.8,
-  SUI: 1.15,
-  NEAR: 3.65,
-  LTC: 88.5,
-  BCH: 385.0,
-  TRX: 0.235,
-  PEPE: 0.0000075,
-  SHIB: 0.0000135,
-  PAXG: 2750.0
+  USDT: 1,
+  USDC: 1,
+  ADA: 0.2203,
+  LINK: 12.003,
+  BTC: 81819.65,
+  AVAX: 9.783,
+  BNB: 720.38,
+  SUI: 0.9833,
+  PEPE: 0.0000039,
+  SHIB: 0.00000497,
+  LTC: 58.96,
+  ETH: 2418.75,
+  SOL: 103.98,
+  TRX: 0.3336,
+  BCH: 275.8,
+  PAXG: 4159.56,
+  DOGE: 0.07949,
+  NEAR: 4.991,
+  DOT: 1.105,
+  XRP: 1.297
 };
 
 // Memory cache
@@ -206,6 +206,34 @@ async function fetchSpotPriceUsdt(symbol: string): Promise<number | null> {
   return fallbackSpotUsdt[clean] || null;
 }
 
+async function fetchP2pJsonDataset(): Promise<P2pArmyPrice[] | null> {
+  const endpoints = [
+    `https://raw.githubusercontent.com/hariuda/pearl-port-web/main/public/data/p2p-rates.json?t=${Date.now()}`,
+    `/data/p2p-rates.json?t=${Date.now()}`
+  ];
+  for (const url of endpoints) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 4000);
+      const res = await fetch(url, { signal: controller.signal });
+      clearTimeout(timeoutId);
+      if (res.ok) {
+        const json = await res.json();
+        if (Array.isArray(json?.prices) && json.prices.length > 0) {
+          if (typeof json.usdtBaseRate === 'number' && json.usdtBaseRate > 0) {
+            liveUsdtLkrRate = json.usdtBaseRate;
+          }
+          if (json.spotPrices && typeof json.spotPrices === 'object') {
+            Object.assign(liveSpotPrices, json.spotPrices);
+          }
+          return json.prices;
+        }
+      }
+    } catch {}
+  }
+  return null;
+}
+
 /**
  * Fetches live P2P Army rates for given assets (or all popular assets).
  */
@@ -215,34 +243,46 @@ export async function fetchLiveP2pRates(targetSymbols: string[] = []): Promise<P
     return cachedP2pPrices;
   }
 
-  // 1. Fetch USDT rate
-  const usdtRate = await fetchLiveUsdtRate();
-  liveUsdtLkrRate = usdtRate;
-
-  // 2. Determine all symbols to fetch
-  const defaultSymbols = ['USDT', 'USDC', 'BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'DOGE', 'ADA', 'AVAX', 'LINK', 'DOT', 'SUI'];
-  const symbolsToFetch = Array.from(new Set([...defaultSymbols, ...targetSymbols.map(s => s.trim().toUpperCase())])).filter(Boolean);
-
-  // 3. Fetch spot prices concurrently
-  await Promise.all(
-    symbolsToFetch.map(async sym => {
-      const price = await fetchSpotPriceUsdt(sym);
-      if (price !== null && price > 0) {
-        liveSpotPrices[sym] = price;
-      }
-    })
-  );
-
-  // 4. Generate all P2P price objects
-  const generated = generatePricesFromSpotAndUsdt(liveSpotPrices, liveUsdtLkrRate);
-  cachedP2pPrices = generated;
-  lastP2pFetchTime = Date.now();
-
   try {
-    localStorage.setItem('pearlport_cached_p2p_prices', JSON.stringify(generated));
-  } catch {}
+    // 1. Fetch USDT rate
+    const usdtRate = await fetchLiveUsdtRate();
+    liveUsdtLkrRate = usdtRate;
 
-  return generated;
+    // 2. Determine all symbols to fetch
+    const defaultSymbols = ['USDT', 'USDC', 'BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'DOGE', 'ADA', 'AVAX', 'LINK', 'DOT', 'SUI'];
+    const symbolsToFetch = Array.from(new Set([...defaultSymbols, ...targetSymbols.map(s => s.trim().toUpperCase())])).filter(Boolean);
+
+    // 3. Fetch spot prices concurrently
+    await Promise.all(
+      symbolsToFetch.map(async sym => {
+        const price = await fetchSpotPriceUsdt(sym);
+        if (price !== null && price > 0) {
+          liveSpotPrices[sym] = price;
+        }
+      })
+    );
+
+    // 4. Generate all P2P price objects
+    const generated = generatePricesFromSpotAndUsdt(liveSpotPrices, liveUsdtLkrRate);
+    cachedP2pPrices = generated;
+    lastP2pFetchTime = Date.now();
+
+    try {
+      localStorage.setItem('pearlport_cached_p2p_prices', JSON.stringify(generated));
+    } catch {}
+
+    return generated;
+  } catch {
+    // Fallback to daily GitHub raw CDN dataset
+    const dailyDataset = await fetchP2pJsonDataset();
+    if (dailyDataset && dailyDataset.length > 0) {
+      cachedP2pPrices = dailyDataset;
+      lastP2pFetchTime = Date.now();
+      return dailyDataset;
+    }
+  }
+
+  return getFallbackP2pRates();
 }
 
 export function findP2pPriceForAsset(

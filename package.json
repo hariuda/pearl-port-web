@@ -1,18 +1,22 @@
 {
   "name": "pearl-port-web",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "update:utasl": "node scripts/update-utasl.cjs",
+    "update:cse": "node scripts/update-cse.cjs",
+    "update:p2p": "node scripts/update-p2p.cjs",
+    "update:all": "node scripts/update-utasl.cjs && node scripts/update-cse.cjs && node scripts/update-p2p.cjs",
+    "build": "node scripts/update-utasl.cjs && node scripts/update-cse.cjs && node scripts/update-p2p.cjs && tsc && vite build",
     "preview": "vite preview",
     "assets": "node scripts/generate-assets.cjs",
     "cap:sync": "npx cap sync",
     "cap:android": "npx cap open android",
     "cap:ios": "npx cap open ios",
     "build:native": "npm run build && npx cap sync",
-    "deploy": "npm run build && firebase deploy --only hosting"
+    "deploy": "npm run build && npx -y firebase-tools@latest deploy --only hosting"
   },
   "dependencies": {
     "@capacitor/android": "^8.5.2",
@@ -21,6 +25,7 @@
     "@capacitor/ios": "^8.5.2",
     "@capacitor/splash-screen": "^8.0.2",
     "@capacitor/status-bar": "^8.0.3",
+    "firebase": "^12.19.0",
     "lucide-react": "^1.16.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -31,9 +36,11 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.6.1",
+    "playwright-core": "^1.63.0",
     "postcss": "^8.5.28",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.6.3",
-    "vite": "^5.4.10"
+    "vite": "^5.4.10",
+    "vite-plugin-pwa": "^2.0.0"
   }
 }

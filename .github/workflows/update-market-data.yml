@@ -1,11 +1,11 @@
-name: Update Market Data (CSE & UTASL)
+name: Update Market Data (CSE, UTASL & P2P Crypto)
 
 on:
   schedule:
     # 10:15 UTC = 3:45 PM Sri Lanka Time (Monday-Friday, immediately after CSE 2:30 PM market close & settlement)
     - cron: '15 10 * * 1-5'
-    # 12:30 UTC = 6:00 PM Sri Lanka Time (Monday-Friday, evening final settlement & UTASL NAV publications)
-    - cron: '30 12 * * 1-5'
+    # 12:30 UTC = 6:00 PM Sri Lanka Time (Daily, evening final settlement, UTASL NAV & P2P Crypto rates)
+    - cron: '30 12 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 permissions:
@@ -31,15 +31,18 @@ jobs:
       - name: Run CSE Market Data Updater
         run: node scripts/update-cse.cjs
 
+      - name: Run P2P Army Crypto Rates Updater
+        run: node scripts/update-p2p.cjs
+
       - name: Commit and push if prices updated
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/utasl-funds.json public/data/cse-market-data.json src/services/utaslData.ts src/services/cseStocksData.ts src/services/cseService.ts
+          git add public/data/utasl-funds.json public/data/cse-market-data.json public/data/p2p-rates.json src/services/utaslData.ts src/services/cseStocksData.ts src/services/cseService.ts src/services/p2pArmyData.ts
           if git diff --staged --quiet; then
             echo "No changes in market data."
           else
-            git commit -m "chore(data): update daily CSE equity prices & UTASL fund NAVs [skip ci]"
+            git commit -m "chore(data): update daily CSE equities, UTASL fund NAVs & P2P crypto rates [skip ci]"
             git pull --rebase origin main || true
             git push origin main
           fi

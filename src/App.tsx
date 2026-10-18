@@ -134,13 +134,11 @@ const MainAppContent: React.FC = () => {
           </div>
         </main>
 
-        {/* Bottom Navigation (Only for main screens) */}
-        {currentRoute !== 'allocation' && (
-          <BottomNavigation
-            currentRoute={currentRoute}
-            onNavigate={(route) => navigateTo(route)}
-          />
-        )}
+        {/* Bottom Navigation (Always visible) */}
+        <BottomNavigation
+          currentRoute={currentRoute}
+          onNavigate={(route) => navigateTo(route)}
+        />
       </div>
     </div>
   );

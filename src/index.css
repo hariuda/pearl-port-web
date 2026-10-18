@@ -15,7 +15,6 @@
 
 html {
   background-color: #0B0F19;
-  overscroll-behavior-y: contain;
 }
 
 html:not(.dark) {
@@ -33,7 +32,6 @@ body {
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
-  overscroll-behavior-y: contain;
   padding-top: var(--sat);
   padding-left: var(--sal);
   padding-right: var(--sar);

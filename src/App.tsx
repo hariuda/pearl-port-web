@@ -22,7 +22,7 @@ const getStoredRoute = (): string => {
 };
 
 const MainAppContent: React.FC = () => {
-  const { isDarkMode } = usePortfolio();
+  const { isDarkMode, isRefreshingPrices } = usePortfolio();
 
   // Initialize native status bar and splash screen
   useEffect(() => {
@@ -113,18 +113,25 @@ const MainAppContent: React.FC = () => {
           backgroundColor: isDarkMode ? '#0B0F19' : '#F8FAFC',
           color: isDarkMode ? '#F8FAFC' : '#0F172A',
         }}
-        className="w-full max-w-lg min-h-screen relative flex flex-col shadow-2xl overflow-x-hidden border-x border-slate-200/40 dark:border-slate-800/40"
+        className="w-full max-w-lg min-h-screen relative flex flex-col shadow-2xl overflow-x-hidden border-x border-slate-200/40 dark:border-slate-800/40 app-reveal"
       >
-        {/* Screen Routing */}
+        {/* Top subtle live market sync shimmer bar */}
+        {isRefreshingPrices && (
+          <div className="absolute top-0 left-0 right-0 h-[2.5px] top-progress-shimmer z-50 pointer-events-none" />
+        )}
+
+        {/* Screen Routing with subtle transition */}
         <main className="flex-1 w-full overflow-y-auto">
-          {currentRoute === 'dashboard' && (
-            <DashboardScreen onNavigateToAllocation={() => navigateTo('allocation')} />
-          )}
-          {currentRoute === 'portfolio' && <PortfolioScreen />}
-          {currentRoute === 'reports' && <ReportsScreen />}
-          {currentRoute === 'allocation' && (
-            <AllocationScreen onNavigateBack={navigateBack} />
-          )}
+          <div key={currentRoute} className="screen-transition-enter w-full">
+            {currentRoute === 'dashboard' && (
+              <DashboardScreen onNavigateToAllocation={() => navigateTo('allocation')} />
+            )}
+            {currentRoute === 'portfolio' && <PortfolioScreen />}
+            {currentRoute === 'reports' && <ReportsScreen />}
+            {currentRoute === 'allocation' && (
+              <AllocationScreen onNavigateBack={navigateBack} />
+            )}
+          </div>
         </main>
 
         {/* Bottom Navigation (Only for main screens) */}

@@ -38,7 +38,7 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({ currentRoute
               if (navigator.vibrate) navigator.vibrate(15);
               onNavigate(item.route);
             }}
-            className="flex-1 flex flex-col items-center justify-center py-1 transition-all duration-150 outline-none"
+            className="flex-1 flex flex-col items-center justify-center py-1 transition-all duration-150 outline-none active:scale-95"
             style={{
               color: isSelected
                 ? isDarkMode ? '#A5B4FC' : '#2C2260'
@@ -47,10 +47,10 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({ currentRoute
           >
             {/* Pill Container */}
             <div
-              className={`flex items-center justify-center transition-all duration-200 ${
+              className={`flex items-center justify-center transition-all duration-250 ease-out ${
                 isSelected
-                  ? 'px-5 py-1 rounded-full'
-                  : 'px-5 py-1'
+                  ? 'px-5 py-1 rounded-full scale-100 shadow-sm'
+                  : 'px-5 py-1 scale-95 opacity-80'
               }`}
               style={{
                 backgroundColor: isSelected
@@ -58,11 +58,15 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({ currentRoute
                   : 'transparent',
               }}
             >
-              <Icon size={22} strokeWidth={isSelected ? 2.5 : 2} />
+              <Icon
+                size={22}
+                strokeWidth={isSelected ? 2.5 : 2}
+                className="transition-transform duration-200"
+              />
             </div>
             <span
-              className={`text-xs mt-1 transition-all ${
-                isSelected ? 'font-bold tracking-tight' : 'font-normal opacity-85'
+              className={`text-xs mt-1 transition-all duration-200 ${
+                isSelected ? 'font-bold tracking-tight scale-100' : 'font-normal opacity-80 scale-95'
               }`}
               style={{ fontSize: '11.5px' }}
             >

@@ -113,11 +113,11 @@ const MainAppContent: React.FC = () => {
           backgroundColor: isDarkMode ? '#0B0F19' : '#F8FAFC',
           color: isDarkMode ? '#F8FAFC' : '#0F172A',
         }}
-        className="w-full max-w-lg min-h-screen relative flex flex-col shadow-2xl overflow-x-hidden border-x border-slate-200/40 dark:border-slate-800/40 app-reveal"
+        className="w-full max-w-lg min-h-screen relative flex flex-col shadow-2xl overflow-x-hidden border-x border-slate-200/40 dark:border-slate-800/40"
       >
         {/* Top subtle live market sync shimmer bar */}
         {isRefreshingPrices && (
-          <div className="absolute top-0 left-0 right-0 h-[2.5px] top-progress-shimmer z-50 pointer-events-none" />
+          <div className="fixed top-0 left-0 right-0 max-w-lg mx-auto h-[2.5px] top-progress-shimmer z-50 pointer-events-none" />
         )}
 
         {/* Screen Routing with subtle transition */}
@@ -134,7 +134,7 @@ const MainAppContent: React.FC = () => {
           </div>
         </main>
 
-        {/* Bottom Navigation (Always visible) */}
+        {/* Bottom Navigation (Always fixed to viewport) */}
         <BottomNavigation
           currentRoute={currentRoute}
           onNavigate={(route) => navigateTo(route)}

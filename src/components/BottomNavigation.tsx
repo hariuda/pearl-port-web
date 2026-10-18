@@ -25,7 +25,7 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({ currentRoute
         borderTop: `1px solid ${isDarkMode ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
         boxShadow: isDarkMode ? '0 -4px 16px rgba(0,0,0,0.4)' : '0 -4px 16px rgba(0,0,0,0.04)',
       }}
-      className="fixed bottom-0 left-0 right-0 z-40 max-w-lg mx-auto flex items-center justify-around px-2 select-none"
+      className="fixed bottom-0 left-0 right-0 z-50 max-w-lg mx-auto flex items-center justify-around px-2 select-none"
     >
       {items.map((item) => {
         const Icon = item.icon;

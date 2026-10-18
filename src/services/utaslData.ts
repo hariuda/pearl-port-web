@@ -1,23 +1,17 @@
 import { UtaslFundPrice } from '../types';
 
 /**
- * Official Unit Trust Association of Sri Lanka (UTASL) funds list.
+ * Official Unit Trust Association of Sri Lanka (UTASL) funds list and latest NAV prices.
  * Sourced from: https://www.utasl.lk/unit-prices/
  */
 export const UTASL_FUNDS: string[] = [
+  "ASTRUE Active Income Fund",
+  "ASTRUE Money Market Fund",
   "Arpico Ataraxia Cash Management Trust Fund",
   "Arpico Ataraxia Equity Income Fund",
-  "Asia Securities Dynamic Gilt Fund",
-  "Asia Securities Dynamic Income Fund",
-  "Asia Securities Equity Opportunity Fund",
-  "Asia Securities Gilt Fund",
-  "Asia Securities Income Fund",
-  "Asia Securities Money Market Fund",
   "Assetline Income Fund",
   "Assetline Income Plus Growth Fund",
-  "ASTRUE Active Income Fund",
   "Astrue Alpha Fund",
-  "ASTRUE Money Market Fund",
   "CAL Balanced Fund",
   "CAL Corporate Treasury Fund",
   "CAL Fixed Income Opportunities Fund",
@@ -30,24 +24,6 @@ export const UTASL_FUNDS: string[] = [
   "CAL Medium Risk Debt Fund",
   "CAL Money Market Fund",
   "CAL Quant Equity Fund",
-  "Ceybank Century Growth",
-  "Ceybank Gilt Edge Fund (A Series)",
-  "Ceybank High Yield Fund",
-  "Ceybank Savings Plus Money Market Fund",
-  "Ceybank Surakum Fund",
-  "Ceybank Unit Trust",
-  "Ceylon Dollar Bond Fund (in $)",
-  "Ceylon Dollar Bond Fund (in Rs)",
-  "Ceylon Financial Sector Fund",
-  "Ceylon Income Fund",
-  "Ceylon Index Fund",
-  "Ceylon Money Market Fund",
-  "Ceylon Tourism Fund",
-  "Ceylon Treasury Income Fund",
-  "Ceylon Wealth Plus Fund",
-  "Comtrust Equity Fund",
-  "Comtrust Gilt Edged Fund",
-  "Comtrust Money Market Fund",
   "CT Smith Equity Fund",
   "CT Smith Gilt-Edged Fund",
   "CT Smith Growth Equity Fund",
@@ -71,7 +47,6 @@ export const UTASL_FUNDS: string[] = [
   "NAMAL Growth Fund",
   "NAMAL High Yield Fund",
   "NAMAL Income Fund",
-  "National Equity Fund",
   "NDB Wealth Gilt Edged Fund",
   "NDB Wealth Growth & Income Fund",
   "NDB Wealth Growth Fund",
@@ -80,8 +55,7 @@ export const UTASL_FUNDS: string[] = [
   "NDB Wealth Islamic Money Plus Fund",
   "NDB Wealth Money Fund",
   "NDB Wealth Money Plus Fund",
-  "Premier Money Market Fund",
-  "Premier Wealth Income Fund",
+  "National Equity Fund",
   "Senfin Consumer Staples Fund",
   "Senfin Dividend Fund",
   "Senfin Dynamic Income Fund",
@@ -89,7 +63,6 @@ export const UTASL_FUNDS: string[] = [
   "Senfin Growth Fund",
   "Senfin Insurance Sector Fund",
   "Senfin Money Market Fund",
-  "Senfin Select Factor Fund",
   "Senfin Shariah Balanced Fund",
   "Senfin Shariah Income Fund",
   "Softlogic Equity Fund",
@@ -98,102 +71,70 @@ export const UTASL_FUNDS: string[] = [
 ];
 
 export const fallbackUtaslFunds: UtaslFundPrice[] = [
-  // Arpico Ataraxia
-  { company: "ArpicoAtaraxia Asset Management Pvt Ltd", fundName: "Arpico Ataraxia Cash Management Trust Fund", sellingPrice: 46.9721, buyingPrice: 46.9721, date: "Latest", effectiveNav: 46.9721 },
-  { company: "ArpicoAtaraxia Asset Management Pvt Ltd", fundName: "Arpico Ataraxia Equity Income Fund", sellingPrice: 17.2739, buyingPrice: 16.9093, date: "Latest", effectiveNav: 16.9093 },
-
-  // Asset Trust Management
-  { company: "Asset Trust Management (Pvt) Ltd", fundName: "Astrue Alpha Fund", sellingPrice: 32.3660, buyingPrice: 30.4406, date: "Latest", effectiveNav: 30.4406 },
-  { company: "Asset Trust Management (Pvt) Ltd", fundName: "ASTRUE Active Income Fund", sellingPrice: 221.1653, buyingPrice: 221.1653, date: "Latest", effectiveNav: 221.1653 },
-  { company: "Asset Trust Management (Pvt) Ltd", fundName: "ASTRUE Money Market Fund", sellingPrice: 12.3100, buyingPrice: 12.3100, date: "Latest", effectiveNav: 12.3100 },
-
-  // Assetline Capital
-  { company: "Assetline Capital (Pvt) Ltd", fundName: "Assetline Income Fund", sellingPrice: 31.1414, buyingPrice: 31.1414, date: "Latest", effectiveNav: 31.1414 },
-  { company: "Assetline Capital (Pvt) Ltd", fundName: "Assetline Income Plus Growth Fund", sellingPrice: 31.4254, buyingPrice: 30.9862, date: "Latest", effectiveNav: 30.9862 },
-
-  // CT Smith Asset Management
-  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Equity Fund", sellingPrice: 70.5500, buyingPrice: 67.1200, date: "Latest", effectiveNav: 67.1200 },
-  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Gilt-Edged Fund", sellingPrice: 18.6362, buyingPrice: 18.6362, date: "Latest", effectiveNav: 18.6362 },
-  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith High Yield Fund", sellingPrice: 21.3389, buyingPrice: 21.3389, date: "Latest", effectiveNav: 21.3389 },
-  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Growth Equity Fund", sellingPrice: 43.5049, buyingPrice: 42.5943, date: "Latest", effectiveNav: 42.5943 },
-  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Income Fund", sellingPrice: 19.2250, buyingPrice: 19.2250, date: "Latest", effectiveNav: 19.2250 },
-  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Money Market Fund", sellingPrice: 36.2266, buyingPrice: 36.2266, date: "Latest", effectiveNav: 36.2266 },
-
-  // First Capital Asset Management
-  { company: "First Capital Asset Management Limited", fundName: "First Capital Equity Fund (FCEF)", sellingPrice: 4349.7700, buyingPrice: 4284.5200, date: "Latest", effectiveNav: 4284.5200 },
-  { company: "First Capital Asset Management Limited", fundName: "First Capital Fixed income Fund", sellingPrice: 4608.5600, buyingPrice: 4608.5600, date: "Latest", effectiveNav: 4608.5600 },
-  { company: "First Capital Asset Management Limited", fundName: "First Capital Gilt Edged Fund", sellingPrice: 2819.9700, buyingPrice: 2819.9700, date: "Latest", effectiveNav: 2819.9700 },
-  { company: "First Capital Asset Management Limited", fundName: "First Capital Money Market Fund", sellingPrice: 3792.4700, buyingPrice: 3792.4700, date: "Latest", effectiveNav: 3792.4700 },
-  { company: "First Capital Asset Management Limited", fundName: "First Capital Wealth Fund", sellingPrice: 2331.9200, buyingPrice: 2331.9200, date: "Latest", effectiveNav: 2331.9200 },
-  { company: "First Capital Asset Management Limited", fundName: "First Capital Money Plus Fund", sellingPrice: 1209.6300, buyingPrice: 1209.6300, date: "Latest", effectiveNav: 1209.6300 },
-
-  // JB Vantage / Financial Services
-  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Credit Opportunity Fund", sellingPrice: 10.6355, buyingPrice: 10.6355, date: "Latest", effectiveNav: 10.6355 },
-  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Money Market Fund", sellingPrice: 55.8454, buyingPrice: 55.8454, date: "Latest", effectiveNav: 55.8454 },
-  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Short Term Gilt Fund", sellingPrice: 29.8348, buyingPrice: 29.8348, date: "Latest", effectiveNav: 29.8348 },
-  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Value Equity Fund", sellingPrice: 82.9954, buyingPrice: 78.8056, date: "Latest", effectiveNav: 78.8056 },
-
-  // LYNEAR Wealth Management
-  { company: "LYNEAR Wealth Management (Pvt) Ltd", fundName: "LYNEAR Wealth Dynamic Opportunities Fund", sellingPrice: 308.8773, buyingPrice: 293.5582, date: "Latest", effectiveNav: 293.5582 },
-  { company: "LYNEAR Wealth Management (Pvt) Ltd", fundName: "LYNEAR Wealth Income Fund", sellingPrice: 187.6203, buyingPrice: 183.8646, date: "Latest", effectiveNav: 183.8646 },
-  { company: "LYNEAR Wealth Management (Pvt) Ltd", fundName: "LYNEAR Wealth Liquid Money Fund", sellingPrice: 117.9342, buyingPrice: 117.9342, date: "Latest", effectiveNav: 117.9342 },
-  { company: "LYNEAR Wealth Management (Pvt) Ltd", fundName: "LYNEAR Wealth Optimal Yield Fund", sellingPrice: 105.9177, buyingPrice: 103.7988, date: "Latest", effectiveNav: 103.7988 },
-
-  // NDB Wealth Management
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Growth Fund", sellingPrice: 22.9700, buyingPrice: 22.4900, date: "Latest", effectiveNav: 22.4900 },
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Growth & Income Fund", sellingPrice: 125.0200, buyingPrice: 122.4500, date: "Latest", effectiveNav: 122.4500 },
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Income Fund", sellingPrice: 36.6752, buyingPrice: 36.6752, date: "Latest", effectiveNav: 36.6752 },
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Gilt Edged Fund", sellingPrice: 42.9120, buyingPrice: 42.9120, date: "Latest", effectiveNav: 42.9120 },
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Income Plus Fund", sellingPrice: 34.0260, buyingPrice: 34.0260, date: "Latest", effectiveNav: 34.0260 },
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Money Plus Fund", sellingPrice: 44.2937, buyingPrice: 44.2937, date: "Latest", effectiveNav: 44.2937 },
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Money Fund", sellingPrice: 40.1597, buyingPrice: 40.1597, date: "Latest", effectiveNav: 40.1597 },
-  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Islamic Money Plus Fund", sellingPrice: 27.3836, buyingPrice: 27.3836, date: "Latest", effectiveNav: 27.3836 },
-
-  // National Asset Management (NAMAL)
-  { company: "National Asset Management Limited", fundName: "NAMAL Growth Fund", sellingPrice: 346.9749, buyingPrice: 334.8411, date: "Latest", effectiveNav: 334.8411 },
-  { company: "National Asset Management Limited", fundName: "National Equity Fund", sellingPrice: 75.0121, buyingPrice: 72.2760, date: "Latest", effectiveNav: 72.2760 },
-  { company: "National Asset Management Limited", fundName: "NAMAL Income Fund", sellingPrice: 16.1670, buyingPrice: 16.1670, date: "Latest", effectiveNav: 16.1670 },
-  { company: "National Asset Management Limited", fundName: "NAMAL High Yield Fund", sellingPrice: 48.4592, buyingPrice: 48.4592, date: "Latest", effectiveNav: 48.4592 },
-
-  // Premier Asset Management
-  { company: "Premier Wealth Management Limited", fundName: "Premier Money Market Fund", sellingPrice: 35.4837, buyingPrice: 35.4837, date: "Latest", effectiveNav: 35.4837 },
-  { company: "Premier Wealth Management Limited", fundName: "Premier Wealth Income Fund", sellingPrice: 26.4300, buyingPrice: 26.4300, date: "Latest", effectiveNav: 26.4300 },
-
-  // Senfin Asset Management
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Money Market Fund", sellingPrice: 30.2308, buyingPrice: 30.2308, date: "Latest", effectiveNav: 30.2308 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Shariah Income Fund", sellingPrice: 19.5808, buyingPrice: 19.5808, date: "Latest", effectiveNav: 19.5808 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Dynamic Income Fund", sellingPrice: 23.6550, buyingPrice: 23.6550, date: "Latest", effectiveNav: 23.6550 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Growth Fund", sellingPrice: 26.1300, buyingPrice: 25.2300, date: "Latest", effectiveNav: 25.2300 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Shariah Balanced Fund", sellingPrice: 20.9400, buyingPrice: 20.3100, date: "Latest", effectiveNav: 20.3100 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Dividend Fund", sellingPrice: 20.1339, buyingPrice: 19.7248, date: "Latest", effectiveNav: 19.7248 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Consumer Staples Fund", sellingPrice: 20.6500, buyingPrice: 20.2300, date: "Latest", effectiveNav: 20.2300 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Financial Services Fund", sellingPrice: 21.7700, buyingPrice: 21.3200, date: "Latest", effectiveNav: 21.3200 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Insurance Sector Fund", sellingPrice: 18.5800, buyingPrice: 18.2100, date: "Latest", effectiveNav: 18.2100 },
-  { company: "Senfin Asset Management Ltd", fundName: "Senfin Select Factor Fund", sellingPrice: 13.1300, buyingPrice: 12.8600, date: "Latest", effectiveNav: 12.8600 },
-
-  // Softlogic Asset Management
-  { company: "Softlogic Asset Management (Pvt) Ltd", fundName: "Softlogic Money Market Fund", sellingPrice: 194.7723, buyingPrice: 194.7723, date: "Latest", effectiveNav: 194.7723 },
-  { company: "Softlogic Asset Management (Pvt) Ltd", fundName: "Softlogic Equity Fund", sellingPrice: 274.7119, buyingPrice: 261.1329, date: "Latest", effectiveNav: 261.1329 },
-  { company: "Softlogic Asset Management (Pvt) Ltd", fundName: "Softlogic Income Fund", sellingPrice: 103.4765, buyingPrice: 103.4765, date: "Latest", effectiveNav: 103.4765 },
-
-  // CAL Asset Management
-  { company: "CAL Asset Management Ltd", fundName: "CAL Balanced Fund", sellingPrice: 35.0700, buyingPrice: 34.4500, date: "Latest", effectiveNav: 34.4500 },
-  { company: "CAL Asset Management Ltd", fundName: "CAL Income Fund", sellingPrice: 33.7845, buyingPrice: 33.7845, date: "Latest", effectiveNav: 33.7845 },
-  { company: "CAL Asset Management Ltd", fundName: "CAL High Yield Fund", sellingPrice: 27.8420, buyingPrice: 27.8420, date: "Latest", effectiveNav: 27.8420 },
-  { company: "CAL Asset Management Ltd", fundName: "CAL Gilt Fund", sellingPrice: 25.1320, buyingPrice: 25.1320, date: "Latest", effectiveNav: 25.1320 },
-  { company: "CAL Asset Management Ltd", fundName: "CAL Money Market Fund", sellingPrice: 7.3978, buyingPrice: 7.3978, date: "Latest", effectiveNav: 7.3978 },
-  { company: "CAL Asset Management Ltd", fundName: "CAL Investment Grade Fund", sellingPrice: 26.1400, buyingPrice: 26.1400, date: "Latest", effectiveNav: 26.1400 },
-  { company: "CAL Asset Management Ltd", fundName: "CAL Corporate Treasury Fund", sellingPrice: 31.2500, buyingPrice: 31.2500, date: "Latest", effectiveNav: 31.2500 },
-  { company: "CAL Asset Management Ltd", fundName: "CAL Fixed Income Opportunities Fund", sellingPrice: 25.0400, buyingPrice: 25.0400, date: "Latest", effectiveNav: 25.0400 },
-
-  // Ceybank Asset Management
-  { company: "Ceybank Asset Management Ltd", fundName: "Ceybank Century Growth", sellingPrice: 178.7500, buyingPrice: 171.0200, date: "Latest", effectiveNav: 171.0200 },
-  { company: "Ceybank Asset Management Ltd", fundName: "Ceybank Century Growth Fund", sellingPrice: 178.7500, buyingPrice: 171.0200, date: "Latest", effectiveNav: 171.0200 },
-  { company: "Ceybank Asset Management Ltd", fundName: "Ceybank Unit Trust", sellingPrice: 50.6200, buyingPrice: 48.4100, date: "Latest", effectiveNav: 48.4100 },
-  { company: "Ceybank Asset Management Ltd", fundName: "Ceybank Savings Plus Money Market Fund", sellingPrice: 19.7374, buyingPrice: 19.7374, date: "Latest", effectiveNav: 19.7374 },
-  { company: "Ceybank Asset Management Ltd", fundName: "Ceybank Surakum Fund", sellingPrice: 23.8783, buyingPrice: 23.8783, date: "Latest", effectiveNav: 23.8783 },
-  { company: "Ceybank Asset Management Ltd", fundName: "Ceybank Gilt Edge Fund (A Series)", sellingPrice: 25.4339, buyingPrice: 25.4339, date: "Latest", effectiveNav: 25.4339 },
-  { company: "Ceybank Asset Management Ltd", fundName: "Ceybank High Yield Fund", sellingPrice: 26.6098, buyingPrice: 26.6098, date: "Latest", effectiveNav: 26.6098 }
+  { company: "ArpicoAtaraxia Asset Management Pvt Ltd", fundName: "Arpico Ataraxia Cash Management Trust Fund", sellingPrice: 47.1783, buyingPrice: 47.1783, date: "15 Oct 2026", effectiveNav: 47.1783 },
+  { company: "ArpicoAtaraxia Asset Management Pvt Ltd", fundName: "Arpico Ataraxia Equity Income Fund", sellingPrice: 16.4134, buyingPrice: 16.0545, date: "15 Oct 2026", effectiveNav: 16.0545 },
+  { company: "Asset Trust Management (Pvt) Ltd", fundName: "Astrue Alpha Fund", sellingPrice: 30.9382, buyingPrice: 29.0957, date: "15 Oct 2026", effectiveNav: 29.0957 },
+  { company: "Asset Trust Management (Pvt) Ltd", fundName: "ASTRUE Money Market Fund", sellingPrice: 12.3576, buyingPrice: 12.3576, date: "15 Oct 2026", effectiveNav: 12.3576 },
+  { company: "Asset Trust Management (Pvt) Ltd", fundName: "ASTRUE Active Income Fund", sellingPrice: 222.007, buyingPrice: 222.007, date: "15 Oct 2026", effectiveNav: 222.007 },
+  { company: "Assetline Capital (Pvt) Ltd", fundName: "Assetline Income Fund", sellingPrice: 31.2572, buyingPrice: 31.2572, date: "15 Oct 2026", effectiveNav: 31.2572 },
+  { company: "Assetline Capital (Pvt) Ltd", fundName: "Assetline Income Plus Growth Fund", sellingPrice: 30.6266, buyingPrice: 30.2062, date: "15 Oct 2026", effectiveNav: 30.2062 },
+  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Equity Fund", sellingPrice: 68.42, buyingPrice: 65.08, date: "15 Oct 2026", effectiveNav: 65.08 },
+  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Gilt-Edged Fund", sellingPrice: 18.6914, buyingPrice: 18.6914, date: "15 Oct 2026", effectiveNav: 18.6914 },
+  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith High Yield Fund", sellingPrice: 21.4227, buyingPrice: 21.4227, date: "15 Oct 2026", effectiveNav: 21.4227 },
+  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Growth Equity Fund", sellingPrice: 42.3458, buyingPrice: 41.4419, date: "15 Oct 2026", effectiveNav: 41.4419 },
+  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Income Fund", sellingPrice: 19.2842, buyingPrice: 19.2842, date: "15 Oct 2026", effectiveNav: 19.2842 },
+  { company: "CT Smith Asset Management (Pvt) Ltd", fundName: "CT Smith Money Market Fund", sellingPrice: 36.3596, buyingPrice: 36.3596, date: "15 Oct 2026", effectiveNav: 36.3596 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Islamic Money Market Fund", sellingPrice: 10.5799, buyingPrice: 10.5799, date: "15 Oct 2026", effectiveNav: 10.5799 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Quant Equity Fund", sellingPrice: 62.7911, buyingPrice: 64.0069, date: "15 Oct 2026", effectiveNav: 64.0069 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Balanced Fund", sellingPrice: 32.8826, buyingPrice: 33.5316, date: "15 Oct 2026", effectiveNav: 33.5316 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Medium Risk Debt Fund", sellingPrice: 25.7848, buyingPrice: 25.7848, date: "15 Oct 2026", effectiveNav: 25.7848 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Gilt Trading Fund", sellingPrice: 82.9127, buyingPrice: 82.9127, date: "15 Oct 2026", effectiveNav: 82.9127 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Gilt Fund", sellingPrice: 14.7588, buyingPrice: 14.7588, date: "15 Oct 2026", effectiveNav: 14.7588 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Corporate Treasury Fund", sellingPrice: 28.5396, buyingPrice: 28.5396, date: "15 Oct 2026", effectiveNav: 28.5396 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Income Fund", sellingPrice: 42.8148, buyingPrice: 42.8148, date: "15 Oct 2026", effectiveNav: 42.8148 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL High Yield Fund", sellingPrice: 48.0629, buyingPrice: 48.0629, date: "15 Oct 2026", effectiveNav: 48.0629 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Investment Grade Fund", sellingPrice: 41.8935, buyingPrice: 41.8935, date: "15 Oct 2026", effectiveNav: 41.8935 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Money Market Fund", sellingPrice: 7.4244, buyingPrice: 7.4244, date: "15 Oct 2026", effectiveNav: 7.4244 },
+  { company: "Capital Alliance Investments Ltd", fundName: "CAL Fixed Income Opportunities Fund", sellingPrice: 44.3062, buyingPrice: 44.3062, date: "15 Oct 2026", effectiveNav: 44.3062 },
+  { company: "First Capital Asset Management Limited", fundName: "First Capital Equity Fund (FCEF)", sellingPrice: 4185.03, buyingPrice: 4122.25, date: "15 Oct 2026", effectiveNav: 4122.25 },
+  { company: "First Capital Asset Management Limited", fundName: "First Capital Fixed income Fund", sellingPrice: 4629.42, buyingPrice: 4629.42, date: "15 Oct 2026", effectiveNav: 4629.42 },
+  { company: "First Capital Asset Management Limited", fundName: "First Capital Gilt Edged Fund", sellingPrice: 2824.22, buyingPrice: 2824.22, date: "15 Oct 2026", effectiveNav: 2824.22 },
+  { company: "First Capital Asset Management Limited", fundName: "First Capital Money Market Fund", sellingPrice: 3806.96, buyingPrice: 3806.96, date: "15 Oct 2026", effectiveNav: 3806.96 },
+  { company: "First Capital Asset Management Limited", fundName: "First Capital Wealth Fund", sellingPrice: 2333.59, buyingPrice: 2333.59, date: "15 Oct 2026", effectiveNav: 2333.59 },
+  { company: "First Capital Asset Management Limited", fundName: "First Capital Money Plus Fund", sellingPrice: 1214, buyingPrice: 1214, date: "15 Oct 2026", effectiveNav: 1214 },
+  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Credit Opportunity Fund", sellingPrice: 10.6848, buyingPrice: 10.6848, date: "15 Oct 2026", effectiveNav: 10.6848 },
+  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Money Market Fund", sellingPrice: 56.0754, buyingPrice: 56.0754, date: "15 Oct 2026", effectiveNav: 56.0754 },
+  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Short Term Gilt Fund", sellingPrice: 29.9507, buyingPrice: 29.9507, date: "15 Oct 2026", effectiveNav: 29.9507 },
+  { company: "JB Financial (Pvt) Ltd", fundName: "JB Vantage Value Equity Fund", sellingPrice: 80.5332, buyingPrice: 76.4752, date: "15 Oct 2026", effectiveNav: 76.4752 },
+  { company: "LYNEAR Wealth Mangament (Pvt) Ltd", fundName: "LYNEAR Wealth Dynamic Opportunities Fund", sellingPrice: 294.8752, buyingPrice: 280.5002, date: "15 Oct 2026", effectiveNav: 280.5002 },
+  { company: "LYNEAR Wealth Mangament (Pvt) Ltd", fundName: "LYNEAR Wealth Income Fund", sellingPrice: 188.315, buyingPrice: 184.5454, date: "15 Oct 2026", effectiveNav: 184.5454 },
+  { company: "LYNEAR Wealth Mangament (Pvt) Ltd", fundName: "LYNEAR Wealth Liquid Money Fund", sellingPrice: 118.4011, buyingPrice: 118.4011, date: "15 Oct 2026", effectiveNav: 118.4011 },
+  { company: "LYNEAR Wealth Mangament (Pvt) Ltd", fundName: "LYNEAR Wealth Optimal Yield Fund", sellingPrice: 106.3247, buyingPrice: 104.1975, date: "15 Oct 2026", effectiveNav: 104.1975 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Growth Fund", sellingPrice: 22.14, buyingPrice: 21.68, date: "15 Oct 2026", effectiveNav: 21.68 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Growth & Income Fund", sellingPrice: 121.96, buyingPrice: 119.41, date: "15 Oct 2026", effectiveNav: 119.41 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Income Fund", sellingPrice: 36.8226, buyingPrice: 36.8226, date: "15 Oct 2026", effectiveNav: 36.8226 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Gilt Edged Fund", sellingPrice: 42.9285, buyingPrice: 42.9285, date: "15 Oct 2026", effectiveNav: 42.9285 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Income Plus Fund", sellingPrice: 34.1823, buyingPrice: 34.1823, date: "15 Oct 2026", effectiveNav: 34.1823 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Money Plus Fund", sellingPrice: 44.4558, buyingPrice: 44.4558, date: "15 Oct 2026", effectiveNav: 44.4558 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Money Fund", sellingPrice: 40.3161, buyingPrice: 40.3161, date: "15 Oct 2026", effectiveNav: 40.3161 },
+  { company: "NDB Wealth Management Ltd", fundName: "NDB Wealth Islamic Money Plus Fund", sellingPrice: 27.4825, buyingPrice: 27.4825, date: "15 Oct 2026", effectiveNav: 27.4825 },
+  { company: "National Asset Management Limited", fundName: "NAMAL Growth Fund", sellingPrice: 335.4714, buyingPrice: 323.6219, date: "15 Oct 2026", effectiveNav: 323.6219 },
+  { company: "National Asset Management Limited", fundName: "National Equity Fund", sellingPrice: 71.5841, buyingPrice: 68.9849, date: "15 Oct 2026", effectiveNav: 68.9849 },
+  { company: "National Asset Management Limited", fundName: "NAMAL Income Fund", sellingPrice: 16.2329, buyingPrice: 16.2329, date: "15 Oct 2026", effectiveNav: 16.2329 },
+  { company: "National Asset Management Limited", fundName: "NAMAL High Yield Fund", sellingPrice: 48.6754, buyingPrice: 48.6754, date: "15 Oct 2026", effectiveNav: 48.6754 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Money Market Fund", sellingPrice: 30.3512, buyingPrice: 30.3512, date: "15 Oct 2026", effectiveNav: 30.3512 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Shariah Income Fund", sellingPrice: 19.6636, buyingPrice: 19.6636, date: "15 Oct 2026", effectiveNav: 19.6636 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Dynamic Income Fund", sellingPrice: 23.7212, buyingPrice: 23.7212, date: "15 Oct 2026", effectiveNav: 23.7212 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Growth Fund", sellingPrice: 25.36, buyingPrice: 24.49, date: "15 Oct 2026", effectiveNav: 24.49 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Shariah Balanced Fund", sellingPrice: 20.4, buyingPrice: 19.79, date: "15 Oct 2026", effectiveNav: 19.79 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Consumer Staples Fund", sellingPrice: 19.93, buyingPrice: 19.53, date: "15 Oct 2026", effectiveNav: 19.53 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Dividend Fund", sellingPrice: 19.4357, buyingPrice: 19.0432, date: "15 Oct 2026", effectiveNav: 19.0432 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Financial Services Fund", sellingPrice: 21.14, buyingPrice: 20.71, date: "15 Oct 2026", effectiveNav: 20.71 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Growth Fund", sellingPrice: 25.36, buyingPrice: 24.49, date: "15 Oct 2026", effectiveNav: 24.49 },
+  { company: "Senfin Asset Management (Pvt) Ltd", fundName: "Senfin Insurance Sector Fund", sellingPrice: 18.09, buyingPrice: 17.73, date: "15 Oct 2026", effectiveNav: 17.73 },
+  { company: "Softlogic Asset Management (Pvt) Ltd", fundName: "Softlogic Money Market Fund", sellingPrice: 195.5953, buyingPrice: 195.5953, date: "15 Oct 2026", effectiveNav: 195.5953 },
+  { company: "Softlogic Asset Management (Pvt) Ltd", fundName: "Softlogic Equity Fund", sellingPrice: 256.0531, buyingPrice: 243.2165, date: "15 Oct 2026", effectiveNav: 243.2165 },
+  { company: "Softlogic Asset Management (Pvt) Ltd", fundName: "Softlogic Income Fund", sellingPrice: 103.9617, buyingPrice: 103.9617, date: "15 Oct 2026", effectiveNav: 103.9617 }
 ];
 
 function normalize(text: string): string {
@@ -210,6 +151,11 @@ function normalize(text: string): string {
 
 export function parseUtaslHtml(html: string): UtaslFundPrice[] {
   const funds: UtaslFundPrice[] = [];
+  const dateMatch = html.match(/Unit Trust Price on\s+([0-9]{1,2}\s+[A-Za-z]+\s+[0-9]{4})/i) ||
+                    html.match(/As at\s+([0-9]{1,2}\s+[A-Za-z]+\s+[0-9]{4})/i) ||
+                    html.match(/([0-9]{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+[0-9]{4})/i);
+  const publishedDate = dateMatch ? dateMatch[1] : 'Live';
+
   const rowRegex = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
   let rowMatch;
   while ((rowMatch = rowRegex.exec(html)) !== null) {
@@ -218,7 +164,13 @@ export function parseUtaslHtml(html: string): UtaslFundPrice[] {
     const cells: string[] = [];
     let cellMatch;
     while ((cellMatch = cellRegex.exec(rowContent)) !== null) {
-      cells.push(cellMatch[1].replace(/<[^>]+>/g, '').trim());
+      const clean = cellMatch[1]
+        .replace(/<[^>]+>/g, '')
+        .replace(/&amp;/g, '&')
+        .replace(/&#8211;/g, '-')
+        .replace(/&nbsp;/g, ' ')
+        .trim();
+      cells.push(clean);
     }
     if (cells.length >= 4) {
       const company = cells[0];
@@ -234,7 +186,7 @@ export function parseUtaslHtml(html: string): UtaslFundPrice[] {
           sellingPrice,
           buyingPrice,
           effectiveNav: buyingPrice > 0 ? buyingPrice : sellingPrice,
-          date: 'Live'
+          date: publishedDate
         });
       }
     }
@@ -261,15 +213,59 @@ function mergeFundLists(liveList: UtaslFundPrice[], fallbackList: UtaslFundPrice
 let cachedLiveFunds: UtaslFundPrice[] | null = null;
 let lastUtaslFetchTime = 0;
 
-export async function fetchUtaslFundPrices(): Promise<UtaslFundPrice[]> {
-  // If recently fetched in memory, reuse
-  if (cachedLiveFunds && cachedLiveFunds.length > 0 && Date.now() - lastUtaslFetchTime < 30000) {
+export async function fetchUtaslFundPrices(forceRefresh: boolean = false): Promise<UtaslFundPrice[]> {
+  // If recently fetched in memory and not force refreshing, reuse
+  if (!forceRefresh && cachedLiveFunds && cachedLiveFunds.length > 0 && Date.now() - lastUtaslFetchTime < 30000) {
     return cachedLiveFunds;
   }
 
+  // Helper to commit newly fetched live funds
+  const handleSuccess = (funds: UtaslFundPrice[]): UtaslFundPrice[] => {
+    const merged = mergeFundLists(funds, fallbackUtaslFunds);
+    cachedLiveFunds = merged;
+    lastUtaslFetchTime = Date.now();
+    try {
+      localStorage.setItem('pearlport_cached_utasl_funds', JSON.stringify(merged));
+      localStorage.setItem('pearlport_cached_utasl_time', Date.now().toString());
+    } catch {}
+    return merged;
+  };
+
+  // Tier 1: Try Capacitor Native HTTP if on mobile (Android/iOS)
+  // CapacitorHttp completely bypasses browser CORS restrictions
+  try {
+    if (typeof window !== 'undefined' && (window as any).Capacitor?.isNativePlatform?.()) {
+      const { CapacitorHttp } = await import('@capacitor/core');
+      const capRes = await CapacitorHttp.get({
+        url: 'https://www.utasl.lk/unit-prices/',
+        headers: {
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Cookie': 'hc_js_gate=1'
+        }
+      });
+      if (capRes && capRes.status === 200 && capRes.data) {
+        const htmlStr = typeof capRes.data === 'string' ? capRes.data : JSON.stringify(capRes.data);
+        const parsed = parseUtaslHtml(htmlStr);
+        if (parsed.length > 0) {
+          return handleSuccess(parsed);
+        }
+      }
+    }
+  } catch (err) {
+    // Proceed to web tiers
+  }
+
+  // Tier 2: Web endpoints (Vite dev proxy, static JSON, GitHub raw dataset)
   const endpoints = [
+    // 1. If in Vite development mode, use local dev proxy directly
+    ...((import.meta as any)?.env?.DEV ? ['/api/utasl/unit-prices/'] : []),
+    // 2. GitHub raw dataset with CORS enabled (daily synced via GitHub Actions)
+    `https://raw.githubusercontent.com/hariuda/pearl-port-web/main/public/data/utasl-funds.json?t=${Date.now()}`,
+    // 3. Bundled static data file served by Firebase Hosting / local web server
+    `/data/utasl-funds.json?t=${Date.now()}`,
+    // 4. Vite proxy route
     '/api/utasl/unit-prices/',
-    '/api/utasl',
+    // 5. Direct URL (works in browser environments where CORS is disabled or extension enabled)
     'https://www.utasl.lk/unit-prices/'
   ];
 
@@ -279,23 +275,37 @@ export async function fetchUtaslFundPrices(): Promise<UtaslFundPrice[]> {
       const timeoutId = setTimeout(() => controller.abort(), 6000);
       const res = await fetch(url, {
         headers: {
-          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+          'Accept': 'application/json, text/html, */*'
         },
         signal: controller.signal
       });
       clearTimeout(timeoutId);
 
       if (res.ok) {
-        const html = await res.text();
-        const parsed = parseUtaslHtml(html);
-        if (parsed.length > 10) {
-          const merged = mergeFundLists(parsed, fallbackUtaslFunds);
-          cachedLiveFunds = merged;
-          lastUtaslFetchTime = Date.now();
+        const text = await res.text();
+        const trimmed = text.trim();
+
+        // Check if JSON response (e.g. from utasl-funds.json)
+        if (trimmed.startsWith('{') && trimmed.includes('"funds"')) {
           try {
-            localStorage.setItem('pearlport_cached_utasl_funds', JSON.stringify(merged));
+            const data = JSON.parse(trimmed);
+            if (Array.isArray(data.funds) && data.funds.length > 0) {
+              const validFunds: UtaslFundPrice[] = data.funds.filter(
+                (f: any) => f.fundName && (f.sellingPrice > 0 || f.buyingPrice > 0 || f.effectiveNav > 0)
+              );
+              if (validFunds.length > 0) {
+                return handleSuccess(validFunds);
+              }
+            }
           } catch {}
-          return merged;
+        }
+
+        // Check if HTML response with uta-table
+        if (trimmed.includes('uta-table') || trimmed.includes('<tr')) {
+          const parsed = parseUtaslHtml(trimmed);
+          if (parsed.length > 0) {
+            return handleSuccess(parsed);
+          }
         }
       }
     } catch {
@@ -303,20 +313,26 @@ export async function fetchUtaslFundPrices(): Promise<UtaslFundPrice[]> {
     }
   }
 
-  // If live fetch fails, check localStorage cache
+  // Tier 3: If live fetch fails, check localStorage cache
   if (!cachedLiveFunds) {
     try {
       const stored = localStorage.getItem('pearlport_cached_utasl_funds');
       if (stored) {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          cachedLiveFunds = parsed;
-          return parsed;
+          const cal = parsed.find((f: any) => f.fundName?.includes('High Yield') && (f.fundName?.includes('CAL') || f.company?.includes('CAL') || f.company?.includes('Capital Alliance')));
+          if (!cal || cal.effectiveNav > 35) {
+            cachedLiveFunds = parsed;
+            return parsed;
+          } else {
+            localStorage.removeItem('pearlport_cached_utasl_funds');
+          }
         }
       }
     } catch {}
   }
 
+  cachedLiveFunds = fallbackUtaslFunds;
   return fallbackUtaslFunds;
 }
 
@@ -329,8 +345,13 @@ export function getUtaslFundsList(): UtaslFundPrice[] {
     if (stored) {
       const parsed = JSON.parse(stored);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        cachedLiveFunds = parsed;
-        return parsed;
+        const cal = parsed.find((f: any) => f.fundName?.includes('High Yield') && (f.fundName?.includes('CAL') || f.company?.includes('CAL') || f.company?.includes('Capital Alliance')));
+        if (!cal || cal.effectiveNav > 35) {
+          cachedLiveFunds = parsed;
+          return parsed;
+        } else {
+          localStorage.removeItem('pearlport_cached_utasl_funds');
+        }
       }
     }
   } catch {}
@@ -374,7 +395,6 @@ export function findBestUtaslMatch(
     }
 
     // Critical distinguishing keywords check:
-    // If one contains 'income' and the other has 'growth' but not vice versa, penalize heavily
     const criticalWords = ['income', 'growth', 'gilt', 'equity', 'balanced', 'plus', 'yield', 'shariah', 'islamic', 'money', 'century', 'surakum'];
     let mismatch = false;
     for (const cw of criticalWords) {

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   Sparkles,
   Search,
@@ -33,6 +33,7 @@ import { getPalette } from '../theme/colors';
 import { formatCurrency } from '../utils/formatters';
 import { StockPosition, getFdCurrentValue, PortfolioSortOrder } from '../types';
 import { isGoldAsset, formatGoldWeight } from '../services/goldService';
+import { findBestUtaslMatch } from '../services/utaslData';
 
 type SortOrder = PortfolioSortOrder;
 
@@ -59,7 +60,22 @@ export const PortfolioScreen: React.FC = () => {
     isMarketOpen,
   } = usePortfolio();
 
-  const [selectedTabIndex, setSelectedTabIndex] = useState(0);
+  const [selectedTabIndex, setSelectedTabIndex] = useState<number>(() => {
+    try {
+      const saved = sessionStorage.getItem('pearlport_portfolio_tab');
+      if (saved !== null) {
+        const val = parseInt(saved, 10);
+        if (!isNaN(val) && val >= 0 && val <= 5) return val;
+      }
+    } catch {}
+    return 0;
+  });
+
+  useEffect(() => {
+    try {
+      sessionStorage.setItem('pearlport_portfolio_tab', String(selectedTabIndex));
+    } catch {}
+  }, [selectedTabIndex]);
   const [showAddDialog, setShowAddDialog] = useState(false);
   const [itemToEdit, setItemToEdit] = useState<any>(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -872,7 +888,8 @@ export const PortfolioScreen: React.FC = () => {
                   </div>
                 ) : (
                   filteredUnitTrusts.map((ut) => {
-                    const curNav = ut.currentNav > 0 ? ut.currentNav : ut.averageNav;
+                    const matchedFund = findBestUtaslMatch(ut.fundName || '');
+                    const curNav = ut.currentNav > 0 ? ut.currentNav : (matchedFund && matchedFund.effectiveNav > 0 ? matchedFund.effectiveNav : ut.averageNav);
                     const totalCost = ut.averageNav * ut.units;
                     const totalVal = curNav * ut.units;
                     const diff = totalVal - totalCost;
@@ -933,7 +950,7 @@ export const PortfolioScreen: React.FC = () => {
 
                         <div className="flex items-center justify-between text-[11px] text-slate-500">
                           <span className="flex items-center gap-1 text-emerald-500 font-semibold">
-                            <CheckCircle2 size={14} /> UTASL Live
+                            <CheckCircle2 size={14} /> UTASL Live {matchedFund?.date && matchedFund.date !== 'Live' ? `(${matchedFund.date})` : ''}
                           </span>
                           <span>Invested: {new Date(ut.purchaseDate).toLocaleDateString()}</span>
                         </div>

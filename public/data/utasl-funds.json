@@ -1,552 +1,576 @@
 {
-  "updatedAt": "2026-10-19T18:46:42.726Z",
-  "publishedDate": "16 Oct 2026",
+  "updatedAt": "2026-10-20T15:04:48.714Z",
+  "publishedDate": "19 Oct 2026",
   "source": "https://www.utasl.lk/unit-prices/",
-  "count": 68,
+  "count": 71,
   "funds": [
     {
       "company": "ArpicoAtaraxia Asset Management Pvt Ltd",
       "fundName": "Arpico Ataraxia Cash Management Trust Fund",
-      "sellingPrice": 47.1914,
-      "buyingPrice": 47.1914,
-      "effectiveNav": 47.1914,
-      "date": "16 Oct 2026"
+      "sellingPrice": 47.2304,
+      "buyingPrice": 47.2304,
+      "effectiveNav": 47.2304,
+      "date": "19 Oct 2026"
     },
     {
       "company": "ArpicoAtaraxia Asset Management Pvt Ltd",
       "fundName": "Arpico Ataraxia Equity Income Fund",
-      "sellingPrice": 16.6598,
-      "buyingPrice": 16.2954,
-      "effectiveNav": 16.2954,
-      "date": "16 Oct 2026"
+      "sellingPrice": 16.4958,
+      "buyingPrice": 16.1351,
+      "effectiveNav": 16.1351,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Asset Trust Management (Pvt) Ltd",
       "fundName": "Astrue Alpha Fund",
-      "sellingPrice": 31.1225,
-      "buyingPrice": 29.2663,
-      "effectiveNav": 29.2663,
-      "date": "16 Oct 2026"
-    },
-    {
-      "company": "Asset Trust Management (Pvt) Ltd",
-      "fundName": "ASTRUE Active Income Fund",
-      "sellingPrice": 222.1588,
-      "buyingPrice": 222.1588,
-      "effectiveNav": 222.1588,
-      "date": "16 Oct 2026"
+      "sellingPrice": 30.973,
+      "buyingPrice": 29.1283,
+      "effectiveNav": 29.1283,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Asset Trust Management (Pvt) Ltd",
       "fundName": "ASTRUE Money Market Fund",
-      "sellingPrice": 12.3666,
-      "buyingPrice": 12.3666,
-      "effectiveNav": 12.3666,
-      "date": "16 Oct 2026"
+      "sellingPrice": 12.3695,
+      "buyingPrice": 12.3695,
+      "effectiveNav": 12.3695,
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "Asset Trust Management (Pvt) Ltd",
+      "fundName": "ASTRUE Active Income Fund",
+      "sellingPrice": 222.2015,
+      "buyingPrice": 222.2015,
+      "effectiveNav": 222.2015,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Assetline Capital (Pvt) Ltd",
       "fundName": "Assetline Income Fund",
-      "sellingPrice": 31.2644,
-      "buyingPrice": 31.2644,
-      "effectiveNav": 31.2644,
-      "date": "16 Oct 2026"
+      "sellingPrice": 31.2861,
+      "buyingPrice": 31.2861,
+      "effectiveNav": 31.2861,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Assetline Capital (Pvt) Ltd",
       "fundName": "Assetline Income Plus Growth Fund",
-      "sellingPrice": 30.7502,
-      "buyingPrice": 30.3271,
-      "effectiveNav": 30.3271,
-      "date": "16 Oct 2026"
+      "sellingPrice": 30.7365,
+      "buyingPrice": 30.3137,
+      "effectiveNav": 30.3137,
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "CT Smith Asset Management (Pvt) Ltd",
+      "fundName": "CT Smith Income Fund",
+      "sellingPrice": 19.2838,
+      "buyingPrice": 19.2838,
+      "effectiveNav": 19.2838,
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "CT Smith Asset Management (Pvt) Ltd",
+      "fundName": "CT Smith Money Market Fund",
+      "sellingPrice": 36.3929,
+      "buyingPrice": 36.3929,
+      "effectiveNav": 36.3929,
+      "date": "19 Oct 2026"
     },
     {
       "company": "CT Smith Asset Management (Pvt) Ltd",
       "fundName": "CT Smith Equity Fund",
-      "sellingPrice": 69.03,
-      "buyingPrice": 65.66,
-      "effectiveNav": 65.66,
-      "date": "16 Oct 2026"
+      "sellingPrice": 68.61,
+      "buyingPrice": 65.26,
+      "effectiveNav": 65.26,
+      "date": "19 Oct 2026"
     },
     {
       "company": "CT Smith Asset Management (Pvt) Ltd",
       "fundName": "CT Smith Gilt-Edged Fund",
-      "sellingPrice": 18.6949,
-      "buyingPrice": 18.6949,
-      "effectiveNav": 18.6949,
-      "date": "16 Oct 2026"
+      "sellingPrice": 18.7053,
+      "buyingPrice": 18.7053,
+      "effectiveNav": 18.7053,
+      "date": "19 Oct 2026"
     },
     {
       "company": "CT Smith Asset Management (Pvt) Ltd",
       "fundName": "CT Smith High Yield Fund",
-      "sellingPrice": 21.4281,
-      "buyingPrice": 21.4281,
-      "effectiveNav": 21.4281,
-      "date": "16 Oct 2026"
+      "sellingPrice": 21.4441,
+      "buyingPrice": 21.4441,
+      "effectiveNav": 21.4441,
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "CT Smith Asset Management (Pvt) Ltd",
+      "fundName": "CT Smith Growth Equity Fund",
+      "sellingPrice": 42.4865,
+      "buyingPrice": 41.5791,
+      "effectiveNav": 41.5791,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Islamic Money Market Fund",
-      "sellingPrice": 10.5824,
-      "buyingPrice": 10.5824,
-      "effectiveNav": 10.5824,
-      "date": "16 Oct 2026"
+      "sellingPrice": 10.5897,
+      "buyingPrice": 10.5897,
+      "effectiveNav": 10.5897,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Quant Equity Fund",
-      "sellingPrice": 63.2022,
-      "buyingPrice": 64.4233,
-      "effectiveNav": 64.4233,
-      "date": "16 Oct 2026"
+      "sellingPrice": 62.9311,
+      "buyingPrice": 64.1446,
+      "effectiveNav": 64.1446,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Balanced Fund",
-      "sellingPrice": 33.1797,
-      "buyingPrice": 33.8352,
-      "effectiveNav": 33.8352,
-      "date": "16 Oct 2026"
+      "sellingPrice": 33.0158,
+      "buyingPrice": 33.6677,
+      "effectiveNav": 33.6677,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Medium Risk Debt Fund",
-      "sellingPrice": 25.79,
-      "buyingPrice": 25.79,
-      "effectiveNav": 25.79,
-      "date": "16 Oct 2026"
+      "sellingPrice": 25.8059,
+      "buyingPrice": 25.8059,
+      "effectiveNav": 25.8059,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Gilt Trading Fund",
-      "sellingPrice": 82.9287,
-      "buyingPrice": 82.9287,
-      "effectiveNav": 82.9287,
-      "date": "16 Oct 2026"
+      "sellingPrice": 82.9768,
+      "buyingPrice": 82.9768,
+      "effectiveNav": 82.9768,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Gilt Fund",
-      "sellingPrice": 14.7621,
-      "buyingPrice": 14.7621,
-      "effectiveNav": 14.7621,
-      "date": "16 Oct 2026"
+      "sellingPrice": 14.7719,
+      "buyingPrice": 14.7719,
+      "effectiveNav": 14.7719,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Corporate Treasury Fund",
-      "sellingPrice": 28.5455,
-      "buyingPrice": 28.5455,
-      "effectiveNav": 28.5455,
-      "date": "16 Oct 2026"
+      "sellingPrice": 28.5639,
+      "buyingPrice": 28.5639,
+      "effectiveNav": 28.5639,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Income Fund",
-      "sellingPrice": 42.8247,
-      "buyingPrice": 42.8247,
-      "effectiveNav": 42.8247,
-      "date": "16 Oct 2026"
+      "sellingPrice": 42.8547,
+      "buyingPrice": 42.8547,
+      "effectiveNav": 42.8547,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL High Yield Fund",
-      "sellingPrice": 48.0773,
-      "buyingPrice": 48.0773,
-      "effectiveNav": 48.0773,
-      "date": "16 Oct 2026"
+      "sellingPrice": 48.1206,
+      "buyingPrice": 48.1206,
+      "effectiveNav": 48.1206,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Investment Grade Fund",
-      "sellingPrice": 41.9038,
-      "buyingPrice": 41.9038,
-      "effectiveNav": 41.9038,
-      "date": "16 Oct 2026"
+      "sellingPrice": 41.9345,
+      "buyingPrice": 41.9345,
+      "effectiveNav": 41.9345,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Money Market Fund",
-      "sellingPrice": 7.426,
-      "buyingPrice": 7.426,
-      "effectiveNav": 7.426,
-      "date": "16 Oct 2026"
+      "sellingPrice": 7.4307,
+      "buyingPrice": 7.4307,
+      "effectiveNav": 7.4307,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Capital Alliance Investments Ltd",
       "fundName": "CAL Fixed Income Opportunities Fund",
-      "sellingPrice": 44.3192,
-      "buyingPrice": 44.3192,
-      "effectiveNav": 44.3192,
-      "date": "16 Oct 2026"
+      "sellingPrice": 44.3538,
+      "buyingPrice": 44.3538,
+      "effectiveNav": 44.3538,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Ceybank Asset Management Ltd",
       "fundName": "Ceybank Unit Trust",
-      "sellingPrice": 48.11,
-      "buyingPrice": 46.02,
-      "effectiveNav": 46.02,
-      "date": "16 Oct 2026"
+      "sellingPrice": 47.93,
+      "buyingPrice": 45.84,
+      "effectiveNav": 45.84,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Ceybank Asset Management Ltd",
       "fundName": "Ceybank Century Growth",
-      "sellingPrice": 170.57,
-      "buyingPrice": 163.2,
-      "effectiveNav": 163.2,
-      "date": "16 Oct 2026"
+      "sellingPrice": 169.63,
+      "buyingPrice": 162.31,
+      "effectiveNav": 162.31,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Ceybank Asset Management Ltd",
       "fundName": "Ceybank Savings Plus Money Market Fund",
-      "sellingPrice": 19.8744,
-      "buyingPrice": 19.8744,
-      "effectiveNav": 19.8744,
-      "date": "16 Oct 2026"
+      "sellingPrice": 19.8877,
+      "buyingPrice": 19.8877,
+      "effectiveNav": 19.8877,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Ceybank Asset Management Ltd",
       "fundName": "Ceybank Surakum Fund",
-      "sellingPrice": 24.0269,
-      "buyingPrice": 24.0269,
-      "effectiveNav": 24.0269,
-      "date": "16 Oct 2026"
+      "sellingPrice": 24.0394,
+      "buyingPrice": 24.0394,
+      "effectiveNav": 24.0394,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Ceybank Asset Management Ltd",
       "fundName": "Ceybank Gilt Edge Fund (A Series)",
-      "sellingPrice": 25.6463,
-      "buyingPrice": 25.6463,
-      "effectiveNav": 25.6463,
-      "date": "16 Oct 2026"
+      "sellingPrice": 25.6641,
+      "buyingPrice": 25.6641,
+      "effectiveNav": 25.6641,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Ceybank Asset Management Ltd",
       "fundName": "Ceybank High Yield Fund",
-      "sellingPrice": 26.8572,
-      "buyingPrice": 26.8572,
-      "effectiveNav": 26.8572,
-      "date": "16 Oct 2026"
+      "sellingPrice": 26.8779,
+      "buyingPrice": 26.8779,
+      "effectiveNav": 26.8779,
+      "date": "19 Oct 2026"
     },
     {
       "company": "First Capital Asset Management Limited",
       "fundName": "First Capital Equity Fund (FCEF)",
-      "sellingPrice": 4222.51,
-      "buyingPrice": 4159.17,
-      "effectiveNav": 4159.17,
-      "date": "16 Oct 2026"
+      "sellingPrice": 4200.02,
+      "buyingPrice": 4137.02,
+      "effectiveNav": 4137.02,
+      "date": "19 Oct 2026"
     },
     {
       "company": "First Capital Asset Management Limited",
       "fundName": "First Capital Fixed income Fund",
-      "sellingPrice": 4630.72,
-      "buyingPrice": 4630.72,
-      "effectiveNav": 4630.72,
-      "date": "16 Oct 2026"
+      "sellingPrice": 4634.63,
+      "buyingPrice": 4634.63,
+      "effectiveNav": 4634.63,
+      "date": "19 Oct 2026"
     },
     {
       "company": "First Capital Asset Management Limited",
       "fundName": "First Capital Gilt Edged Fund",
-      "sellingPrice": 2823.24,
-      "buyingPrice": 2823.24,
-      "effectiveNav": 2823.24,
-      "date": "16 Oct 2026"
+      "sellingPrice": 2823.09,
+      "buyingPrice": 2823.09,
+      "effectiveNav": 2823.09,
+      "date": "19 Oct 2026"
     },
     {
       "company": "First Capital Asset Management Limited",
       "fundName": "First Capital Money Market Fund",
-      "sellingPrice": 3807.87,
-      "buyingPrice": 3807.87,
-      "effectiveNav": 3807.87,
-      "date": "16 Oct 2026"
+      "sellingPrice": 3810.59,
+      "buyingPrice": 3810.59,
+      "effectiveNav": 3810.59,
+      "date": "19 Oct 2026"
     },
     {
       "company": "First Capital Asset Management Limited",
       "fundName": "First Capital Wealth Fund",
-      "sellingPrice": 2332.55,
-      "buyingPrice": 2332.55,
-      "effectiveNav": 2332.55,
-      "date": "16 Oct 2026"
+      "sellingPrice": 2331.75,
+      "buyingPrice": 2331.75,
+      "effectiveNav": 2331.75,
+      "date": "19 Oct 2026"
     },
     {
       "company": "First Capital Asset Management Limited",
       "fundName": "First Capital Money Plus Fund",
-      "sellingPrice": 1214.27,
-      "buyingPrice": 1214.27,
-      "effectiveNav": 1214.27,
-      "date": "16 Oct 2026"
+      "sellingPrice": 1215.04,
+      "buyingPrice": 1215.04,
+      "effectiveNav": 1215.04,
+      "date": "19 Oct 2026"
     },
     {
       "company": "JB Financial (Pvt) Ltd",
       "fundName": "JB Vantage Credit Opportunity Fund",
-      "sellingPrice": 10.6879,
-      "buyingPrice": 10.6879,
-      "effectiveNav": 10.6879,
-      "date": "16 Oct 2026"
+      "sellingPrice": 10.6972,
+      "buyingPrice": 10.6972,
+      "effectiveNav": 10.6972,
+      "date": "19 Oct 2026"
     },
     {
       "company": "JB Financial (Pvt) Ltd",
       "fundName": "JB Vantage Money Market Fund",
-      "sellingPrice": 56.0898,
-      "buyingPrice": 56.0898,
-      "effectiveNav": 56.0898,
-      "date": "16 Oct 2026"
+      "sellingPrice": 56.1329,
+      "buyingPrice": 56.1329,
+      "effectiveNav": 56.1329,
+      "date": "19 Oct 2026"
     },
     {
       "company": "JB Financial (Pvt) Ltd",
       "fundName": "JB Vantage Short Term Gilt Fund",
-      "sellingPrice": 29.958,
-      "buyingPrice": 29.958,
-      "effectiveNav": 29.958,
-      "date": "16 Oct 2026"
+      "sellingPrice": 29.9797,
+      "buyingPrice": 29.9797,
+      "effectiveNav": 29.9797,
+      "date": "19 Oct 2026"
     },
     {
       "company": "JB Financial (Pvt) Ltd",
       "fundName": "JB Vantage Value Equity Fund",
-      "sellingPrice": 81.2996,
-      "buyingPrice": 77.2172,
-      "effectiveNav": 77.2172,
-      "date": "16 Oct 2026"
+      "sellingPrice": 80.9329,
+      "buyingPrice": 76.8689,
+      "effectiveNav": 76.8689,
+      "date": "19 Oct 2026"
     },
     {
       "company": "LYNEAR Wealth Mangament (Pvt) Ltd",
       "fundName": "LYNEAR Wealth Dynamic Opportunities Fund",
-      "sellingPrice": 298.2092,
-      "buyingPrice": 283.6752,
-      "effectiveNav": 283.6752,
-      "date": "16 Oct 2026"
+      "sellingPrice": 295.8628,
+      "buyingPrice": 281.4455,
+      "effectiveNav": 281.4455,
+      "date": "19 Oct 2026"
     },
     {
       "company": "LYNEAR Wealth Mangament (Pvt) Ltd",
       "fundName": "LYNEAR Wealth Income Fund",
-      "sellingPrice": 188.3458,
-      "buyingPrice": 184.5755,
-      "effectiveNav": 184.5755,
-      "date": "16 Oct 2026"
+      "sellingPrice": 188.4612,
+      "buyingPrice": 184.6885,
+      "effectiveNav": 184.6885,
+      "date": "19 Oct 2026"
     },
     {
       "company": "LYNEAR Wealth Mangament (Pvt) Ltd",
       "fundName": "LYNEAR Wealth Liquid Money Fund",
-      "sellingPrice": 118.4303,
-      "buyingPrice": 118.4303,
-      "effectiveNav": 118.4303,
-      "date": "16 Oct 2026"
+      "sellingPrice": 118.5181,
+      "buyingPrice": 118.5181,
+      "effectiveNav": 118.5181,
+      "date": "19 Oct 2026"
     },
     {
       "company": "LYNEAR Wealth Mangament (Pvt) Ltd",
       "fundName": "LYNEAR Wealth Optimal Yield Fund",
-      "sellingPrice": 106.3226,
-      "buyingPrice": 104.1955,
-      "effectiveNav": 104.1955,
-      "date": "16 Oct 2026"
+      "sellingPrice": 106.3636,
+      "buyingPrice": 104.2356,
+      "effectiveNav": 104.2356,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Growth Fund",
-      "sellingPrice": 22.36,
-      "buyingPrice": 21.89,
-      "effectiveNav": 21.89,
-      "date": "16 Oct 2026"
+      "sellingPrice": 22.26,
+      "buyingPrice": 21.79,
+      "effectiveNav": 21.79,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Growth & Income Fund",
-      "sellingPrice": 122.98,
-      "buyingPrice": 120.39,
-      "effectiveNav": 120.39,
-      "date": "16 Oct 2026"
+      "sellingPrice": 122.38,
+      "buyingPrice": 119.8,
+      "effectiveNav": 119.8,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Income Fund",
-      "sellingPrice": 36.8304,
-      "buyingPrice": 36.8304,
-      "effectiveNav": 36.8304,
-      "date": "16 Oct 2026"
+      "sellingPrice": 36.8573,
+      "buyingPrice": 36.8573,
+      "effectiveNav": 36.8573,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Gilt Edged Fund",
-      "sellingPrice": 42.9049,
-      "buyingPrice": 42.9049,
-      "effectiveNav": 42.9049,
-      "date": "16 Oct 2026"
+      "sellingPrice": 42.8707,
+      "buyingPrice": 42.8707,
+      "effectiveNav": 42.8707,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Income Plus Fund",
-      "sellingPrice": 34.192,
-      "buyingPrice": 34.192,
-      "effectiveNav": 34.192,
-      "date": "16 Oct 2026"
+      "sellingPrice": 34.2211,
+      "buyingPrice": 34.2211,
+      "effectiveNav": 34.2211,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Money Plus Fund",
-      "sellingPrice": 44.4661,
-      "buyingPrice": 44.4661,
-      "effectiveNav": 44.4661,
-      "date": "16 Oct 2026"
+      "sellingPrice": 44.497,
+      "buyingPrice": 44.497,
+      "effectiveNav": 44.497,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Money Fund",
-      "sellingPrice": 40.3258,
-      "buyingPrice": 40.3258,
-      "effectiveNav": 40.3258,
-      "date": "16 Oct 2026"
+      "sellingPrice": 40.355,
+      "buyingPrice": 40.355,
+      "effectiveNav": 40.355,
+      "date": "19 Oct 2026"
     },
     {
       "company": "NDB Wealth Management Ltd",
       "fundName": "NDB Wealth Islamic Money Plus Fund",
-      "sellingPrice": 27.4887,
-      "buyingPrice": 27.4887,
-      "effectiveNav": 27.4887,
-      "date": "16 Oct 2026"
+      "sellingPrice": 27.5074,
+      "buyingPrice": 27.5074,
+      "effectiveNav": 27.5074,
+      "date": "19 Oct 2026"
     },
     {
       "company": "National Asset Management Limited",
       "fundName": "NAMAL Growth Fund",
-      "sellingPrice": 338.8801,
-      "buyingPrice": 326.9714,
-      "effectiveNav": 326.9714,
-      "date": "16 Oct 2026"
+      "sellingPrice": 337.9829,
+      "buyingPrice": 326.1061,
+      "effectiveNav": 326.1061,
+      "date": "19 Oct 2026"
     },
     {
       "company": "National Asset Management Limited",
       "fundName": "National Equity Fund",
-      "sellingPrice": 72.5579,
-      "buyingPrice": 69.9306,
-      "effectiveNav": 69.9306,
-      "date": "16 Oct 2026"
+      "sellingPrice": 72.1957,
+      "buyingPrice": 69.5822,
+      "effectiveNav": 69.5822,
+      "date": "19 Oct 2026"
     },
     {
       "company": "National Asset Management Limited",
       "fundName": "NAMAL Income Fund",
-      "sellingPrice": 16.237,
-      "buyingPrice": 16.237,
-      "effectiveNav": 16.237,
-      "date": "16 Oct 2026"
+      "sellingPrice": 16.2516,
+      "buyingPrice": 16.2516,
+      "effectiveNav": 16.2516,
+      "date": "19 Oct 2026"
     },
     {
       "company": "National Asset Management Limited",
       "fundName": "NAMAL High Yield Fund",
-      "sellingPrice": 48.6889,
-      "buyingPrice": 48.6889,
-      "effectiveNav": 48.6889,
-      "date": "16 Oct 2026"
+      "sellingPrice": 48.7429,
+      "buyingPrice": 48.7429,
+      "effectiveNav": 48.7429,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Premier Wealth Management Limited",
       "fundName": "Premier Money Market Fund",
-      "sellingPrice": 35.6324,
-      "buyingPrice": 35.6324,
-      "effectiveNav": 35.6324,
-      "date": "16 Oct 2026"
+      "sellingPrice": 35.659,
+      "buyingPrice": 35.659,
+      "effectiveNav": 35.659,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Senfin Asset Management (Pvt) Ltd",
       "fundName": "Senfin Money Market Fund",
-      "sellingPrice": 30.3587,
-      "buyingPrice": 30.3587,
-      "effectiveNav": 30.3587,
-      "date": "16 Oct 2026"
-    },
-    {
-      "company": "Senfin Asset Management (Pvt) Ltd",
-      "fundName": "Senfin Shariah Income Fund",
-      "sellingPrice": 19.6675,
-      "buyingPrice": 19.6675,
-      "effectiveNav": 19.6675,
-      "date": "16 Oct 2026"
+      "sellingPrice": 30.3815,
+      "buyingPrice": 30.3815,
+      "effectiveNav": 30.3815,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Senfin Asset Management (Pvt) Ltd",
       "fundName": "Senfin Dynamic Income Fund",
-      "sellingPrice": 23.7208,
-      "buyingPrice": 23.7208,
-      "effectiveNav": 23.7208,
-      "date": "16 Oct 2026"
+      "sellingPrice": 23.7289,
+      "buyingPrice": 23.7289,
+      "effectiveNav": 23.7289,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Senfin Asset Management (Pvt) Ltd",
-      "fundName": "Senfin Select Factor Fund",
-      "sellingPrice": 12.91,
-      "buyingPrice": 12.65,
-      "effectiveNav": 12.65,
-      "date": "16 Oct 2026"
-    },
-    {
-      "company": "Senfin Asset Management (Pvt) Ltd",
-      "fundName": "Senfin Consumer Staples Fund",
-      "sellingPrice": 20.2,
-      "buyingPrice": 19.79,
-      "effectiveNav": 19.79,
-      "date": "16 Oct 2026"
-    },
-    {
-      "company": "Senfin Asset Management (Pvt) Ltd",
-      "fundName": "Senfin Financial Services Fund",
-      "sellingPrice": 21.22,
-      "buyingPrice": 20.78,
-      "effectiveNav": 20.78,
-      "date": "16 Oct 2026"
-    },
-    {
-      "company": "Senfin Asset Management (Pvt) Ltd",
-      "fundName": "Senfin Shariah Balanced Fund",
-      "sellingPrice": 20.6,
-      "buyingPrice": 19.98,
-      "effectiveNav": 19.98,
-      "date": "16 Oct 2026"
+      "fundName": "Senfin Shariah Income Fund",
+      "sellingPrice": 19.6794,
+      "buyingPrice": 19.6794,
+      "effectiveNav": 19.6794,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Senfin Asset Management (Pvt) Ltd",
       "fundName": "Senfin Growth Fund",
-      "sellingPrice": 25.57,
-      "buyingPrice": 24.69,
-      "effectiveNav": 24.69,
-      "date": "16 Oct 2026"
+      "sellingPrice": 25.49,
+      "buyingPrice": 24.61,
+      "effectiveNav": 24.61,
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "Senfin Asset Management (Pvt) Ltd",
+      "fundName": "Senfin Shariah Balanced Fund",
+      "sellingPrice": 20.49,
+      "buyingPrice": 19.88,
+      "effectiveNav": 19.88,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Senfin Asset Management (Pvt) Ltd",
       "fundName": "Senfin Dividend Fund",
-      "sellingPrice": 19.6325,
-      "buyingPrice": 19.2327,
-      "effectiveNav": 19.2327,
-      "date": "16 Oct 2026"
+      "sellingPrice": 19.5893,
+      "buyingPrice": 19.1904,
+      "effectiveNav": 19.1904,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Senfin Asset Management (Pvt) Ltd",
       "fundName": "Senfin Insurance Sector Fund",
-      "sellingPrice": 18.16,
+      "sellingPrice": 18.15,
       "buyingPrice": 17.79,
       "effectiveNav": 17.79,
-      "date": "16 Oct 2026"
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "Senfin Asset Management (Pvt) Ltd",
+      "fundName": "Senfin Financial Services Fund",
+      "sellingPrice": 21.18,
+      "buyingPrice": 20.75,
+      "effectiveNav": 20.75,
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "Senfin Asset Management (Pvt) Ltd",
+      "fundName": "Senfin Consumer Staples Fund",
+      "sellingPrice": 20.08,
+      "buyingPrice": 19.67,
+      "effectiveNav": 19.67,
+      "date": "19 Oct 2026"
+    },
+    {
+      "company": "Senfin Asset Management (Pvt) Ltd",
+      "fundName": "Senfin Select Factor Fund",
+      "sellingPrice": 12.86,
+      "buyingPrice": 12.6,
+      "effectiveNav": 12.6,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Softlogic Asset Management (Pvt) Ltd",
       "fundName": "Softlogic Money Market Fund",
-      "sellingPrice": 195.6455,
-      "buyingPrice": 195.6455,
-      "effectiveNav": 195.6455,
-      "date": "16 Oct 2026"
+      "sellingPrice": 195.796,
+      "buyingPrice": 195.796,
+      "effectiveNav": 195.796,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Softlogic Asset Management (Pvt) Ltd",
       "fundName": "Softlogic Equity Fund",
-      "sellingPrice": 260.2604,
-      "buyingPrice": 247.3394,
-      "effectiveNav": 247.3394,
-      "date": "16 Oct 2026"
+      "sellingPrice": 257.8177,
+      "buyingPrice": 245.0176,
+      "effectiveNav": 245.0176,
+      "date": "19 Oct 2026"
     },
     {
       "company": "Softlogic Asset Management (Pvt) Ltd",
       "fundName": "Softlogic Income Fund",
-      "sellingPrice": 103.9925,
-      "buyingPrice": 103.9925,
-      "effectiveNav": 103.9925,
-      "date": "16 Oct 2026"
+      "sellingPrice": 104.0849,
+      "buyingPrice": 104.0849,
+      "effectiveNav": 104.0849,
+      "date": "19 Oct 2026"
     }
   ]
 }

@@ -20,40 +20,40 @@ export interface TradeSummaryFetchResult {
 }
 
 export const fallbackAspiData: AspiData = {
-  value: 19692.67,
-  change: 52.11,
-  percentage: 0.27
+  value: 19970.22,
+  change: 277.55,
+  percentage: 1.41
 };
 
 export const fallbackStockPrices: Record<string, number> = {
-  'COMB.N0000': 195.5,
-  'COMB': 195.5,
-  'HNB.N0000': 367.5,
-  'HNB': 367.5,
-  'SAMP.N0000': 138.75,
-  'SAMP': 138.75,
-  'JKH.N0000': 17.9,
-  'JKH': 17.9,
-  'HAYL.N0000': 216,
-  'HAYL': 216,
-  'DIAL.N0000': 42.2,
-  'DIAL': 42.2,
-  'HHL.N0000': 30,
-  'HHL': 30,
+  'COMB.N0000': 199,
+  'COMB': 199,
+  'HNB.N0000': 374.75,
+  'HNB': 374.75,
+  'SAMP.N0000': 139.25,
+  'SAMP': 139.25,
+  'JKH.N0000': 17.8,
+  'JKH': 17.8,
+  'HAYL.N0000': 218.75,
+  'HAYL': 218.75,
+  'DIAL.N0000': 43.5,
+  'DIAL': 43.5,
+  'HHL.N0000': 30.9,
+  'HHL': 30.9,
   'LOLC.N0000': 390,
   'LOLC': 390,
-  'CALT.N0000': 42,
-  'CALT': 42,
-  'FCT.N0000': 24,
-  'FCT': 24,
-  'ACL.N0000': 86.5,
-  'ACL': 86.5,
-  'TILE.N0000': 39.7,
-  'TILE': 39.7,
-  'RCL.N0000': 40.1,
-  'RCL': 40.1,
-  'HEMA.N0000': 30,
-  'HEMA': 30
+  'CALT.N0000': 39.9,
+  'CALT': 39.9,
+  'FCT.N0000': 23.5,
+  'FCT': 23.5,
+  'ACL.N0000': 87.4,
+  'ACL': 87.4,
+  'TILE.N0000': 39.5,
+  'TILE': 39.5,
+  'RCL.N0000': 41.9,
+  'RCL': 41.9,
+  'HEMA.N0000': 30.9,
+  'HEMA': 30.9
 };
 
 /**

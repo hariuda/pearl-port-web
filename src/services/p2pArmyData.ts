@@ -19,17 +19,15 @@ const exchangeSpreads: [string, number, number][] = [
 const fallbackSpotUsdt: Record<string, number> = {
   USDT: 1,
   USDC: 1,
-  NEAR: 4.58,
-  SOL: 101.85,
-  LINK: 11.85,
-  ETH: 2353.7,
-  AVAX: 8.95,
-  BTC: 81209,
-  BNB: 749.45,
-  DOGE: 0.080056,
-  ADA: 0.205167,
-  DOT: 1.004,
-  SUI: 0.94672
+  ETH: 2324.64,
+  ADA: 0.201638,
+  BNB: 742.03,
+  AVAX: 8.81,
+  LINK: 11.63,
+  BTC: 80572,
+  SOL: 100.39,
+  XRP: 1.28,
+  DOT: 0.979806
 };
 
 // Memory cache

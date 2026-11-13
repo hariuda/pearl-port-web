@@ -1,494 +1,1473 @@
 {
-  "updatedAt": "2026-11-12T20:13:01.269Z",
-  "publishedDate": "12 Nov 2026",
+  "updatedAt": "2026-11-13T17:43:55.421Z",
+  "publishedDate": "13 Nov 2026",
   "source": "Binance P2P & CoinGecko Spot",
-  "usdtBaseRate": 341.88,
+  "usdtBaseRate": 342,
   "spotPrices": {
     "USDT": 1,
     "USDC": 1,
-    "BNB": 654.59,
-    "ADA": 0.171959,
-    "ETH": 2017.57,
-    "XRP": 1.031,
-    "DOGE": 0.065922,
-    "NEAR": 3.42,
-    "SUI": 0.801779,
-    "LINK": 10.03,
-    "DOT": 0.826879
+    "ETH": 1940.82,
+    "DOGE": 0.065451,
+    "SUI": 0.807741,
+    "SOL": 80.39,
+    "BTC": 68965,
+    "XRP": 1.026,
+    "BNB": 634.27,
+    "NEAR": 3.53,
+    "ADA": 0.171706,
+    "AVAX": 8.38,
+    "DOT": 0.828794,
+    "LINK": 9.96
   },
-  "count": 99,
+  "count": 126,
   "prices": [
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "Binance",
-      "buyPrice": 342.56,
-      "sellPrice": 341.2,
-      "date": "2026-11-12",
+      "buyPrice": 342.68,
+      "sellPrice": 341.32,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.88,
+      "effectivePrice": 342,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "Bybit",
-      "buyPrice": 342.39,
-      "sellPrice": 341.03,
-      "date": "2026-11-12",
+      "buyPrice": 342.51,
+      "sellPrice": 341.15,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.71,
+      "effectivePrice": 341.83,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "OKX",
-      "buyPrice": 342.22,
-      "sellPrice": 340.85,
-      "date": "2026-11-12",
+      "buyPrice": 342.34,
+      "sellPrice": 340.97,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.54,
+      "effectivePrice": 341.65,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "KuCoin",
-      "buyPrice": 342.05,
-      "sellPrice": 340.68,
-      "date": "2026-11-12",
+      "buyPrice": 342.17,
+      "sellPrice": 340.8,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.37,
+      "effectivePrice": 341.49,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "HTX",
-      "buyPrice": 342.39,
-      "sellPrice": 340.85,
-      "date": "2026-11-12",
+      "buyPrice": 342.51,
+      "sellPrice": 340.97,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.62,
+      "effectivePrice": 341.74,
       "spreadPercent": 0.45
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "Bitget",
-      "buyPrice": 341.88,
-      "sellPrice": 340.51,
-      "date": "2026-11-12",
+      "buyPrice": 342,
+      "sellPrice": 340.63,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.19,
+      "effectivePrice": 341.31,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "Gate.io",
-      "buyPrice": 341.71,
-      "sellPrice": 340.34,
-      "date": "2026-11-12",
+      "buyPrice": 341.83,
+      "sellPrice": 340.46,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.02,
+      "effectivePrice": 341.14,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "MEXC",
-      "buyPrice": 341.71,
-      "sellPrice": 340.17,
-      "date": "2026-11-12",
+      "buyPrice": 341.83,
+      "sellPrice": 340.29,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 340.94,
+      "effectivePrice": 341.06,
       "spreadPercent": 0.45
     },
     {
       "asset": "USDT",
       "fiat": "LKR",
       "exchange": "Market Average",
-      "buyPrice": 342.22,
-      "sellPrice": 340.85,
-      "date": "2026-11-12",
+      "buyPrice": 342.34,
+      "sellPrice": 340.97,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.54,
+      "effectivePrice": 341.65,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "Binance",
-      "buyPrice": 342.56,
-      "sellPrice": 341.2,
-      "date": "2026-11-12",
+      "buyPrice": 342.68,
+      "sellPrice": 341.32,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.88,
+      "effectivePrice": 342,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "Bybit",
-      "buyPrice": 342.39,
-      "sellPrice": 341.03,
-      "date": "2026-11-12",
+      "buyPrice": 342.51,
+      "sellPrice": 341.15,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.71,
+      "effectivePrice": 341.83,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "OKX",
-      "buyPrice": 342.22,
-      "sellPrice": 340.85,
-      "date": "2026-11-12",
+      "buyPrice": 342.34,
+      "sellPrice": 340.97,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.54,
+      "effectivePrice": 341.65,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "KuCoin",
-      "buyPrice": 342.05,
-      "sellPrice": 340.68,
-      "date": "2026-11-12",
+      "buyPrice": 342.17,
+      "sellPrice": 340.8,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.37,
+      "effectivePrice": 341.49,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "HTX",
-      "buyPrice": 342.39,
-      "sellPrice": 340.85,
-      "date": "2026-11-12",
+      "buyPrice": 342.51,
+      "sellPrice": 340.97,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.62,
+      "effectivePrice": 341.74,
       "spreadPercent": 0.45
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "Bitget",
-      "buyPrice": 341.88,
-      "sellPrice": 340.51,
-      "date": "2026-11-12",
+      "buyPrice": 342,
+      "sellPrice": 340.63,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.19,
+      "effectivePrice": 341.31,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "Gate.io",
-      "buyPrice": 341.71,
-      "sellPrice": 340.34,
-      "date": "2026-11-12",
+      "buyPrice": 341.83,
+      "sellPrice": 340.46,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.02,
+      "effectivePrice": 341.14,
       "spreadPercent": 0.4
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "MEXC",
-      "buyPrice": 341.71,
-      "sellPrice": 340.17,
-      "date": "2026-11-12",
+      "buyPrice": 341.83,
+      "sellPrice": 340.29,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 340.94,
+      "effectivePrice": 341.06,
       "spreadPercent": 0.45
     },
     {
       "asset": "USDC",
       "fiat": "LKR",
       "exchange": "Market Average",
-      "buyPrice": 342.22,
-      "sellPrice": 340.85,
-      "date": "2026-11-12",
+      "buyPrice": 342.34,
+      "sellPrice": 340.97,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 341.54,
+      "effectivePrice": 341.65,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 665087.96,
+      "sellPrice": 662432.92,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 663760.44,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 664756.08,
+      "sellPrice": 662101.04,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 663428.56,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 664424.2,
+      "sellPrice": 661769.16,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 663096.68,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 664092.32,
+      "sellPrice": 661437.28,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 662764.8,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 664756.08,
+      "sellPrice": 661769.16,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 663262.62,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 663760.44,
+      "sellPrice": 661105.4,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 662432.92,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 663428.56,
+      "sellPrice": 660773.52,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 662101.04,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 663428.56,
+      "sellPrice": 660441.64,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 661935.1,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "ETH",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 664424.2,
+      "sellPrice": 661769.16,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 663096.68,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 22.43,
+      "sellPrice": 22.34,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.38,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 22.42,
+      "sellPrice": 22.33,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.38,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 22.41,
+      "sellPrice": 22.32,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.37,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 22.4,
+      "sellPrice": 22.31,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.35,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 22.42,
+      "sellPrice": 22.32,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.37,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 22.38,
+      "sellPrice": 22.29,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.34,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 22.37,
+      "sellPrice": 22.28,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.33,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 22.37,
+      "sellPrice": 22.27,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.32,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "DOGE",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 22.41,
+      "sellPrice": 22.32,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 22.37,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 276.8,
+      "sellPrice": 275.69,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 276.25,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 276.66,
+      "sellPrice": 275.56,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 276.11,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 276.52,
+      "sellPrice": 275.42,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 275.97,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 276.39,
+      "sellPrice": 275.28,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 275.83,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 276.66,
+      "sellPrice": 275.42,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 276.04,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 276.25,
+      "sellPrice": 275.14,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 275.69,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 276.11,
+      "sellPrice": 275,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 275.56,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 276.11,
+      "sellPrice": 274.87,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 275.49,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "SUI",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 276.52,
+      "sellPrice": 275.42,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 275.97,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 27548.37,
+      "sellPrice": 27438.39,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27493.38,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 27534.62,
+      "sellPrice": 27424.65,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27479.64,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 27520.87,
+      "sellPrice": 27410.9,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27465.89,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 27507.13,
+      "sellPrice": 27397.15,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27452.14,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 27534.62,
+      "sellPrice": 27410.9,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27472.76,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 27493.38,
+      "sellPrice": 27383.41,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27438.4,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 27479.63,
+      "sellPrice": 27369.66,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27424.65,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 27479.63,
+      "sellPrice": 27355.91,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27417.77,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "SOL",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 27520.87,
+      "sellPrice": 27410.9,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 27465.89,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 23633202.06,
+      "sellPrice": 23538857.94,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23586030,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 23621409.05,
+      "sellPrice": 23527064.93,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23574236.99,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 23609616.03,
+      "sellPrice": 23515271.91,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23562443.97,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 23597823.02,
+      "sellPrice": 23503478.89,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23550650.95,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 23621409.05,
+      "sellPrice": 23515271.91,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23568340.48,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 23586030,
+      "sellPrice": 23491685.88,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23538857.94,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 23574236.98,
+      "sellPrice": 23479892.87,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23527064.93,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 23574236.98,
+      "sellPrice": 23468099.85,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23521168.41,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "BTC",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 23609616.03,
+      "sellPrice": 23515271.91,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 23562443.97,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 351.59,
+      "sellPrice": 350.19,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.89,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 351.42,
+      "sellPrice": 350.01,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.72,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 351.24,
+      "sellPrice": 349.84,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.54,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 351.07,
+      "sellPrice": 349.66,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.37,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 351.42,
+      "sellPrice": 349.84,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.63,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 350.89,
+      "sellPrice": 349.49,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.19,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 350.72,
+      "sellPrice": 349.31,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.01,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 350.72,
+      "sellPrice": 349.14,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 349.93,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "XRP",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 351.24,
+      "sellPrice": 349.84,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 350.54,
       "spreadPercent": 0.4
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "Binance",
-      "buyPrice": 224238.81,
-      "sellPrice": 223343.65,
-      "date": "2026-11-12",
+      "buyPrice": 217354.18,
+      "sellPrice": 216486.5,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223791.23,
+      "effectivePrice": 216920.34,
       "spreadPercent": 0.4
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "Bybit",
-      "buyPrice": 224126.92,
-      "sellPrice": 223231.75,
-      "date": "2026-11-12",
+      "buyPrice": 217245.72,
+      "sellPrice": 216378.04,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223679.34,
+      "effectivePrice": 216811.88,
       "spreadPercent": 0.4
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "OKX",
-      "buyPrice": 224015.02,
-      "sellPrice": 223119.86,
-      "date": "2026-11-12",
+      "buyPrice": 217137.26,
+      "sellPrice": 216269.58,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223567.44,
+      "effectivePrice": 216703.42,
       "spreadPercent": 0.4
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "KuCoin",
-      "buyPrice": 223903.12,
-      "sellPrice": 223007.96,
-      "date": "2026-11-12",
+      "buyPrice": 217028.8,
+      "sellPrice": 216161.12,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223455.54,
+      "effectivePrice": 216594.96,
       "spreadPercent": 0.4
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "HTX",
-      "buyPrice": 224126.92,
-      "sellPrice": 223119.86,
-      "date": "2026-11-12",
+      "buyPrice": 217245.72,
+      "sellPrice": 216269.58,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223623.39,
+      "effectivePrice": 216757.65,
       "spreadPercent": 0.45
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "Bitget",
-      "buyPrice": 223791.23,
-      "sellPrice": 222896.06,
-      "date": "2026-11-12",
+      "buyPrice": 216920.34,
+      "sellPrice": 216052.66,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223343.65,
+      "effectivePrice": 216486.5,
       "spreadPercent": 0.4
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "Gate.io",
-      "buyPrice": 223679.33,
-      "sellPrice": 222784.17,
-      "date": "2026-11-12",
+      "buyPrice": 216811.88,
+      "sellPrice": 215944.2,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223231.75,
+      "effectivePrice": 216378.04,
       "spreadPercent": 0.4
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "MEXC",
-      "buyPrice": 223679.33,
-      "sellPrice": 222672.27,
-      "date": "2026-11-12",
+      "buyPrice": 216811.88,
+      "sellPrice": 215835.74,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223175.8,
+      "effectivePrice": 216323.81,
       "spreadPercent": 0.45
     },
     {
       "asset": "BNB",
       "fiat": "LKR",
       "exchange": "Market Average",
-      "buyPrice": 224015.02,
-      "sellPrice": 223119.86,
-      "date": "2026-11-12",
+      "buyPrice": 217137.26,
+      "sellPrice": 216269.58,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 223567.44,
+      "effectivePrice": 216703.42,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 1209.67,
+      "sellPrice": 1204.85,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1207.26,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 1209.07,
+      "sellPrice": 1204.24,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1206.65,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 1208.47,
+      "sellPrice": 1203.64,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1206.06,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 1207.86,
+      "sellPrice": 1203.03,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1205.44,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 1209.07,
+      "sellPrice": 1203.64,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1206.36,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 1207.26,
+      "sellPrice": 1202.43,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1204.85,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 1206.66,
+      "sellPrice": 1201.83,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1204.24,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 1206.66,
+      "sellPrice": 1201.22,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1203.94,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "NEAR",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 1208.47,
+      "sellPrice": 1203.64,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 1206.06,
       "spreadPercent": 0.4
     },
     {
       "asset": "ADA",
       "fiat": "LKR",
       "exchange": "Binance",
-      "buyPrice": 58.91,
-      "sellPrice": 58.67,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 58.79,
-      "spreadPercent": 0.41
-    },
-    {
-      "asset": "ADA",
-      "fiat": "LKR",
-      "exchange": "Bybit",
-      "buyPrice": 58.88,
-      "sellPrice": 58.64,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 58.76,
-      "spreadPercent": 0.41
-    },
-    {
-      "asset": "ADA",
-      "fiat": "LKR",
-      "exchange": "OKX",
-      "buyPrice": 58.85,
+      "buyPrice": 58.84,
       "sellPrice": 58.61,
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
@@ -496,15 +1475,15 @@
         "Sampath Vishwa"
       ],
       "effectivePrice": 58.73,
-      "spreadPercent": 0.41
+      "spreadPercent": 0.39
     },
     {
       "asset": "ADA",
       "fiat": "LKR",
-      "exchange": "KuCoin",
-      "buyPrice": 58.82,
+      "exchange": "Bybit",
+      "buyPrice": 58.81,
       "sellPrice": 58.58,
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
@@ -512,47 +1491,31 @@
         "Sampath Vishwa"
       ],
       "effectivePrice": 58.7,
-      "spreadPercent": 0.41
+      "spreadPercent": 0.39
     },
     {
       "asset": "ADA",
       "fiat": "LKR",
-      "exchange": "HTX",
-      "buyPrice": 58.88,
-      "sellPrice": 58.61,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 58.75,
-      "spreadPercent": 0.46
-    },
-    {
-      "asset": "ADA",
-      "fiat": "LKR",
-      "exchange": "Bitget",
-      "buyPrice": 58.79,
+      "exchange": "OKX",
+      "buyPrice": 58.78,
       "sellPrice": 58.55,
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 58.67,
-      "spreadPercent": 0.41
+      "effectivePrice": 58.66,
+      "spreadPercent": 0.39
     },
     {
       "asset": "ADA",
       "fiat": "LKR",
-      "exchange": "Gate.io",
-      "buyPrice": 58.76,
+      "exchange": "KuCoin",
+      "buyPrice": 58.75,
       "sellPrice": 58.52,
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
@@ -560,1046 +1523,518 @@
         "Sampath Vishwa"
       ],
       "effectivePrice": 58.64,
-      "spreadPercent": 0.41
+      "spreadPercent": 0.39
     },
     {
       "asset": "ADA",
       "fiat": "LKR",
-      "exchange": "MEXC",
-      "buyPrice": 58.76,
-      "sellPrice": 58.5,
-      "date": "2026-11-12",
+      "exchange": "HTX",
+      "buyPrice": 58.81,
+      "sellPrice": 58.55,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 58.63,
+      "effectivePrice": 58.68,
+      "spreadPercent": 0.44
+    },
+    {
+      "asset": "ADA",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 58.72,
+      "sellPrice": 58.49,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 58.61,
+      "spreadPercent": 0.39
+    },
+    {
+      "asset": "ADA",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 58.69,
+      "sellPrice": 58.46,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 58.58,
+      "spreadPercent": 0.39
+    },
+    {
+      "asset": "ADA",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 58.69,
+      "sellPrice": 58.43,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 58.56,
       "spreadPercent": 0.44
     },
     {
       "asset": "ADA",
       "fiat": "LKR",
       "exchange": "Market Average",
-      "buyPrice": 58.85,
-      "sellPrice": 58.61,
-      "date": "2026-11-12",
+      "buyPrice": 58.78,
+      "sellPrice": 58.55,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 58.73,
-      "spreadPercent": 0.41
+      "effectivePrice": 58.66,
+      "spreadPercent": 0.39
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "Binance",
-      "buyPrice": 691146.37,
-      "sellPrice": 688387.3,
-      "date": "2026-11-12",
+      "buyPrice": 2871.69,
+      "sellPrice": 2860.23,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 689766.83,
+      "effectivePrice": 2865.96,
       "spreadPercent": 0.4
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "Bybit",
-      "buyPrice": 690801.48,
-      "sellPrice": 688042.41,
-      "date": "2026-11-12",
+      "buyPrice": 2870.26,
+      "sellPrice": 2858.8,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 689421.95,
+      "effectivePrice": 2864.53,
       "spreadPercent": 0.4
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "OKX",
-      "buyPrice": 690456.6,
-      "sellPrice": 687697.53,
-      "date": "2026-11-12",
+      "buyPrice": 2868.83,
+      "sellPrice": 2857.36,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 689077.06,
+      "effectivePrice": 2863.1,
       "spreadPercent": 0.4
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "KuCoin",
-      "buyPrice": 690111.72,
-      "sellPrice": 687352.65,
-      "date": "2026-11-12",
+      "buyPrice": 2867.39,
+      "sellPrice": 2855.93,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 688732.19,
+      "effectivePrice": 2861.66,
       "spreadPercent": 0.4
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "HTX",
-      "buyPrice": 690801.48,
-      "sellPrice": 687697.53,
-      "date": "2026-11-12",
+      "buyPrice": 2870.26,
+      "sellPrice": 2857.36,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 689249.51,
+      "effectivePrice": 2863.81,
       "spreadPercent": 0.45
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "Bitget",
-      "buyPrice": 689766.83,
-      "sellPrice": 687007.76,
-      "date": "2026-11-12",
+      "buyPrice": 2865.96,
+      "sellPrice": 2854.5,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 688387.29,
+      "effectivePrice": 2860.23,
       "spreadPercent": 0.4
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "Gate.io",
-      "buyPrice": 689421.95,
-      "sellPrice": 686662.88,
-      "date": "2026-11-12",
+      "buyPrice": 2864.53,
+      "sellPrice": 2853.06,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 688042.42,
+      "effectivePrice": 2858.8,
       "spreadPercent": 0.4
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "MEXC",
-      "buyPrice": 689421.95,
-      "sellPrice": 686318,
-      "date": "2026-11-12",
+      "buyPrice": 2864.53,
+      "sellPrice": 2851.63,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 687869.97,
+      "effectivePrice": 2858.08,
       "spreadPercent": 0.45
     },
     {
-      "asset": "ETH",
+      "asset": "AVAX",
       "fiat": "LKR",
       "exchange": "Market Average",
-      "buyPrice": 690456.6,
-      "sellPrice": 687697.53,
-      "date": "2026-11-12",
+      "buyPrice": 2868.83,
+      "sellPrice": 2857.36,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 689077.06,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "Binance",
-      "buyPrice": 353.18,
-      "sellPrice": 351.77,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 352.48,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "Bybit",
-      "buyPrice": 353.01,
-      "sellPrice": 351.6,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 352.31,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "OKX",
-      "buyPrice": 352.83,
-      "sellPrice": 351.42,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 352.13,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "KuCoin",
-      "buyPrice": 352.65,
-      "sellPrice": 351.24,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 351.94,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "HTX",
-      "buyPrice": 353.01,
-      "sellPrice": 351.42,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 352.22,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "Bitget",
-      "buyPrice": 352.48,
-      "sellPrice": 351.07,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 351.77,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "Gate.io",
-      "buyPrice": 352.3,
-      "sellPrice": 350.89,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 351.6,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "MEXC",
-      "buyPrice": 352.3,
-      "sellPrice": 350.72,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 351.51,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "XRP",
-      "fiat": "LKR",
-      "exchange": "Market Average",
-      "buyPrice": 352.83,
-      "sellPrice": 351.42,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 352.13,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "Binance",
-      "buyPrice": 22.58,
-      "sellPrice": 22.49,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.53,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "Bybit",
-      "buyPrice": 22.57,
-      "sellPrice": 22.48,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.52,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "OKX",
-      "buyPrice": 22.56,
-      "sellPrice": 22.47,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.52,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "KuCoin",
-      "buyPrice": 22.55,
-      "sellPrice": 22.46,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.51,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "HTX",
-      "buyPrice": 22.57,
-      "sellPrice": 22.47,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.52,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "Bitget",
-      "buyPrice": 22.54,
-      "sellPrice": 22.45,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.49,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "Gate.io",
-      "buyPrice": 22.53,
-      "sellPrice": 22.44,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.48,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "MEXC",
-      "buyPrice": 22.53,
-      "sellPrice": 22.42,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.48,
-      "spreadPercent": 0.49
-    },
-    {
-      "asset": "DOGE",
-      "fiat": "LKR",
-      "exchange": "Market Average",
-      "buyPrice": 22.56,
-      "sellPrice": 22.47,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 22.52,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "Binance",
-      "buyPrice": 1171.57,
-      "sellPrice": 1166.89,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1169.23,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "Bybit",
-      "buyPrice": 1170.98,
-      "sellPrice": 1166.31,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1168.64,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "OKX",
-      "buyPrice": 1170.4,
-      "sellPrice": 1165.72,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1168.06,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "KuCoin",
-      "buyPrice": 1169.81,
-      "sellPrice": 1165.14,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1167.47,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "HTX",
-      "buyPrice": 1170.98,
-      "sellPrice": 1165.72,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1168.35,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "Bitget",
-      "buyPrice": 1169.23,
-      "sellPrice": 1164.55,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1166.89,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "Gate.io",
-      "buyPrice": 1168.64,
-      "sellPrice": 1163.97,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1166.31,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "MEXC",
-      "buyPrice": 1168.64,
-      "sellPrice": 1163.38,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1166.01,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "NEAR",
-      "fiat": "LKR",
-      "exchange": "Market Average",
-      "buyPrice": 1170.4,
-      "sellPrice": 1165.72,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 1168.06,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "Binance",
-      "buyPrice": 274.66,
-      "sellPrice": 273.56,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 274.11,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "Bybit",
-      "buyPrice": 274.52,
-      "sellPrice": 273.43,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.98,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "OKX",
-      "buyPrice": 274.39,
-      "sellPrice": 273.29,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.84,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "KuCoin",
-      "buyPrice": 274.25,
-      "sellPrice": 273.15,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.7,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "HTX",
-      "buyPrice": 274.52,
-      "sellPrice": 273.29,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.9,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "Bitget",
-      "buyPrice": 274.11,
-      "sellPrice": 273.02,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.56,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "Gate.io",
-      "buyPrice": 273.98,
-      "sellPrice": 272.88,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.43,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "MEXC",
-      "buyPrice": 273.98,
-      "sellPrice": 272.74,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.36,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "SUI",
-      "fiat": "LKR",
-      "exchange": "Market Average",
-      "buyPrice": 274.39,
-      "sellPrice": 273.29,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 273.84,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "Binance",
-      "buyPrice": 3435.91,
-      "sellPrice": 3422.2,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3429.05,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "Bybit",
-      "buyPrice": 3434.2,
-      "sellPrice": 3420.48,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3427.34,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "OKX",
-      "buyPrice": 3432.49,
-      "sellPrice": 3418.77,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3425.63,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "KuCoin",
-      "buyPrice": 3430.77,
-      "sellPrice": 3417.05,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3423.91,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "HTX",
-      "buyPrice": 3434.2,
-      "sellPrice": 3418.77,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3426.48,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "Bitget",
-      "buyPrice": 3429.06,
-      "sellPrice": 3415.34,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3422.2,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "Gate.io",
-      "buyPrice": 3427.34,
-      "sellPrice": 3413.63,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3420.49,
-      "spreadPercent": 0.4
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "MEXC",
-      "buyPrice": 3427.34,
-      "sellPrice": 3411.91,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3419.63,
-      "spreadPercent": 0.45
-    },
-    {
-      "asset": "LINK",
-      "fiat": "LKR",
-      "exchange": "Market Average",
-      "buyPrice": 3432.49,
-      "sellPrice": 3418.77,
-      "date": "2026-11-12",
-      "paymentMethods": [
-        "Bank Transfer",
-        "Commercial Bank",
-        "FriMi",
-        "Sampath Vishwa"
-      ],
-      "effectivePrice": 3425.63,
+      "effectivePrice": 2863.1,
       "spreadPercent": 0.4
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "Binance",
-      "buyPrice": 283.26,
-      "sellPrice": 282.13,
-      "date": "2026-11-12",
+      "buyPrice": 284.01,
+      "sellPrice": 282.88,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 282.69,
+      "effectivePrice": 283.44,
       "spreadPercent": 0.4
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "Bybit",
-      "buyPrice": 283.12,
-      "sellPrice": 281.99,
-      "date": "2026-11-12",
+      "buyPrice": 283.87,
+      "sellPrice": 282.74,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 282.56,
+      "effectivePrice": 283.31,
       "spreadPercent": 0.4
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "OKX",
-      "buyPrice": 282.98,
-      "sellPrice": 281.85,
-      "date": "2026-11-12",
+      "buyPrice": 283.73,
+      "sellPrice": 282.6,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 282.42,
+      "effectivePrice": 283.17,
       "spreadPercent": 0.4
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "KuCoin",
-      "buyPrice": 282.83,
-      "sellPrice": 281.7,
-      "date": "2026-11-12",
+      "buyPrice": 283.59,
+      "sellPrice": 282.46,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 282.26,
+      "effectivePrice": 283.02,
       "spreadPercent": 0.4
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "HTX",
-      "buyPrice": 283.12,
-      "sellPrice": 281.85,
-      "date": "2026-11-12",
+      "buyPrice": 283.87,
+      "sellPrice": 282.6,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 282.49,
+      "effectivePrice": 283.24,
       "spreadPercent": 0.45
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "Bitget",
-      "buyPrice": 282.69,
-      "sellPrice": 281.56,
-      "date": "2026-11-12",
+      "buyPrice": 283.45,
+      "sellPrice": 282.31,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 282.13,
+      "effectivePrice": 282.88,
       "spreadPercent": 0.4
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "Gate.io",
-      "buyPrice": 282.55,
-      "sellPrice": 281.42,
-      "date": "2026-11-12",
+      "buyPrice": 283.31,
+      "sellPrice": 282.17,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 281.99,
+      "effectivePrice": 282.74,
       "spreadPercent": 0.4
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "MEXC",
-      "buyPrice": 282.55,
-      "sellPrice": 281.28,
-      "date": "2026-11-12",
+      "buyPrice": 283.31,
+      "sellPrice": 282.03,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 281.91,
+      "effectivePrice": 282.67,
       "spreadPercent": 0.45
     },
     {
       "asset": "DOT",
       "fiat": "LKR",
       "exchange": "Market Average",
-      "buyPrice": 282.98,
-      "sellPrice": 281.85,
-      "date": "2026-11-12",
+      "buyPrice": 283.73,
+      "sellPrice": 282.6,
+      "date": "2026-11-13",
       "paymentMethods": [
         "Bank Transfer",
         "Commercial Bank",
         "FriMi",
         "Sampath Vishwa"
       ],
-      "effectivePrice": 282.42,
+      "effectivePrice": 283.17,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "Binance",
+      "buyPrice": 3413.13,
+      "sellPrice": 3399.51,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3406.32,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "Bybit",
+      "buyPrice": 3411.43,
+      "sellPrice": 3397.8,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3404.61,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "OKX",
+      "buyPrice": 3409.73,
+      "sellPrice": 3396.1,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3402.91,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "KuCoin",
+      "buyPrice": 3408.02,
+      "sellPrice": 3394.4,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3401.21,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "HTX",
+      "buyPrice": 3411.43,
+      "sellPrice": 3396.1,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3403.76,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "Bitget",
+      "buyPrice": 3406.32,
+      "sellPrice": 3392.69,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3399.51,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "Gate.io",
+      "buyPrice": 3404.62,
+      "sellPrice": 3390.99,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3397.8,
+      "spreadPercent": 0.4
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "MEXC",
+      "buyPrice": 3404.62,
+      "sellPrice": 3389.29,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3396.95,
+      "spreadPercent": 0.45
+    },
+    {
+      "asset": "LINK",
+      "fiat": "LKR",
+      "exchange": "Market Average",
+      "buyPrice": 3409.73,
+      "sellPrice": 3396.1,
+      "date": "2026-11-13",
+      "paymentMethods": [
+        "Bank Transfer",
+        "Commercial Bank",
+        "FriMi",
+        "Sampath Vishwa"
+      ],
+      "effectivePrice": 3402.91,
       "spreadPercent": 0.4
     }
   ]

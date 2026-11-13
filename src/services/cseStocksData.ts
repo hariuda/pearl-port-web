@@ -18,7 +18,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AAF",
     name: "Asia Asset Finance PLC",
     sector: "Diversified Financials",
-    price: 46.2,
+    price: 45.2,
     isNonVoting: false
   },
   "AAIC.N0000": {
@@ -26,7 +26,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AAIC",
     name: "Softlogic Life Insurance PLC",
     sector: "Insurance",
-    price: 76.1,
+    price: 76,
     isNonVoting: false
   },
   "ABAN.N0000": {
@@ -34,7 +34,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ABAN",
     name: "Abans Electricals PLC",
     sector: "Consumer Durables & Apparel",
-    price: 1018.5,
+    price: 1012.25,
     isNonVoting: false
   },
   "ABL.N0000": {
@@ -42,7 +42,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ABL",
     name: "Amana Bank PLC",
     sector: "Banks",
-    price: 25.3,
+    price: 24.8,
     isNonVoting: false
   },
   "ACAP.N0000": {
@@ -58,7 +58,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ACL",
     name: "ACL Cables PLC",
     sector: "Capital Goods",
-    price: 104.25,
+    price: 101.5,
     isNonVoting: false
   },
   "ACME.N0000": {
@@ -66,7 +66,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ACME",
     name: "ACME Printing & Packaging PLC",
     sector: "Materials",
-    price: 5,
+    price: 4.9,
     isNonVoting: false
   },
   "AEL.N0000": {
@@ -74,7 +74,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AEL",
     name: "Access Engineering PLC",
     sector: "Capital Goods",
-    price: 84.7,
+    price: 85.3,
     isNonVoting: false
   },
   "AFS.N0000": {
@@ -82,7 +82,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AFS",
     name: "Alpha Fire Services PLC",
     sector: "Capital Goods",
-    price: 26.2,
+    price: 25.2,
     isNonVoting: false
   },
   "AFSL.N0000": {
@@ -90,7 +90,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AFSL",
     name: "Abans Finance PLC",
     sector: "Diversified Financials",
-    price: 86.1,
+    price: 86.5,
     isNonVoting: false
   },
   "AGAL.N0000": {
@@ -98,7 +98,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AGAL",
     name: "Agalawatte Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 54.1,
+    price: 53.3,
     isNonVoting: false
   },
   "AGPL.N0000": {
@@ -106,7 +106,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AGPL",
     name: "Agarapatana Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 13.6,
+    price: 13.2,
     isNonVoting: false
   },
   "AGST.N0000": {
@@ -114,7 +114,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AGST",
     name: "Agstar PLC",
     sector: "Materials",
-    price: 12.1,
+    price: 11.9,
     isNonVoting: false
   },
   "AHPL.N0000": {
@@ -122,7 +122,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AHPL",
     name: "Asian Hotels & Properties PLC",
     sector: "Consumer Services",
-    price: 50,
+    price: 51,
     isNonVoting: false
   },
   "AHUN.N0000": {
@@ -130,7 +130,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AHUN",
     name: "Aitken Spence Hotel Holdings PLC",
     sector: "Consumer Services",
-    price: 85.5,
+    price: 85,
     isNonVoting: false
   },
   "AINS.N0000": {
@@ -138,7 +138,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AINS",
     name: "Arpico Insurance PLC",
     sector: "Insurance",
-    price: 25.6,
+    price: 24.8,
     isNonVoting: false
   },
   "ALLI.N0000": {
@@ -146,7 +146,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ALLI",
     name: "Alliance Finance Company PLC",
     sector: "Diversified Financials",
-    price: 313.25,
+    price: 314,
     isNonVoting: false
   },
   "ALUF.N0000": {
@@ -162,7 +162,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ALUM",
     name: "Alumex PLC",
     sector: "Materials",
-    price: 18.9,
+    price: 18.5,
     isNonVoting: false
   },
   "AMCL.N0000": {
@@ -186,7 +186,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "AMSL",
     name: "Asiri Surgical Hospital PLC",
     sector: "Health Care Equipment & Services",
-    price: 13.3,
+    price: 13.2,
     isNonVoting: false
   },
   "APLA.N0000": {
@@ -194,7 +194,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "APLA",
     name: "ACL Plastics PLC",
     sector: "Materials",
-    price: 159.5,
+    price: 158.25,
     isNonVoting: false
   },
   "ASCO.N0000": {
@@ -202,7 +202,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ASCO",
     name: "Lanka Realty Investments PLC",
     sector: "Real Estate Management & Development",
-    price: 51,
+    price: 49.8,
     isNonVoting: false
   },
   "ASHO.N0000": {
@@ -210,7 +210,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ASHO",
     name: "Lanka Ashok Leyland PLC",
     sector: "Capital Goods",
-    price: 3197.75,
+    price: 3199,
     isNonVoting: false
   },
   "ASIR.N0000": {
@@ -218,7 +218,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ASIR",
     name: "Asiri Hospital Holdings PLC",
     sector: "Health Care Equipment & Services",
-    price: 33.1,
+    price: 32.3,
     isNonVoting: false
   },
   "ASIY.N0000": {
@@ -226,7 +226,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ASIY",
     name: "Asia Siyaka Commodities PLC",
     sector: "Diversified Financials",
-    price: 13.3,
+    price: 13.4,
     isNonVoting: false
   },
   "ASPH.N0000": {
@@ -250,7 +250,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ATL",
     name: "Amana Takaful PLC",
     sector: "Insurance",
-    price: 23.5,
+    price: 23,
     isNonVoting: false
   },
   "ATLL.N0000": {
@@ -258,7 +258,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ATLL",
     name: "Amana Takaful Life PLC",
     sector: "Insurance",
-    price: 20.1,
+    price: 19.5,
     isNonVoting: false
   },
   "AUTO.N0000": {
@@ -274,7 +274,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BALA",
     name: "Balangoda Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 58.5,
+    price: 56.6,
     isNonVoting: false
   },
   "BBH.N0000": {
@@ -290,7 +290,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BERU",
     name: "Beruwala Resorts PLC",
     sector: "Consumer Services",
-    price: 2.8,
+    price: 2.9,
     isNonVoting: false
   },
   "BFL.N0000": {
@@ -298,7 +298,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BFL",
     name: "Bairaha Farms PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 86,
+    price: 85,
     isNonVoting: false
   },
   "BFN.N0000": {
@@ -306,7 +306,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BFN",
     name: "Janashakthi Finance PLC",
     sector: "Diversified Financials",
-    price: 25.1,
+    price: 25,
     isNonVoting: false
   },
   "BIL.N0000": {
@@ -314,7 +314,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BIL",
     name: "Browns Investments PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 5,
+    price: 4.8,
     isNonVoting: false
   },
   "BLUE.N0000": {
@@ -330,7 +330,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BOGA",
     name: "Bogala Graphite Lanka PLC",
     sector: "Materials",
-    price: 128,
+    price: 130,
     isNonVoting: false
   },
   "BOPL.N0000": {
@@ -338,7 +338,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BOPL",
     name: "Bogawantalawa TEA Estates PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 67.5,
+    price: 69.6,
     isNonVoting: false
   },
   "BPPL.N0000": {
@@ -346,7 +346,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BPPL",
     name: "B P P L Holdings PLC",
     sector: "Household & Personal Products",
-    price: 17.7,
+    price: 17.5,
     isNonVoting: false
   },
   "BREW.N0000": {
@@ -362,7 +362,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BRR",
     name: "Bansei Royal Resorts Hikkaduwa PLC",
     sector: "Consumer Services",
-    price: 21.2,
+    price: 21,
     isNonVoting: false
   },
   "BRWN.N0000": {
@@ -370,7 +370,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "BRWN",
     name: "Brown & Company PLC",
     sector: "Capital Goods",
-    price: 126.75,
+    price: 126.5,
     isNonVoting: false
   },
   "BUKI.N0000": {
@@ -386,7 +386,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CABO",
     name: "Cargo Boat Development Company PLC",
     sector: "Real Estate Management & Development",
-    price: 236.75,
+    price: 220.75,
     isNonVoting: false
   },
   "CALF.N0000": {
@@ -394,7 +394,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CALF",
     name: "Dialog Finance PLC",
     sector: "Diversified Financials",
-    price: 121.75,
+    price: 119.25,
     isNonVoting: false
   },
   "CALH.N0000": {
@@ -402,7 +402,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CALH",
     name: "Capital Alliance Holdings PLC",
     sector: "Diversified Financials",
-    price: 13.7,
+    price: 13.4,
     isNonVoting: false
   },
   "CALI.U0000": {
@@ -410,7 +410,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CALI",
     name: "CAL Five Year Optimum Fund Units",
     sector: "Diversified Financials",
-    price: 13.3,
+    price: 13.4,
     isNonVoting: false
   },
   "CALT.N0000": {
@@ -418,7 +418,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CALT",
     name: "Capital Alliance PLC",
     sector: "Diversified Financials",
-    price: 43.5,
+    price: 43,
     isNonVoting: false
   },
   "CARE.N0000": {
@@ -426,7 +426,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CARE",
     name: "Printcare PLC",
     sector: "Commercial & Professional Services",
-    price: 37.7,
+    price: 36.8,
     isNonVoting: false
   },
   "CARG.N0000": {
@@ -434,7 +434,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CARG",
     name: "Cargills (ceylon) PLC",
     sector: "Food & Staples Retailing",
-    price: 691,
+    price: 687.75,
     isNonVoting: false
   },
   "CARS.N0000": {
@@ -442,7 +442,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CARS",
     name: "Carson Cumberbatch PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 704.5,
+    price: 705.25,
     isNonVoting: false
   },
   "CBNK.N0000": {
@@ -450,7 +450,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CBNK",
     name: "Cargills Bank PLC",
     sector: "Banks",
-    price: 7.2,
+    price: 7,
     isNonVoting: false
   },
   "CCS.N0000": {
@@ -458,7 +458,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CCS",
     name: "Ceylon Cold Stores PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 125,
+    price: 125.75,
     isNonVoting: false
   },
   "CDB.N0000": {
@@ -466,7 +466,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CDB",
     name: "Citizens Development Business Finance PLC",
     sector: "Diversified Financials",
-    price: 35,
+    price: 33.5,
     isNonVoting: false
   },
   "CDB.X0000": {
@@ -474,7 +474,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CDB",
     name: "Citizens Development Business Finance PLC",
     sector: "Diversified Financials",
-    price: 30.8,
+    price: 29.5,
     isNonVoting: true
   },
   "CERA.N0000": {
@@ -490,7 +490,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CFI",
     name: "Colombo Fort Investments PLC",
     sector: "Diversified Financials",
-    price: 304,
+    price: 301.25,
     isNonVoting: false
   },
   "CFIN.N0000": {
@@ -498,7 +498,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CFIN",
     name: "Central Finance Company PLC",
     sector: "Diversified Financials",
-    price: 232.5,
+    price: 229.25,
     isNonVoting: false
   },
   "CFLB.N0000": {
@@ -506,7 +506,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CFLB",
     name: "The Colombo Fort Land & Building PLC",
     sector: "Capital Goods",
-    price: 52.9,
+    price: 55,
     isNonVoting: false
   },
   "CFVF.N0000": {
@@ -514,7 +514,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CFVF",
     name: "First Capital Holdings PLC",
     sector: "Diversified Financials",
-    price: 46.5,
+    price: 44.5,
     isNonVoting: false
   },
   "CHL.N0000": {
@@ -522,7 +522,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CHL",
     name: "Ceylon Hospitals PLC (durdans)",
     sector: "Health Care Equipment & Services",
-    price: 63.7,
+    price: 65,
     isNonVoting: false
   },
   "CHMX.N0000": {
@@ -538,7 +538,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CHOT",
     name: "Ceylon Hotels Corporation PLC",
     sector: "Consumer Services",
-    price: 31.5,
+    price: 31,
     isNonVoting: false
   },
   "CIC.N0000": {
@@ -546,7 +546,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CIC",
     name: "CIC Holdings PLC",
     sector: "Materials",
-    price: 29.5,
+    price: 28.8,
     isNonVoting: false
   },
   "CIC.X0000": {
@@ -554,7 +554,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CIC",
     name: "CIC Holdings PLC",
     sector: "Materials",
-    price: 25.2,
+    price: 25,
     isNonVoting: true
   },
   "CIND.N0000": {
@@ -562,7 +562,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CIND",
     name: "Central Industries PLC",
     sector: "Capital Goods",
-    price: 230,
+    price: 230.25,
     isNonVoting: false
   },
   "CINS.N0000": {
@@ -578,7 +578,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CINS",
     name: "Ceylinco Holdings PLC",
     sector: "Insurance",
-    price: 1500.25,
+    price: 1540.75,
     isNonVoting: true
   },
   "CINV.N0000": {
@@ -586,7 +586,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CINV",
     name: "Ceylon Investment PLC",
     sector: "Diversified Financials",
-    price: 109.5,
+    price: 109,
     isNonVoting: false
   },
   "CIT.N0000": {
@@ -610,7 +610,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CITW",
     name: "Waskaduwa Beach Resort PLC",
     sector: "Consumer Services",
-    price: 1.7,
+    price: 1.6,
     isNonVoting: false
   },
   "CLND.N0000": {
@@ -618,7 +618,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CLND",
     name: "Colombo Land & Development Company PLC",
     sector: "Real Estate Management & Development",
-    price: 60.6,
+    price: 60.3,
     isNonVoting: false
   },
   "COCO.N0000": {
@@ -626,7 +626,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "COCO",
     name: "Renuka Foods PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 22.6,
+    price: 22.5,
     isNonVoting: false
   },
   "COCO.X0000": {
@@ -634,7 +634,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "COCO",
     name: "Renuka Foods PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 22,
+    price: 20.2,
     isNonVoting: true
   },
   "COCR.N0000": {
@@ -642,7 +642,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "COCR",
     name: "Commercial Credit and Finance PLC",
     sector: "Diversified Financials",
-    price: 101.75,
+    price: 99.9,
     isNonVoting: false
   },
   "COLO.N0000": {
@@ -650,7 +650,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "COLO",
     name: "C M Holdings PLC",
     sector: "Retailing",
-    price: 37.6,
+    price: 36.6,
     isNonVoting: false
   },
   "COMB.N0000": {
@@ -666,7 +666,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "COMB",
     name: "Commercial Bank of Ceylon PLC (Non-Voting)",
     sector: "Banks",
-    price: 195,
+    price: 194,
     isNonVoting: true
   },
   "COMD.N0000": {
@@ -682,7 +682,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CONN",
     name: "Hayleys Leisure PLC",
     sector: "Consumer Services",
-    price: 29.6,
+    price: 29.2,
     isNonVoting: false
   },
   "COOP.N0000": {
@@ -690,7 +690,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "COOP",
     name: "Co-operative Insurance Company PLC",
     sector: "Insurance",
-    price: 3.4,
+    price: 3.3,
     isNonVoting: false
   },
   "CPRT.N0000": {
@@ -698,7 +698,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CPRT",
     name: "Kerner Haus Global Solutions PLC",
     sector: "Real Estate Management & Development",
-    price: 28.7,
+    price: 28.2,
     isNonVoting: false
   },
   "CRL.N0000": {
@@ -706,7 +706,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CRL",
     name: "Softlogic Finance PLC",
     sector: "Diversified Financials",
-    price: 4.4,
+    price: 4.3,
     isNonVoting: false
   },
   "CSD.N0000": {
@@ -714,7 +714,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CSD",
     name: "Seylan Developments PLC",
     sector: "Real Estate Management & Development",
-    price: 24.5,
+    price: 24.2,
     isNonVoting: false
   },
   "CSF.N0000": {
@@ -738,7 +738,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CTBL",
     name: "Ceylon TEA Brokers PLC",
     sector: "Retailing",
-    price: 10.9,
+    price: 10.4,
     isNonVoting: false
   },
   "CTC.N0000": {
@@ -746,7 +746,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CTC",
     name: "Ceylon Tobacco Company PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 1809.5,
+    price: 1828.5,
     isNonVoting: false
   },
   "CTEA.N0000": {
@@ -778,7 +778,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CWL",
     name: "Chrissworld PLC",
     sector: "Capital Goods",
-    price: 19,
+    price: 18.4,
     isNonVoting: false
   },
   "CWM.N0000": {
@@ -786,7 +786,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "CWM",
     name: "C. W. Mackie PLC",
     sector: "Retailing",
-    price: 37.2,
+    price: 36.6,
     isNonVoting: false
   },
   "DFCC.N0000": {
@@ -794,7 +794,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "DFCC",
     name: "DFCC Bank PLC",
     sector: "Banks",
-    price: 143,
+    price: 139,
     isNonVoting: false
   },
   "DIAL.N0000": {
@@ -802,7 +802,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "DIAL",
     name: "Dialog Axiata PLC",
     sector: "Telecommunication Services",
-    price: 50,
+    price: 50.2,
     isNonVoting: false
   },
   "DIMO.N0000": {
@@ -810,7 +810,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "DIMO",
     name: "Diesel & Motor Engineering PLC",
     sector: "Retailing",
-    price: 1420,
+    price: 1418.75,
     isNonVoting: false
   },
   "DIPD.N0000": {
@@ -818,7 +818,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "DIPD",
     name: "Dipped Products PLC",
     sector: "Materials",
-    price: 71.1,
+    price: 73.9,
     isNonVoting: false
   },
   "DIST.N0000": {
@@ -826,7 +826,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "DIST",
     name: "Distilleries Company of Sri Lanka PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 58,
+    price: 58.3,
     isNonVoting: false
   },
   "DOCK.N0000": {
@@ -834,7 +834,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "DOCK",
     name: "Colombo Dockyard PLC",
     sector: "Capital Goods",
-    price: 111.75,
+    price: 108.75,
     isNonVoting: false
   },
   "DPL.N0000": {
@@ -842,7 +842,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "DPL",
     name: "Dankotuwa Porcelain PLC",
     sector: "Consumer Durables & Apparel",
-    price: 15,
+    price: 14.6,
     isNonVoting: false
   },
   "EAST.N0000": {
@@ -850,7 +850,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "EAST",
     name: "EAST West Properties PLC",
     sector: "Real Estate Management & Development",
-    price: 67.6,
+    price: 66.9,
     isNonVoting: false
   },
   "EBCR.N0000": {
@@ -858,7 +858,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "EBCR",
     name: "E B Creasy & Company PLC",
     sector: "Capital Goods",
-    price: 39,
+    price: 37.7,
     isNonVoting: false
   },
   "ECL.N0000": {
@@ -866,7 +866,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ECL",
     name: "E-channelling PLC",
     sector: "Health Care Equipment & Services",
-    price: 16.8,
+    price: 16.3,
     isNonVoting: false
   },
   "EDEN.N0000": {
@@ -874,7 +874,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "EDEN",
     name: "Eden Hotel Lanka PLC",
     sector: "Consumer Services",
-    price: 9.9,
+    price: 9.7,
     isNonVoting: false
   },
   "ELPL.N0000": {
@@ -882,7 +882,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ELPL",
     name: "Elpitiya Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 176,
+    price: 179.25,
     isNonVoting: false
   },
   "EMER.N0000": {
@@ -890,7 +890,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "EMER",
     name: "Eastern Merchants PLC",
     sector: "Retailing",
-    price: 12.4,
+    price: 12,
     isNonVoting: false
   },
   "EML.N0000": {
@@ -898,7 +898,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "EML",
     name: "E M L Consultants PLC",
     sector: "Commercial & Professional Services",
-    price: 8.5,
+    price: 8.2,
     isNonVoting: false
   },
   "ETWO.N0000": {
@@ -906,7 +906,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ETWO",
     name: "Equity Two PLC",
     sector: "Real Estate Management & Development",
-    price: 60,
+    price: 61.4,
     isNonVoting: false
   },
   "EXPO.N0000": {
@@ -922,7 +922,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "EXT",
     name: "Exterminators PLC",
     sector: "Commercial & Professional Services",
-    price: 13.5,
+    price: 13.6,
     isNonVoting: false
   },
   "FCT.N0000": {
@@ -930,7 +930,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "FCT",
     name: "First Capital Treasuries PLC",
     sector: "Diversified Financials",
-    price: 27.9,
+    price: 27.7,
     isNonVoting: false
   },
   "GEST.N0000": {
@@ -946,7 +946,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "GHLL",
     name: "Galadari Hotels (lanka) PLC",
     sector: "Consumer Services",
-    price: 16.1,
+    price: 16.4,
     isNonVoting: false
   },
   "GLAS.N0000": {
@@ -954,7 +954,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "GLAS",
     name: "PGP Glass Ceylon PLC",
     sector: "Materials",
-    price: 58.8,
+    price: 59.5,
     isNonVoting: false
   },
   "GRAN.N0000": {
@@ -962,7 +962,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "GRAN",
     name: "Ceylon Grain Elevators PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 478,
+    price: 472,
     isNonVoting: false
   },
   "GREG.N0000": {
@@ -970,7 +970,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "GREG",
     name: "Ambeon Holdings PLC",
     sector: "Consumer Durables & Apparel",
-    price: 36,
+    price: 35.7,
     isNonVoting: false
   },
   "GUAR.N0000": {
@@ -978,7 +978,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "GUAR",
     name: "Ceylon Guardian Investment Trust PLC",
     sector: "Diversified Financials",
-    price: 219.75,
+    price: 215.5,
     isNonVoting: false
   },
   "HAPU.N0000": {
@@ -986,7 +986,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HAPU",
     name: "Hapugastenne Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 56,
+    price: 55.6,
     isNonVoting: false
   },
   "HARI.N0000": {
@@ -1002,7 +1002,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HASU",
     name: "HNB Life PLC",
     sector: "Insurance",
-    price: 139.75,
+    price: 137,
     isNonVoting: false
   },
   "HAYC.N0000": {
@@ -1010,7 +1010,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HAYC",
     name: "Haycarb PLC",
     sector: "Materials",
-    price: 224.75,
+    price: 224.5,
     isNonVoting: false
   },
   "HAYL.N0000": {
@@ -1018,7 +1018,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HAYL",
     name: "Hayleys PLC",
     sector: "Capital Goods",
-    price: 237.75,
+    price: 236.25,
     isNonVoting: false
   },
   "HBS.N0000": {
@@ -1026,7 +1026,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HBS",
     name: "Hsenid Business Solutions PLC",
     sector: "Software & Services",
-    price: 21.7,
+    price: 21.5,
     isNonVoting: false
   },
   "HDFC.N0000": {
@@ -1034,7 +1034,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HDFC",
     name: "Housing Development Finance Corporation Bank of Sri Lanka",
     sector: "Banks",
-    price: 74.8,
+    price: 72.2,
     isNonVoting: false
   },
   "HELA.N0000": {
@@ -1050,7 +1050,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HEXP",
     name: "Hayleys Fibre PLC",
     sector: "Consumer Durables & Apparel",
-    price: 146.75,
+    price: 143.75,
     isNonVoting: false
   },
   "HHL.N0000": {
@@ -1058,7 +1058,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HHL",
     name: "Hemas Holdings PLC",
     sector: "Health Care Equipment & Services",
-    price: 33.2,
+    price: 33.1,
     isNonVoting: false
   },
   "HNB.N0000": {
@@ -1066,7 +1066,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HNB",
     name: "Hatton National Bank PLC",
     sector: "Banks",
-    price: 411.5,
+    price: 403.75,
     isNonVoting: false
   },
   "HNB.X0000": {
@@ -1074,7 +1074,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HNB",
     name: "Hatton National Bank PLC (Non-Voting)",
     sector: "Banks",
-    price: 359.75,
+    price: 351,
     isNonVoting: true
   },
   "HNBF.N0000": {
@@ -1082,7 +1082,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HNBF",
     name: "HNB Finance PLC",
     sector: "Banks",
-    price: 7.9,
+    price: 7.7,
     isNonVoting: false
   },
   "HNBF.X0000": {
@@ -1090,7 +1090,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HNBF",
     name: "HNB Finance PLC",
     sector: "Banks",
-    price: 7.2,
+    price: 7,
     isNonVoting: true
   },
   "HOPL.N0000": {
@@ -1098,7 +1098,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HOPL",
     name: "Horana Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 51.8,
+    price: 52.2,
     isNonVoting: false
   },
   "HPFL.N0000": {
@@ -1106,7 +1106,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HPFL",
     name: "Lotus Hydro Power PLC",
     sector: "Utilities",
-    price: 11.8,
+    price: 11.9,
     isNonVoting: false
   },
   "HPL.N0000": {
@@ -1114,7 +1114,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HPL",
     name: "Hatton Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 24,
+    price: 23.9,
     isNonVoting: false
   },
   "HPWR.N0000": {
@@ -1122,7 +1122,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HPWR",
     name: "Resus Energy PLC",
     sector: "Utilities",
-    price: 9.6,
+    price: 9.3,
     isNonVoting: false
   },
   "HSIG.N0000": {
@@ -1130,7 +1130,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HSIG",
     name: "Hotel Sigiriya PLC",
     sector: "Consumer Services",
-    price: 73.8,
+    price: 73,
     isNonVoting: false
   },
   "HUNA.N0000": {
@@ -1138,7 +1138,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HUNA",
     name: "Hunas Holdings PLC",
     sector: "Consumer Services",
-    price: 15.6,
+    price: 15.4,
     isNonVoting: false
   },
   "HUNT.N0000": {
@@ -1154,7 +1154,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "HVA",
     name: "Hva Foods PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 5.8,
+    price: 5.7,
     isNonVoting: false
   },
   "IDL.N0000": {
@@ -1170,7 +1170,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "JAT",
     name: "JAT Holdings PLC",
     sector: "Materials",
-    price: 39,
+    price: 38.9,
     isNonVoting: false
   },
   "JETS.N0000": {
@@ -1178,7 +1178,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "JETS",
     name: "Jetwing Symphony PLC",
     sector: "Consumer Services",
-    price: 15.2,
+    price: 15.4,
     isNonVoting: false
   },
   "JFP.N0000": {
@@ -1186,7 +1186,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "JFP",
     name: "Jf Packaging PLC",
     sector: "Materials",
-    price: 18.2,
+    price: 17.9,
     isNonVoting: false
   },
   "JINS.N0000": {
@@ -1194,7 +1194,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "JINS",
     name: "Janashakthi Insurance PLC",
     sector: "Insurance",
-    price: 41.6,
+    price: 40.3,
     isNonVoting: false
   },
   "JKH.N0000": {
@@ -1202,7 +1202,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "JKH",
     name: "John Keells Holdings PLC",
     sector: "Capital Goods",
-    price: 19.7,
+    price: 19.4,
     isNonVoting: false
   },
   "JKL.N0000": {
@@ -1218,7 +1218,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "JXG",
     name: "Janashakthi PLC",
     sector: "Diversified Financials",
-    price: 10,
+    price: 9.8,
     isNonVoting: false
   },
   "KAHA.N0000": {
@@ -1226,7 +1226,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KAHA",
     name: "Kahawatte Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 16.1,
+    price: 15.6,
     isNonVoting: false
   },
   "KCAB.N0000": {
@@ -1234,7 +1234,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KCAB",
     name: "Kelani Cables PLC",
     sector: "Capital Goods",
-    price: 112,
+    price: 109.25,
     isNonVoting: false
   },
   "KDL.N0000": {
@@ -1250,7 +1250,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KFP",
     name: "Keells Food Products PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 161.25,
+    price: 169,
     isNonVoting: false
   },
   "KGAL.N0000": {
@@ -1258,7 +1258,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KGAL",
     name: "Kegalle Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 130.5,
+    price: 131,
     isNonVoting: false
   },
   "KHC.N0000": {
@@ -1266,7 +1266,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KHC",
     name: "The Kandy Hotels Company (1938) PLC",
     sector: "Consumer Services",
-    price: 13.4,
+    price: 13.1,
     isNonVoting: false
   },
   "KHL.N0000": {
@@ -1274,7 +1274,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KHL",
     name: "John Keells Hotels PLC",
     sector: "Consumer Services",
-    price: 17.4,
+    price: 17.1,
     isNonVoting: false
   },
   "KOTA.N0000": {
@@ -1282,7 +1282,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KOTA",
     name: "Kotagala Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 8.2,
+    price: 8,
     isNonVoting: false
   },
   "KPHL.N0000": {
@@ -1290,7 +1290,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KPHL",
     name: "Kapruka Holdings PLC",
     sector: "Retailing",
-    price: 21.9,
+    price: 21.7,
     isNonVoting: false
   },
   "KVAL.N0000": {
@@ -1298,7 +1298,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KVAL",
     name: "Kelani Valley Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 78.6,
+    price: 78.5,
     isNonVoting: false
   },
   "KZOO.N0000": {
@@ -1306,7 +1306,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "KZOO",
     name: "Ceylon Land & Equity PLC",
     sector: "Real Estate Management & Development",
-    price: 8.8,
+    price: 8.6,
     isNonVoting: false
   },
   "LALU.N0000": {
@@ -1314,7 +1314,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LALU",
     name: "Lanka Aluminium Industries PLC",
     sector: "Materials",
-    price: 37.1,
+    price: 36.5,
     isNonVoting: false
   },
   "LAMB.N0000": {
@@ -1330,7 +1330,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LCBF",
     name: "Lanka Credit and Business Finance PLC",
     sector: "Diversified Financials",
-    price: 6.2,
+    price: 5.9,
     isNonVoting: false
   },
   "LCEY.N0000": {
@@ -1338,7 +1338,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LCEY",
     name: "Lankem Ceylon PLC",
     sector: "Capital Goods",
-    price: 32.2,
+    price: 33,
     isNonVoting: false
   },
   "LDEV.N0000": {
@@ -1346,7 +1346,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LDEV",
     name: "Lankem Developments PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 17.3,
+    price: 17.1,
     isNonVoting: false
   },
   "LFIN.N0000": {
@@ -1354,7 +1354,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LFIN",
     name: "L B Finance PLC",
     sector: "Diversified Financials",
-    price: 164,
+    price: 163.25,
     isNonVoting: false
   },
   "LGIL.N0000": {
@@ -1370,7 +1370,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LGL",
     name: "Laugfs Gas PLC",
     sector: "Energy",
-    price: 48.3,
+    price: 49.4,
     isNonVoting: false
   },
   "LGL.X0000": {
@@ -1378,7 +1378,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LGL",
     name: "Laugfs Gas PLC",
     sector: "Energy",
-    price: 39,
+    price: 38,
     isNonVoting: true
   },
   "LHCL.N0000": {
@@ -1386,7 +1386,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LHCL",
     name: "The Lanka Hospitals Corporation PLC",
     sector: "Health Care Equipment & Services",
-    price: 111.5,
+    price: 109.5,
     isNonVoting: false
   },
   "LHL.N0000": {
@@ -1394,7 +1394,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LHL",
     name: "The Lighthouse Hotel PLC",
     sector: "Consumer Services",
-    price: 72.3,
+    price: 68,
     isNonVoting: false
   },
   "LIOC.N0000": {
@@ -1402,7 +1402,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LIOC",
     name: "Lanka Ioc PLC",
     sector: "Energy",
-    price: 128,
+    price: 127.5,
     isNonVoting: false
   },
   "LION.N0000": {
@@ -1418,7 +1418,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LITE",
     name: "Laxapana PLC",
     sector: "Capital Goods",
-    price: 43.9,
+    price: 44.2,
     isNonVoting: false
   },
   "LLUB.N0000": {
@@ -1426,7 +1426,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LLUB",
     name: "Chevron Lubricants Lanka PLC",
     sector: "Materials",
-    price: 209.5,
+    price: 210,
     isNonVoting: false
   },
   "LMF.N0000": {
@@ -1434,7 +1434,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LMF",
     name: "Lanka Milk Foods (cwe) PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 91.9,
+    price: 89.9,
     isNonVoting: false
   },
   "LOFC.N0000": {
@@ -1442,7 +1442,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LOFC",
     name: "LOLC Finance PLC",
     sector: "Diversified Financials",
-    price: 5.1,
+    price: 5.2,
     isNonVoting: false
   },
   "LOLC.N0000": {
@@ -1450,7 +1450,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LOLC",
     name: "LOLC Holdings PLC",
     sector: "Diversified Financials",
-    price: 414,
+    price: 405,
     isNonVoting: false
   },
   "LPL.N0000": {
@@ -1458,7 +1458,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LPL",
     name: "Laugfs Power PLC",
     sector: "Utilities",
-    price: 11.1,
+    price: 11.2,
     isNonVoting: false
   },
   "LPL.X0000": {
@@ -1466,7 +1466,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LPL",
     name: "Laugfs Power PLC",
     sector: "Utilities",
-    price: 8.9,
+    price: 8.7,
     isNonVoting: true
   },
   "LPRT.N0000": {
@@ -1482,7 +1482,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LUMX",
     name: "Luminex PLC",
     sector: "Capital Goods",
-    price: 8.5,
+    price: 8.6,
     isNonVoting: false
   },
   "LVEF.N0000": {
@@ -1490,7 +1490,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LVEF",
     name: "LVL Energy Fund PLC",
     sector: "Utilities",
-    price: 6.5,
+    price: 6.6,
     isNonVoting: false
   },
   "LVEN.N0000": {
@@ -1498,7 +1498,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LVEN",
     name: "Lanka Ventures PLC",
     sector: "Diversified Financials",
-    price: 47,
+    price: 46,
     isNonVoting: false
   },
   "LWL.N0000": {
@@ -1506,7 +1506,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "LWL",
     name: "Lanka Walltiles PLC",
     sector: "Capital Goods",
-    price: 43.1,
+    price: 42.5,
     isNonVoting: false
   },
   "MADU.N0000": {
@@ -1522,7 +1522,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MAL",
     name: "Malwatte Valley Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 55.6,
+    price: 55,
     isNonVoting: false
   },
   "MARA.N0000": {
@@ -1530,7 +1530,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MARA",
     name: "Marawila Resorts PLC",
     sector: "Consumer Services",
-    price: 5.6,
+    price: 5.7,
     isNonVoting: false
   },
   "MASK.N0000": {
@@ -1538,7 +1538,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MASK",
     name: "Maskeliya Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 67,
+    price: 63.9,
     isNonVoting: false
   },
   "MBSL.N0000": {
@@ -1546,7 +1546,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MBSL",
     name: "Merchant Bank of Sri Lanka & Finance PLC",
     sector: "Diversified Financials",
-    price: 11.2,
+    price: 11,
     isNonVoting: false
   },
   "MCPL.N0000": {
@@ -1554,7 +1554,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MCPL",
     name: "Mahaweli Coconut Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 46,
+    price: 45.1,
     isNonVoting: false
   },
   "MDL.N0000": {
@@ -1562,7 +1562,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MDL",
     name: "Myland Developments PLC",
     sector: "Real Estate Management & Development",
-    price: 20.9,
+    price: 20.5,
     isNonVoting: false
   },
   "MEL.N0000": {
@@ -1570,7 +1570,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MEL",
     name: "Greentech Energy PLC",
     sector: "Capital Goods",
-    price: 6.2,
+    price: 6.1,
     isNonVoting: false
   },
   "MELS.N0000": {
@@ -1578,7 +1578,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MELS",
     name: "Melstacorp PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 193.75,
+    price: 193,
     isNonVoting: false
   },
   "MERC.N0000": {
@@ -1602,7 +1602,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MFPE",
     name: "Maharaja Foods PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 16.1,
+    price: 15.6,
     isNonVoting: false
   },
   "MGT.N0000": {
@@ -1610,7 +1610,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MGT",
     name: "Hayleys Fabric PLC",
     sector: "Consumer Durables & Apparel",
-    price: 34.9,
+    price: 34.2,
     isNonVoting: false
   },
   "MHDL.N0000": {
@@ -1618,7 +1618,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MHDL",
     name: "Millennium Housing Developers PLC",
     sector: "Real Estate Management & Development",
-    price: 8.5,
+    price: 7.9,
     isNonVoting: false
   },
   "MRH.N0000": {
@@ -1626,7 +1626,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MRH",
     name: "Mahaweli Reach Hotels PLC",
     sector: "Consumer Services",
-    price: 18,
+    price: 17,
     isNonVoting: false
   },
   "MSL.N0000": {
@@ -1634,7 +1634,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MSL",
     name: "Mercantile Shipping Company PLC",
     sector: "Commercial & Professional Services",
-    price: 210.5,
+    price: 217.5,
     isNonVoting: false
   },
   "MULL.N0000": {
@@ -1642,7 +1642,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "MULL",
     name: "Muller and Phipps (ceylon) PLC",
     sector: "Health Care Equipment & Services",
-    price: 3.9,
+    price: 3.8,
     isNonVoting: false
   },
   "NAMU.N0000": {
@@ -1650,7 +1650,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "NAMU",
     name: "Namunukula Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 66.9,
+    price: 67,
     isNonVoting: false
   },
   "NDB.N0000": {
@@ -1658,7 +1658,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "NDB",
     name: "National Development Bank PLC",
     sector: "Banks",
-    price: 116.25,
+    price: 114.75,
     isNonVoting: false
   },
   "NEH.N0000": {
@@ -1674,7 +1674,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "NHL",
     name: "Nawaloka Hospitals PLC",
     sector: "Health Care Equipment & Services",
-    price: 12.2,
+    price: 11.9,
     isNonVoting: false
   },
   "NTB.N0000": {
@@ -1682,7 +1682,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "NTB",
     name: "Nations Trust Bank PLC",
     sector: "Banks",
-    price: 329.25,
+    price: 325,
     isNonVoting: false
   },
   "ODEL.N0000": {
@@ -1690,7 +1690,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ODEL",
     name: "ODEL PLC",
     sector: "Retailing",
-    price: 13,
+    price: 13.1,
     isNonVoting: false
   },
   "OFEQ.N0000": {
@@ -1706,7 +1706,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "ONAL",
     name: "On Ally Holdings PLC",
     sector: "Real Estate Management & Development",
-    price: 46.3,
+    price: 45,
     isNonVoting: false
   },
   "OSEA.N0000": {
@@ -1714,7 +1714,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "OSEA",
     name: "Overseas Realty (ceylon) PLC",
     sector: "Real Estate Management & Development",
-    price: 55.6,
+    price: 54.9,
     isNonVoting: false
   },
   "PABC.N0000": {
@@ -1722,7 +1722,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PABC",
     name: "Pan Asia Banking Corporation PLC",
     sector: "Banks",
-    price: 57,
+    price: 55.7,
     isNonVoting: false
   },
   "PACK.N0000": {
@@ -1730,7 +1730,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PACK",
     name: "Ex-pack Corrugated Cartons PLC",
     sector: "Materials",
-    price: 11.5,
+    price: 11.3,
     isNonVoting: false
   },
   "PALM.N0000": {
@@ -1746,7 +1746,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PAP",
     name: "Panasian Power PLC",
     sector: "Utilities",
-    price: 13.5,
+    price: 13.6,
     isNonVoting: false
   },
   "PARA.N0000": {
@@ -1762,7 +1762,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PARQ",
     name: "Swisstek (ceylon) PLC",
     sector: "Materials",
-    price: 94.1,
+    price: 92.6,
     isNonVoting: false
   },
   "PEG.N0000": {
@@ -1770,7 +1770,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PEG",
     name: "Pegasus Hotels of Ceylon PLC",
     sector: "Consumer Services",
-    price: 18.4,
+    price: 17.4,
     isNonVoting: false
   },
   "PHAR.N0000": {
@@ -1778,7 +1778,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PHAR",
     name: "Colombo City Holdings PLC",
     sector: "Real Estate Management & Development",
-    price: 210,
+    price: 210.5,
     isNonVoting: false
   },
   "PINS.N0000": {
@@ -1786,7 +1786,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PINS",
     name: "People's Insurance PLC",
     sector: "Insurance",
-    price: 28.1,
+    price: 30.3,
     isNonVoting: false
   },
   "PKME.N0000": {
@@ -1794,7 +1794,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PKME",
     name: "Digital Mobility Solutions Lanka PLC",
     sector: "Transportation",
-    price: 170,
+    price: 171.75,
     isNonVoting: false
   },
   "PLC.N0000": {
@@ -1802,7 +1802,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PLC",
     name: "People's Leasing & Finance PLC",
     sector: "Diversified Financials",
-    price: 19,
+    price: 18.8,
     isNonVoting: false
   },
   "PLR.N0000": {
@@ -1810,7 +1810,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PLR",
     name: "Prime Lands Residencies PLC",
     sector: "Real Estate Management & Development",
-    price: 42.4,
+    price: 40.5,
     isNonVoting: false
   },
   "PMB.N0000": {
@@ -1818,7 +1818,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "PMB",
     name: "Pmf Finance PLC",
     sector: "Diversified Financials",
-    price: 10.1,
+    price: 10,
     isNonVoting: false
   },
   "RAL.N0000": {
@@ -1842,7 +1842,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RCL",
     name: "Royal Ceramics Lanka PLC",
     sector: "Capital Goods",
-    price: 48.1,
+    price: 47.5,
     isNonVoting: false
   },
   "REEF.N0000": {
@@ -1866,7 +1866,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RENU",
     name: "Renuka City Hotel PLC",
     sector: "Consumer Services",
-    price: 807,
+    price: 805,
     isNonVoting: false
   },
   "REXP.N0000": {
@@ -1874,7 +1874,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "REXP",
     name: "Richard Pieris Exports PLC",
     sector: "Materials",
-    price: 322,
+    price: 322.5,
     isNonVoting: false
   },
   "RFL.N0000": {
@@ -1882,7 +1882,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RFL",
     name: "Ramboda Falls PLC",
     sector: "Consumer Services",
-    price: 24,
+    price: 24.1,
     isNonVoting: false
   },
   "RGEM.N0000": {
@@ -1890,7 +1890,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RGEM",
     name: "Radiant Gems International PLC",
     sector: "Consumer Durables & Apparel",
-    price: 154.75,
+    price: 155.5,
     isNonVoting: false
   },
   "RHL.N0000": {
@@ -1898,7 +1898,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RHL",
     name: "Renuka Holdings PLC",
     sector: "Capital Goods",
-    price: 36.7,
+    price: 36.1,
     isNonVoting: false
   },
   "RHTL.N0000": {
@@ -1906,7 +1906,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RHTL",
     name: "The Fortress Resorts PLC",
     sector: "Consumer Services",
-    price: 25.7,
+    price: 26.5,
     isNonVoting: false
   },
   "RICH.N0000": {
@@ -1914,7 +1914,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RICH",
     name: "Richard Pieris and Company PLC",
     sector: "Capital Goods",
-    price: 29,
+    price: 27.2,
     isNonVoting: false
   },
   "RIL.N0000": {
@@ -1922,7 +1922,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RIL",
     name: "R I L Property PLC",
     sector: "Retailing",
-    price: 23.9,
+    price: 23,
     isNonVoting: false
   },
   "RPBH.N0000": {
@@ -1930,7 +1930,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RPBH",
     name: "Royal Palms Beach Hotels PLC",
     sector: "Consumer Services",
-    price: 36.6,
+    price: 37.1,
     isNonVoting: false
   },
   "RWSL.N0000": {
@@ -1938,7 +1938,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "RWSL",
     name: "Raigam Wayamba Salterns PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 20.6,
+    price: 20.5,
     isNonVoting: false
   },
   "SAMP.N0000": {
@@ -1946,7 +1946,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SAMP",
     name: "Sampath Bank PLC",
     sector: "Banks",
-    price: 157,
+    price: 154,
     isNonVoting: false
   },
   "SCAP.N0000": {
@@ -1954,7 +1954,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SCAP",
     name: "Softlogic Capital PLC",
     sector: "Insurance",
-    price: 11.3,
+    price: 11.5,
     isNonVoting: false
   },
   "SDB.N0000": {
@@ -1962,7 +1962,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SDB",
     name: "Sanasa Development Bank PLC",
     sector: "Banks",
-    price: 47.1,
+    price: 48.5,
     isNonVoting: false
   },
   "SDF.N0000": {
@@ -1970,7 +1970,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SDF",
     name: "Sarvodaya Development Finance PLC",
     sector: "Diversified Financials",
-    price: 38.6,
+    price: 38,
     isNonVoting: false
   },
   "SEMB.N0000": {
@@ -1986,7 +1986,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SEMB",
     name: "Smb Finance PLC",
     sector: "Diversified Financials",
-    price: 0.3,
+    price: 0.4,
     isNonVoting: true
   },
   "SERV.N0000": {
@@ -1994,7 +1994,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SERV",
     name: "The Kingsbury PLC",
     sector: "Consumer Services",
-    price: 15.2,
+    price: 15,
     isNonVoting: false
   },
   "SEYB.N0000": {
@@ -2002,7 +2002,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SEYB",
     name: "Seylan Bank PLC",
     sector: "Banks",
-    price: 101,
+    price: 98.9,
     isNonVoting: false
   },
   "SEYB.X0000": {
@@ -2010,7 +2010,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SEYB",
     name: "Seylan Bank PLC",
     sector: "Banks",
-    price: 74,
+    price: 72.6,
     isNonVoting: true
   },
   "SFCL.N0000": {
@@ -2018,7 +2018,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SFCL",
     name: "Senkadagala Finance PLC",
     sector: "Diversified Financials",
-    price: 315.5,
+    price: 313.75,
     isNonVoting: false
   },
   "SFIN.N0000": {
@@ -2026,7 +2026,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SFIN",
     name: "Singer Finance (lanka) PLC",
     sector: "Diversified Financials",
-    price: 44.3,
+    price: 43.5,
     isNonVoting: false
   },
   "SHAW.N0000": {
@@ -2034,7 +2034,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SHAW",
     name: "Lee Hedges PLC",
     sector: "Real Estate Management & Development",
-    price: 290,
+    price: 292.5,
     isNonVoting: false
   },
   "SHL.N0000": {
@@ -2042,7 +2042,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SHL",
     name: "Softlogic Holdings PLC",
     sector: "Capital Goods",
-    price: 9.9,
+    price: 10,
     isNonVoting: false
   },
   "SHOT.N0000": {
@@ -2050,7 +2050,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SHOT",
     name: "Serendib Hotels PLC",
     sector: "Consumer Services",
-    price: 16.3,
+    price: 16.8,
     isNonVoting: false
   },
   "SHOT.X0000": {
@@ -2058,7 +2058,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SHOT",
     name: "Serendib Hotels PLC",
     sector: "Consumer Services",
-    price: 13.8,
+    price: 13,
     isNonVoting: true
   },
   "SIGV.N0000": {
@@ -2066,7 +2066,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SIGV",
     name: "Sigiriya Village Hotels PLC",
     sector: "Consumer Services",
-    price: 13.1,
+    price: 12.9,
     isNonVoting: false
   },
   "SIL.N0000": {
@@ -2074,7 +2074,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SIL",
     name: "Samson International PLC",
     sector: "Materials",
-    price: 568.5,
+    price: 550,
     isNonVoting: false
   },
   "SING.N0000": {
@@ -2082,7 +2082,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SING",
     name: "Standard Capital PLC",
     sector: "Real Estate Management & Development",
-    price: 54,
+    price: 55.7,
     isNonVoting: false
   },
   "SINH.N0000": {
@@ -2090,7 +2090,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SINH",
     name: "Singhe Hospitals PLC",
     sector: "Health Care Equipment & Services",
-    price: 23.2,
+    price: 23.3,
     isNonVoting: false
   },
   "SINI.N0000": {
@@ -2106,7 +2106,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SINS",
     name: "Singer (sri Lanka) PLC",
     sector: "Retailing",
-    price: 79.2,
+    price: 77.3,
     isNonVoting: false
   },
   "SIRA.N0000": {
@@ -2114,7 +2114,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SIRA",
     name: "Sierra Cables PLC",
     sector: "Capital Goods",
-    price: 37.3,
+    price: 36.7,
     isNonVoting: false
   },
   "SLND.N0000": {
@@ -2146,7 +2146,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SOY",
     name: "Convenience Foods (lanka )PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 2072,
+    price: 2025.75,
     isNonVoting: false
   },
   "SPEN.N0000": {
@@ -2154,7 +2154,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SPEN",
     name: "Aitken Spence PLC",
     sector: "Capital Goods",
-    price: 145.75,
+    price: 151,
     isNonVoting: false
   },
   "STAF.N0000": {
@@ -2162,7 +2162,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "STAF",
     name: "Dolphin Hotels PLC",
     sector: "Consumer Services",
-    price: 43,
+    price: 41.2,
     isNonVoting: false
   },
   "SUN.N0000": {
@@ -2170,7 +2170,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "SUN",
     name: "Sunshine Holdings PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 31.5,
+    price: 30.9,
     isNonVoting: false
   },
   "SWAD.N0000": {
@@ -2186,7 +2186,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TAFL",
     name: "Three Acre Farms PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 679.25,
+    price: 677.75,
     isNonVoting: false
   },
   "TAJ.N0000": {
@@ -2194,7 +2194,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TAJ",
     name: "TAL Lanka Hotels PLC",
     sector: "Consumer Services",
-    price: 28.5,
+    price: 28.1,
     isNonVoting: false
   },
   "TANG.N0000": {
@@ -2202,7 +2202,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TANG",
     name: "Tangerine Beach Hotels PLC",
     sector: "Consumer Services",
-    price: 94.4,
+    price: 95,
     isNonVoting: false
   },
   "TAP.N0000": {
@@ -2210,7 +2210,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TAP",
     name: "Ambeon Capital PLC",
     sector: "Consumer Durables & Apparel",
-    price: 29.2,
+    price: 29,
     isNonVoting: false
   },
   "TESS.N0000": {
@@ -2242,7 +2242,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TJL",
     name: "Teejay Lanka PLC",
     sector: "Consumer Durables & Apparel",
-    price: 34.1,
+    price: 34,
     isNonVoting: false
   },
   "TKYO.N0000": {
@@ -2258,7 +2258,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TKYO",
     name: "Tokyo Cement Company (lanka) PLC",
     sector: "Materials",
-    price: 72.7,
+    price: 71.5,
     isNonVoting: true
   },
   "TPL.N0000": {
@@ -2266,7 +2266,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TPL",
     name: "Talawakelle TEA Estates PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 134,
+    price: 135.5,
     isNonVoting: false
   },
   "TRAN.N0000": {
@@ -2274,7 +2274,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TRAN",
     name: "Trans Asia Hotels PLC",
     sector: "Consumer Services",
-    price: 47,
+    price: 46.4,
     isNonVoting: false
   },
   "TSML.N0000": {
@@ -2282,7 +2282,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "TSML",
     name: "TEA Smallholder Factories PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 34,
+    price: 33,
     isNonVoting: false
   },
   "TYRE.N0000": {
@@ -2298,7 +2298,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "UAL",
     name: "UNION Assurance PLC",
     sector: "Insurance",
-    price: 70.7,
+    price: 69.7,
     isNonVoting: false
   },
   "UBC.N0000": {
@@ -2306,7 +2306,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "UBC",
     name: "UNION Bank of Colombo PLC",
     sector: "Banks",
-    price: 13.2,
+    price: 13,
     isNonVoting: false
   },
   "UBF.N0000": {
@@ -2330,7 +2330,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "UDPL",
     name: "Udapussellawa Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 149,
+    price: 142.75,
     isNonVoting: false
   },
   "UML.N0000": {
@@ -2338,7 +2338,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "UML",
     name: "United Motors Lanka PLC",
     sector: "Retailing",
-    price: 23.3,
+    price: 23,
     isNonVoting: false
   },
   "VFIN.N0000": {
@@ -2346,7 +2346,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "VFIN",
     name: "Vallibel Finance PLC",
     sector: "Diversified Financials",
-    price: 90.6,
+    price: 89,
     isNonVoting: false
   },
   "VLL.N0000": {
@@ -2354,7 +2354,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "VLL",
     name: "Vidullanka PLC",
     sector: "Utilities",
-    price: 23.4,
+    price: 23.5,
     isNonVoting: false
   },
   "VLL.X0000": {
@@ -2362,7 +2362,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "VLL",
     name: "Vidullanka PLC",
     sector: "Utilities",
-    price: 19.6,
+    price: 20,
     isNonVoting: true
   },
   "VONE.N0000": {
@@ -2370,7 +2370,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "VONE",
     name: "Vallibel One PLC",
     sector: "Utilities",
-    price: 95,
+    price: 95.1,
     isNonVoting: false
   },
   "VPEL.N0000": {
@@ -2386,7 +2386,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "WAPO",
     name: "Galle Face Capital Partners PLC",
     sector: "Diversified Financials",
-    price: 20.9,
+    price: 20.5,
     isNonVoting: false
   },
   "WATA.N0000": {
@@ -2394,7 +2394,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "WATA",
     name: "Watawala Plantations PLC",
     sector: "Food, Beverage & Tobacco",
-    price: 46,
+    price: 45.1,
     isNonVoting: false
   },
   "WIND.N0000": {
@@ -2402,7 +2402,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "WIND",
     name: "Windforce PLC",
     sector: "Utilities",
-    price: 39.9,
+    price: 38.9,
     isNonVoting: false
   },
   "WLTH.N0000": {
@@ -2410,7 +2410,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "WLTH",
     name: "Wealthtrust Securities PLC",
     sector: "Diversified Financials",
-    price: 12.2,
+    price: 12,
     isNonVoting: false
   },
   "YORK.N0000": {
@@ -2418,7 +2418,7 @@ export const CSE_STOCKS_DATA: Record<string, CseStockInfo> = {
     baseSymbol: "YORK",
     name: "YORK Arcade Holdings PLC",
     sector: "Real Estate Management & Development",
-    price: 10,
+    price: 10.2,
     isNonVoting: false
   }
 };

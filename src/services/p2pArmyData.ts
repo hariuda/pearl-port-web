@@ -1,7 +1,7 @@
 import { P2pArmyPrice } from '../types';
 
 // Baseline USDT/LKR P2P reference rates across major P2P exchanges (Sri Lanka)
-const DEFAULT_USDT_BASE = 345.87;
+const DEFAULT_USDT_BASE = 345.16;
 
 const exchangeSpreads: [string, number, number][] = [
   ["Binance", 1.002, 0.998],
@@ -19,17 +19,16 @@ const exchangeSpreads: [string, number, number][] = [
 const fallbackSpotUsdt: Record<string, number> = {
   USDT: 1,
   USDC: 1,
-  XRP: 0.957069,
-  ETH: 1818.65,
-  NEAR: 3.16,
-  AVAX: 7.16,
-  LINK: 9.14,
-  BNB: 590.82,
-  ADA: 0.153333,
-  DOT: 0.728007,
-  DOGE: 0.059357,
-  BTC: 64945,
-  SUI: 0.721641
+  BNB: 593.85,
+  SOL: 71.9,
+  ETH: 1831.1,
+  DOGE: 0.059449,
+  SUI: 0.722697,
+  ADA: 0.15359,
+  NEAR: 3.18,
+  BTC: 65321,
+  LINK: 9.17,
+  DOT: 0.733012
 };
 
 // Memory cache
